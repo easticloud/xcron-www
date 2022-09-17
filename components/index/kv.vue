@@ -3,6 +3,11 @@
         <el-carousel direction="horizontal" :autoplay="true" @change="changeHandle">
             <el-carousel-item class="u-item" v-for="(item, i) in data" :key="i">
                 <a class="u-link" :href="item.href" :target="item.target" :style="`background-image: url(${item.src})`">
+                    <div class="wp">
+                        <span class="u-title">{{ item.title }}</span>
+                        <span class="u-desc">{{ item.desc }}</span>
+                        <span class="u-btn">立即查看</span>
+                    </div>
                 </a>
             </el-carousel-item>
         </el-carousel>
@@ -15,9 +20,30 @@ export default {
     data() {
         return {
             data: [
-                { href: "/solution/mix", target: "_blank", src: getKV("xcron-1.jpg"), mode: "dark" },
-                { href: "/production/servers", target: "_blank", src: getKV("xcron-2.jpg"), mode: "dark" },
-                { href: "/production/international", target: "_blank", src: getKV("xcron-3.jpg"), mode: "light" },
+                {
+                    title: "上云场景组合折上折",
+                    desc: "所有场景组合折上9折起！万元礼券限时领！",
+                    href: "/solution/mix",
+                    target: "_blank",
+                    src: getKV("xcron-1.jpg"),
+                    mode: "dark",
+                },
+                {
+                    title: "X.CRON推荐奖励计划",
+                    desc: "加入推广成为云推官，推荐新用户下单即可获得现金奖励",
+                    href: "/production/servers",
+                    target: "_blank",
+                    src: getKV("xcron-2.jpg"),
+                    mode: "dark",
+                },
+                {
+                    title: "企业上云解决方案",
+                    desc: "高质量、高效率、高安全”7*24h专业运维服务",
+                    href: "/production/international",
+                    target: "_blank",
+                    src: getKV("xcron-3.jpg"),
+                    mode: "light",
+                },
             ],
         };
     },
@@ -30,24 +56,5 @@ export default {
 </script>
 
 <style lang="less">
-.m-slider .u-link {
-    .db;
-    .h(550px);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-.el-carousel__container {
-    height: 550px;
-}
-@media screen and (max-width: @phone) {
-    .el-carousel__container {
-        height: 176px;
-    }
-    .m-slider .u-link {
-        .h(176px);
-        background-position: center top;
-        background-size: 150%;
-    }
-}
+@import "../../assets/css/index/kv.less";
 </style>

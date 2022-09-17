@@ -1,0 +1,43 @@
+.m-slider .u-link {
+    .db;
+    .h(550px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    .wp {
+        .flex;
+        .color(#F8F8F8);
+        .h(500px);
+        flex-direction: column;
+        justify-content: center;
+        .u-title {
+            .fz(52px);
+            .mb(10px);
+        }
+        .u-desc {
+            .fz(21px);
+            .mb(75px);
+        }
+        .u-btn {
+            .size(200px,65px);
+            .color(#fff);
+            .r(5px);
+            .x;
+            .fz(24px,65px);
+            background-color: #cf0010;
+        }
+    }
+}
+.el-carousel__container {
+    height: 550px;
+}
+@media screen and (max-width: @phone) {
+    .el-carousel__container {
+        height: 176px;
+    }
+    .m-slider .u-link {
+        .h(176px);
+        background-position: center top;
+        background-size: 150%;
+    }
+}

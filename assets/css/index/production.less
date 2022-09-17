@@ -35,7 +35,50 @@
     }
     .m-content {
         .mt(50px);
-        min-height: 270px;
         background-color: #f8f8f8;
+        .wp {
+            .w(100%);
+        }
+        .m-children {
+            .flex;
+            min-height: 270px;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 80px;
+            .u-child {
+                .flex;
+                flex-direction: column;
+                gap: 8px;
+                .fz(18px);
+                .u-title {
+                    .flex;
+                    .h(40px);
+                    .fz(21px);
+                    gap: 10px;
+                    align-items: center;
+                    .u-sign {
+                        .fz(18px);
+                        .r(2px);
+                        .color(#CF0010);
+                        padding: 3px 12px;
+                        border: 1px solid #cf0010;
+                    }
+                }
+                .u-desc {
+                    .color(#848484);
+                    .mb(20px);
+                }
+                .u-tags {
+                    .flex;
+                    gap: 10px;
+                    .u-tag {
+                        .r(2px);
+                        .color(#B2B2B2);
+                        padding: 3px 12px;
+                        border: 1px solid #b2b2b2;
+                    }
+                }
+            }
+        }
     }
 }
