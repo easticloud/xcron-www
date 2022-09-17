@@ -1,0 +1,37 @@
+.m-index-solution {
+    .m-tabs {
+        .flex;
+        .mt(50px);
+        .m-item {
+            .flex;
+            .fz(18px);
+            .pointer;
+            position: relative;
+            min-width: 170px;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            .u-img {
+                .size(18px);
+            }
+            &:hover,
+            &.active {
+                .color(#CF0010);
+                &::after {
+                    content: "";
+                    .db;
+                    .pa;
+                    .lb(50%,-20px);
+                    .size(170px,3px);
+                    .ml(-75px);
+                    background-color: #cf0010;
+                }
+            }
+        }
+    }
+    .m-content {
+        .mt(30px);
+        .size(100%,280px);
+        background-color: #f8f8f8;
+    }
+}

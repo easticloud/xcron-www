@@ -1,0 +1,32 @@
+.c-header {
+    background-color: #fff;
+    .wp {
+        .flex;
+        justify-content: space-between;
+        align-items: center;
+        .m-box {
+            .flex;
+            align-items: center;
+            gap: 50px;
+            .h(100px);
+            .u-link {
+                position: relative;
+                .fz(18px,100px);
+                .color(#3c3c3c);
+                .nobreak;
+                opacity: 0.8;
+                &:hover {
+                    opacity: 1;
+                    &::after {
+                        content: "";
+                        .db;
+                        .pa;
+                        .size(100%,2px);
+                        .lb(0);
+                        background-color: #cf0010;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.m-index-production {
+    .m-tabs {
+        .flex;
+        .mt(50px);
+        justify-content: space-between;
+        .m-item {
+            .flex;
+            min-width: 150px;
+            position: relative;
+            flex-direction: column;
+            align-items: center;
+            .u-img {
+                .size(80px);
+            }
+            .u-label {
+                .fz(18px);
+            }
+            &:hover,
+            &.active {
+                .pointer;
+                .u-label {
+                    .color(#CF0010);
+                }
+                &::after {
+                    content: "";
+                    .db;
+                    .pa;
+                    .lb(50%,-20px);
+                    .size(150px,3px);
+                    .ml(-75px);
+                    background-color: #cf0010;
+                }
+            }
+        }
+    }
+    .m-content {
+        .mt(50px);
+        min-height: 270px;
+        background-color: #f8f8f8;
+    }
+}
