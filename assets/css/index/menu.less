@@ -1,0 +1,95 @@
+.m-index-menu {
+    .size(100%);
+    .pa;
+    .z(9);
+    .lt(0,100px);
+    .wp {
+        .flex;
+        align-items: flex-start;
+        background-color: #fff;
+        border-top: 1px solid #e6e6e6;
+        .m-list-production {
+            .flex;
+            .w(224px);
+            .fz(18px);
+            margin: 10px 0;
+            gap: 20px;
+            padding: 30px 0 30px 50px;
+            box-sizing: border-box;
+            flex-direction: column;
+            border-right: 1px solid #e6e6e6;
+            .u-more {
+                .color(#3c3c3c);
+                font-weight: 500;
+            }
+            .u-list {
+                .pointer;
+                &:hover,
+                &.active {
+                    .color(#cf0010);
+                }
+            }
+        }
+        .m-search {
+            .flex;
+            flex: 1;
+            flex-direction: column;
+            padding: 40px 50px;
+            box-sizing: border-box;
+            .m-content {
+                .flex;
+                .mt(20px);
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                .m-item {
+                    .flex;
+                    .size(290px,95px);
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding: 20px 15px;
+                    &:hover {
+                        cursor: pointer;
+                        background-color: #f8f8f8;
+                    }
+                    .u-title {
+                        .fz(18px);
+                        .mb(8px);
+                    }
+                    .u-desc {
+                        .break(1);
+                        .fz(16px);
+                        .color(#848484);
+                    }
+                }
+            }
+        }
+        .m-list-solution {
+            .flex;
+            flex-wrap: wrap;
+            .m-item {
+                .flex;
+                .size(400px,150px);
+                .fz(18px,1.5);
+                padding: 40px 0 0 60px;
+                box-sizing: border-box;
+                gap: 10px;
+                &:hover {
+                    cursor: pointer;
+                    background-color: #f8f8f8;
+                }
+                .u-img {
+                    .size(18px);
+                    .mt(5px);
+                }
+                .u-txt {
+                    .flex;
+                    flex-direction: column;
+                    .u-desc {
+                        .fz(16px);
+                        .color(#848484);
+                    }
+                }
+            }
+        }
+    }
+}

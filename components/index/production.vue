@@ -209,7 +209,6 @@ export default {
     },
     computed: {
         children() {
-            console.log(this.list[this.index].children);
             return this.list[this.index].children;
         },
     },
