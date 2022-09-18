@@ -17,7 +17,31 @@
         </div>
         <div class="m-content">
             <div class="wp">
-                
+                <div class="m-box m-left">
+                    <div class="m-list">
+                        <span class="u-item">7*24h专业服务</span>
+                        <span class="u-item">业务故障 双倍赔偿</span>
+                        <span class="u-item">0元试用7天</span>
+                        <span class="u-item">1V1大客户专享服务</span>
+                    </div>
+                    <div class="m-btn">
+                        <span class="u-btn">安全中心</span>
+                        <span class="u-btn red">数据保障</span>
+                    </div>
+                </div>
+                <div class="m-box m-right">
+                    <span class="u-title">[稳定·可靠·安全]真正实现<b>降本提效</b></span>
+                    <div class="m-item">
+                        <div class="u-item">
+                            <span class="u-num"><b>99.9999</b>%</span>
+                            <span class="u-desc">数据可靠性</span>
+                        </div>
+                        <div class="u-item">
+                            <span class="u-num"><b>99.9995</b>%</span>
+                            <span class="u-desc">业务可靠性</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -54,14 +78,11 @@ export default {
             ],
         };
     },
-    async asyncData({ params }) {
-        return {};
-    },
     computed: {},
     methods: {},
 };
 </script>
 
-<style lang="less">
+<style scope lang="less">
 @import "../../assets/css/index/scene.less";
 </style>

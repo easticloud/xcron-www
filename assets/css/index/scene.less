@@ -6,17 +6,17 @@
         .m-item {
             .flex;
             .w(285px);
-            .r(5px); 
+            .r(5px);
             cursor: default;
             min-height: 300px;
             flex-direction: column;
             gap: 20px;
             box-sizing: border-box;
-            padding:200px 20px 20px 20px;
-            border: 1px solid rgba(151,151,151,0.8);
+            padding: 200px 20px 20px 20px;
+            border: 1px solid rgba(151, 151, 151, 0.8);
             background-repeat: no-repeat;
-            background-position: top center; 
-            background-size: 100%  185px;
+            background-position: top center;
+            background-size: 100% 185px;
             .u-img {
                 .size(100%,150px);
             }
@@ -41,5 +41,93 @@
         .mt(50px);
         min-height: 380px;
         background-color: #f8f8f8;
+        .wp {
+            position: relative;
+            .w(100%);
+        }
+        .m-box {
+            .size(650px,200px);
+            .flex;
+            .r(5px);
+            flex-direction: column;
+            justify-content: center;
+            border: 1px solid #848484;
+            .m-list {
+                .flex;
+                .w(500px);
+                .mb(30px);
+                gap: 10px;
+                flex-wrap: wrap;
+                .u-item {
+                    .w(180px);
+                    .pl(40px);
+                    box-sizing: border-box;
+                    background: url(../../../static/images/index/scene/dot.svg) left center no-repeat;
+                }
+            }
+            .m-btn {
+                .flex;
+                gap: 20px;
+                .u-btn {
+                    .color(#cf0010);
+                    .r(2px);
+                    padding: 5px 12px;
+                    border: 1px solid #cf0010;
+                    &.red {
+                        .color(#fff);
+                        background-color: #cf0010;
+                    }
+                }
+            }
+            .u-title {
+                .fz(21px);
+                font-weight: 500;
+                b {
+                    .color(#cf0010);
+                    font-weight: 500;
+                }
+            }
+            .m-item {
+                .flex;
+                .fz(18px);
+                width: 100%;
+                gap:50px;
+                box-sizing: border-box;
+                padding: 0 90px;
+                justify-content: space-between;
+                .u-item {
+                    .flex;
+                    flex-direction: column;
+                    .u-num {
+                        .fz(21px);
+                        .pr(30px);
+                        font-weight: 500;
+                        background: url(../../../static/images/index/scene/up.svg) center right no-repeat;
+                        b {
+                            .fz(36px);
+                            font-weight: 500;
+                        }
+                    }
+                    .u-desc {
+                        .color(#848484);
+                        .x;
+                        .ml(-2em);
+                    }
+                }
+            }
+
+            &.m-left {
+                .mt(106px);
+                .pl(80px);
+                box-sizing: border-box;
+                background-color: #fff;
+            }
+            &.m-right {
+                .pa;
+                .rt(0,75px);
+                align-items: center;
+                background-color: #f8f8f8;
+            }
+        }
     }
 }

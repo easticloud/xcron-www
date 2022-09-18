@@ -32,6 +32,6 @@ export default {
 };
 </script>
 
-<style lang="less">
+<style scope lang="less">
 @import "~@/assets/css/header.less";
 </style>
