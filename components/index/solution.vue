@@ -6,7 +6,7 @@
                 <a href="" target="_blank" class="u-desc">查看全部解决方案 ></a>
             </div>
             <div class="m-tabs">
-                <div class="m-item" v-for="(item, i) in list" :key="i" @click="change(i)">
+                <div class="m-item" v-for="(item, i) in list" :key="i" :class="{active:index == i}" @click="change(i)">
                     <img class="u-img" :src="item.src" />
                     <span class="u-label">{{ item.label }}</span>
                 </div>
