@@ -3,7 +3,7 @@
         <el-carousel direction="horizontal" :autoplay="true" @change="changeHandle">
             <el-carousel-item class="u-item" v-for="(item, i) in data" :key="i">
                 <a class="u-link" :href="item.href" :target="item.target" :style="`background-image: url(${item.src})`">
-                    <div class="wp">
+                    <div class="wp" :class="item.mode=='dark'?'dark':'light'">
                         <span class="u-title">{{ item.title }}</span>
                         <span class="u-desc">{{ item.desc }}</span>
                         <span class="u-btn">立即查看</span>
@@ -34,7 +34,7 @@ export default {
                     href: "/production/servers",
                     target: "_blank",
                     src: getKV("xcron-2.jpg"),
-                    mode: "dark",
+                    mode: "light",
                 },
                 {
                     title: "企业上云解决方案",

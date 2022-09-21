@@ -7,6 +7,7 @@
             </div>
             <div class="m-tabs">
                 <div class="m-item" v-for="(item, i) in list" :key="i" :style="`backgroundImage: url(${item.src})`">
+                    <span class="u-line"></span>
                     <span class="u-title">
                         <img class="u-icon" :src="item.icon" />
                         <span>{{ item.title }}</span>

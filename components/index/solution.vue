@@ -11,7 +11,7 @@
                     <span class="u-label">{{ item.label }}</span>
                 </div>
             </div>
-            <div class="m-content">
+            <div class="m-content" :style="`backgroundImage: url(${children.src})`">
                 <div class="m-item">
                     <span class="u-title">{{ children.title }}</span>
                     <span class="u-desc" v-if="children.desc">{{ children.desc }}</span>
@@ -21,7 +21,12 @@
                         </template>
                     </div>
                 </div>
-                <img class="u-img" v-if="children.src" :src="children.src" />
+                <div class="u-others">
+                    <template v-if="children.other.length">
+                        <span class="u-other" v-for="(child, i) in children.other" :key="i">{{ child }}</span>
+                    </template>
+                </div>
+                <!-- <img class="u-img" v-if="children.src" :src="children.src" /> -->
             </div>
         </div>
     </div>
@@ -40,6 +45,7 @@ export default {
                         desc: "通过云计算、大数据、人工智能等技术，蒋零售场景中要素进行整合，达到精准营销，高效运营。",
                         src: "/images/index/solution/01.svg",
                         tag: ["数据驱动", "数字赋能", "AI加持"],
+                        other:[],
                     },
                 },
                 {
@@ -49,7 +55,8 @@ export default {
                         title: "运营商行业解决方案",
                         desc: "提供更适合运营商的业务云化转型方案以及面向运营商企业客户的行业数字化方案，帮助运营商加速网络变现，业务创新，运营敏捷，取得新增长。",
                         src: "/images/index/solution/02.jpeg",
-                        tag: [],
+                        tag: ["网络变现","业务创新","运营敏捷"],
+                        other:[],
                     },
                 },
                 {
@@ -59,7 +66,8 @@ export default {
                         title: "数字政府解决方案",
                         desc: "通过全栈专属云，人工智能和微服务等服务，帮助政府及公共事业的服务能力向移动化和智能化发展。",
                         src: "/images/index/solution/03.jpeg",
-                        tag: [],
+                        tag: ["协同共享","智能精准","简单易用"],
+                        other:[],
                     },
                 },
                 {
@@ -69,7 +77,8 @@ export default {
                         title: "金融行业解决方案",
                         desc: "通过金融专区、专属云安全合规部署和全栈技术创新，助力金融客户业务敏捷创新、智能升级等数字化转型目标。",
                         src: "/images/index/solution/04.jpeg",
-                        tag: [],
+                        tag: ["全新趋势","转型升级","业务创新"],
+                        other:[],
                     },
                 },
                 {
@@ -79,7 +88,8 @@ export default {
                         title: "迁移上云解决方案",
                         desc: "提供ERP系统上云一站式服务，为您完成数字化时代的企业管理工具转型。",
                         src: "/images/index/solution/05.jpeg",
-                        tag: [],
+                        tag: ["降低成本","安全稳定","最新技术"],
+                        other:[],
                     },
                 },
                 {
@@ -89,17 +99,19 @@ export default {
                         title: "TIk Tok解决方案",
                         desc: "抖音国际版Tiktok在全球深受欢迎，成为国际上下载量最多的APP之一。由简入深，针对浏览客户、运营客户以及企业高端客户都有完整配套解决方案，解决个人/企业Tiktok问题。",
                         src: "/images/index/solution/06.jpeg",
-                        tag: [],
+                        tag: ["全案定制","高速转化","精准匹配"],
+                        other:[],
                     },
                 },
                 {
                     label: "其他",
                     src: "/images/index/solution/icon-7.png",
                     children: {
-                        title: "能源、医疗健康、教育、工业互联网",
+                        title: "",
                         desc: "",
                         src: "",
                         tag: [],
+                        other:["能源行业解决方案","医疗健康行业解决方案","教育行业解决方案","工业互联网行业解决方案"],
                     },
                 },
             ],
