@@ -49,7 +49,6 @@ export default {
     data() {
         return {
             production_key: "人工智能",
-
             search: "",
             production: ["人工智能", "区块链", "云计算", "大数据", "网络", "智能边缘", "终端", "安全"],
             solution: [
