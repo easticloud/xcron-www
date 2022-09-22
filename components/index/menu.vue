@@ -14,9 +14,10 @@
                     >
                 </div>
                 <div class="m-search">
-                    <el-input placeholder="搜索云产品" v-model="search">
-                        <el-button slot="prepend" icon="el-icon-search"></el-button>
-                    </el-input>
+                    <div class="u-search">
+                        <img class="u-img" src="../../assets/img/search.svg" />
+                        <el-input class="u-input" placeholder="搜索云产品" v-model="search"> </el-input>
+                    </div>
                     <div class="m-content">
                         <div class="m-item">
                             <span class="u-title">智能AI边缘盒子</span>

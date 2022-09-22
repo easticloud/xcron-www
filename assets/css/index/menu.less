@@ -36,29 +36,26 @@
             flex-direction: column;
             padding: 40px 50px;
             box-sizing: border-box;
-            .el-input-group{
-                border-bottom: 1px solid #E6E6E6;
+            .u-search {
+                .flex;
+                .pb(10px);
+                align-items: center;
+                gap: 15px;
+                border-bottom: 1px solid #e6e6e6;
+                .u-img {
+                    .size(18px);
+                }
+                .u-input {
+                    .fz(18px);
+                }
             }
-            .el-button,.el-input-group__prepend{
-                border:none;
-                background-color: transparent;
-                .r(0);
-                .el-icon-search {
-                    background: url(../../img/search.svg) left center no-repeat;
-                    font-size: 20px;
-                    color: #3c3c3c;
-                    font-family:""!important;
-                    &::after{
-                        content: "";
-                    }
-                  }
-            }
-            .el-button{
-                padding:12px 20px 12px 0;
+
+            .el-button {
+                padding: 12px 20px 12px 0;
                 font-size: 18px;
-                color:#B2B2B2;
+                color: #b2b2b2;
             }
-            .el-input__inner{
+            .el-input__inner {
                 border: none;
                 .r(0);
                 padding-left: 0;
