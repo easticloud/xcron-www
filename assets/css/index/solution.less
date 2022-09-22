@@ -56,7 +56,7 @@
             box-sizing: border-box;
             flex-direction: column;
             align-items: flex-start;
-            .u-bgimg{
+            .u-bgimg {
                 .h(280px);
                 .pl(60px);
                 .fz(18px,1.8);
@@ -84,7 +84,7 @@
                 }
             }
         }
-        .u-others{
+        .u-others {
             .flex;
             .pa;
             .lt(0);
@@ -93,17 +93,24 @@
             width: 100%;
             flex-wrap: wrap;
             justify-content: space-between;
-            &:after {  
-                content: '';
+            &:after {
+                content: "";
                 width: 50%;
             }
             .u-other {
                 .db;
+                .pointer;
+                .bold;
                 .size(50%,140px);
                 .lh(140px);
                 text-align: center;
+                letter-spacing: 2px;
+                box-sizing: border-box;
+                border: 1px dashed #f3f3f3;
                 &:hover {
-                  background-image: linear-gradient(to right,#F1D994,#CF0010);
+                    color: #fff;
+                    border: 0;
+                    background-image: linear-gradient(to right, #f1d994, #cf0010);
                 }
             }
         }
