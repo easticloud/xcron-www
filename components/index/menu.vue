@@ -14,9 +14,10 @@
                     >
                 </div>
                 <div class="m-search">
-                    <el-input placeholder="搜索云产品" v-model="search">
-                        <el-button slot="prepend" icon="el-icon-search"></el-button>
-                    </el-input>
+                    <div class="u-search">
+                        <img class="u-img" src="../../assets/img/search.svg" />
+                        <el-input class="u-input" placeholder="搜索云产品" v-model="search"> </el-input>
+                    </div>
                     <div class="m-content">
                         <div class="m-item">
                             <span class="u-title">智能AI边缘盒子</span>
@@ -49,7 +50,6 @@ export default {
     data() {
         return {
             production_key: "人工智能",
-
             search: "",
             production: ["人工智能", "区块链", "云计算", "大数据", "网络", "智能边缘", "终端", "安全"],
             solution: [

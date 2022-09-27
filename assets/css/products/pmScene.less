@@ -1,0 +1,100 @@
+.m-p-scene{
+    background:#f8f8f8;
+    .pb(75px);
+    .pt(75px);
+    h2{
+        .db;
+        .x;
+        .pb(50px);
+        .fz(36px,50px,50px);    
+    }
+    .m-tabs {
+        .flex;
+        .w(100%);
+        padding:0 20px;
+        box-sizing: border-box;
+        .pr;
+        &::after{
+            border-bottom:2px solid #E6E6E6;
+            content: "";
+            .db;
+            .pa;
+            .lb(0,-20px);
+            .size(100%,2px);
+            box-sizing: border-box;
+        }
+        .m-item {
+            .flex;
+            .fz(18px);
+            .pointer;
+            position: relative;
+            min-width: 170px;
+            justify-content: center;
+            gap: 5px;
+            &:hover,
+            &.active {
+                .color(#CF0010);
+                &::after {
+                    content: "";
+                    .db;
+                    .pa;
+                    .lb(50%,-20px);
+                    .size(170px,3px);
+                    .ml(-75px);
+                    z-index: 3;
+                    box-sizing: border-box;
+                    border-left: 1px solid #fff;
+                    border-right: 1px solid #fff;
+                    background-color: #cf0010;
+                }
+            }
+        }
+    }
+    .m-Scontent {
+        .db;
+        .mt(70px);
+        .size(100%,auto);
+        .r(5px);
+        background-color: #fff;
+        overflow: hidden;
+        .pr;
+        box-sizing: border-box;
+        padding:50px;
+        .u-img {
+            .w(446px);
+            min-height: 225px;
+            .pa;
+            .lt(74px,50px);
+            bottom:50px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .m-item {
+            .pl(550px);
+            .fz(18px,1.8);
+            .db;
+            .u-bgimg {
+                .h(280px);
+                .pl(60px);
+                .fz(18px,1.8);
+                min-width: 500px;
+                .db;
+                .w(100%);
+            }
+            .u-title {
+                .fz(24px,33px);
+                .mb(17px);
+                .db;
+                .w(100%);
+            }
+            .u-tags{
+                .db;
+                .w(100%);
+                span{
+                    .db;
+                    .fz(18px,35px);
+                }
+            }
+        }
+    }
+}
