@@ -3,7 +3,7 @@
         <div class="wp">
             <h2>{{pAboutBCSTil}}</h2>
             <div class="m-bcs">
-                <p v-for="item in pAboutBCS" :key="item">
+                <p v-for="(item,aindex) in pAboutBCS" :key="aindex">
                     <span>{{item.til}}</span>
                     <span class="tags">{{item.desc}}</span>
                 </p>
@@ -14,10 +14,10 @@
 
 <script>
 export default {
-    props:{
-        pAboutBCS:Array,
-        pAboutBCSTil:String,
-        pAboutBCSClass:String
+    props: {
+        pAboutBCS: Array,
+        pAboutBCSTil: String,
+        pAboutBCSClass: String
     },
     data() {
         return {

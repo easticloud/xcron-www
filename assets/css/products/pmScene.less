@@ -1,28 +1,35 @@
-.m-p-scene{
-    background:#f8f8f8;
+.m-p-scene {
+    background: #f8f8f8;
     .pb(75px);
     .pt(75px);
-    h2{
+
+    h2 {
         .db;
         .x;
         .pb(50px);
-        .fz(36px,50px,50px);    
+        .fz(36px, 50px, 50px);
     }
+
     .m-tabs {
-        .flex;
+        display: flex;
+        justify-content: center; // 内容自适应：上下居中
+        align-items: center; // 子项对齐方式：左右居中
         .w(100%);
-        padding:0 20px;
+        padding: 0 20px;
         box-sizing: border-box;
         .pr;
-        &::after{
-            border-bottom:2px solid #E6E6E6;
+        gap: 50px;
+
+        &::after {
+            border-bottom: 2px solid #E6E6E6;
             content: "";
             .db;
             .pa;
-            .lb(0,-20px);
-            .size(100%,2px);
+            .lb(0, -20px);
+            .size(100%, 2px);
             box-sizing: border-box;
         }
+
         .m-item {
             .flex;
             .fz(18px);
@@ -30,17 +37,18 @@
             position: relative;
             min-width: 170px;
             justify-content: center;
-            gap: 5px;
+
             &:hover,
             &.active {
                 .color(#CF0010);
+
                 &::after {
                     content: "";
                     .db;
                     .pa;
-                    .lb(50%,-20px);
-                    .size(170px,3px);
-                    .ml(-75px);
+                    .lb(50%, -20px);
+                    .size(170px, 3px);
+                    .ml(-85px);
                     z-index: 3;
                     box-sizing: border-box;
                     border-left: 1px solid #fff;
@@ -50,49 +58,90 @@
             }
         }
     }
+
     .m-Scontent {
         .db;
         .mt(70px);
-        .size(100%,auto);
+        .size(100%, auto);
         .r(5px);
         background-color: #fff;
         overflow: hidden;
         .pr;
         box-sizing: border-box;
-        padding:50px;
+        padding: 50px;
+
         .u-img {
             .w(446px);
             min-height: 225px;
             .pa;
-            .lt(74px,50px);
-            bottom:50px;
+            .lt(74px, 50px);
+            bottom: 50px;
             background-repeat: no-repeat;
             background-position: center;
         }
+
         .m-item {
             .pl(550px);
-            .fz(18px,1.8);
+            .fz(18px, 1.8);
             .db;
+
             .u-bgimg {
                 .h(280px);
                 .pl(60px);
-                .fz(18px,1.8);
+                .fz(18px, 1.8);
                 min-width: 500px;
                 .db;
                 .w(100%);
             }
+
             .u-title {
-                .fz(24px,33px);
+                .fz(24px, 33px);
                 .mb(17px);
                 .db;
                 .w(100%);
             }
-            .u-tags{
+
+            .u-tags {
                 .db;
                 .w(100%);
-                span{
+                .color(#848484);
+
+                .u-tag {
                     .db;
-                    .fz(18px,35px);
+                    .fz(18px, 35px);
+                }
+            }
+        }
+    }
+}
+
+// 裸金属
+.m-Bms-scene {
+    .m-Scontent {
+        .m-item {
+            .u-title {
+                .mb(17px);
+
+                .u-titletag {
+                    color: #848484;
+                    .fz(18px, 1.8);
+                    .db;
+                    .pt(5px);
+                    white-space: pre-wrap;
+                }
+            }
+
+            .u-tags {
+                .u-tag {
+                    .pb(15px);
+
+                    b {
+                        .pt(5px);
+                        .db;
+                        color: #3c3c3c;
+                        font-weight: bold;
+                        line-height: 25px;
+                    }
                 }
             }
         }

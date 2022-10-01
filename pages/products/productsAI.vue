@@ -13,7 +13,7 @@
         <products-pmDotCon :pmDotConTil="pmDotConTil" :pmDotCon="pmDotCon"></products-pmDotCon>
 
         <!-- 4、场景介绍  -->
-        <products-pmScene></products-pmScene>
+        <products-pmScene :pmScene="pmScene"></products-pmScene>
 
         <!-- 公共底部 -->
         <common-footer></common-footer>
@@ -23,16 +23,17 @@
 <script>
 import pmBanner from '../../components/products/pmBanner.vue';
 import pmDotCon from '../../components/products/pm-dotCon.vue';
+import pmScene from '../../components/products/pmScene.vue';
 export default {
     name: "Products-AI",
-    data(){
-        return{
-            pmBanner:{
+    data() {
+        return {
+            pmBanner: {
                 title: "智能AI边缘盒子",
                 desc: "一款基于寒武纪220系列模块设计的计算平台，采用嵌入式设计原理，搭载AI处理芯片，内嵌基于深度学习的算法，提供识别、抓拍、比对、报警等服务。可广泛部署在边缘区域，以及时、快速、精准的做智能化分析。",
             },
             // 产品优势
-            pmDotConTil:"产品优势",//标题
+            pmDotConTil: "产品优势",//标题
             pmDotCon: [
                 {
                     title: "高解码能力/高算力",
@@ -55,11 +56,36 @@ export default {
                     img: "/images/index/scene/03.svg",
                 },
             ],
+            // 场景介绍 
+            pmScene: {
+                index: 0,
+                til: "场景介绍",
+                isShow: true,
+                list: [
+                    {
+                        label: "数据中心",
+                        children: {
+                            title: "数据中心",
+                            src: "/images/index/solution/01.svg",
+                            tag: ["● 提供区域入侵检测，保护机房内部重要设备，提供安全可靠的运行环境", "● 提供烟火检测，实时识别区域内烟气、明火情况，及时告警", "● 提供安全帽、工装检测,自动识别区域内人员作业着装检测，对不符合要求的及时告警", "● 提供人体骨骼关键点检测，在前端设备未抓取到人体正脸时，通过骨骼关键点及着装情况，分析人员", "● 提供脱岗、摔倒检测，自动识别区域内人员状态，对脱岗及摔倒状态，及时告警"],
+                        },
+                    },
+                    {
+                        label: "智慧工地",
+                        children: {
+                            title: "智慧工地",
+                            src: "/images/index/solution/01.svg",
+                            tag: ["● 提供人员出入检测，智能识别出入人员", "● 提供升降梯人数识别，严控入梯人数，降低安全隐患", "● 提供人员聚集检测，当检测到人员异常聚集时，及时告警", "● 提供玩手机识别，对区域内人员进行玩手机行为检测，并实时告警，保障安全生产", "● 提供反光衣、灭火器检测，对区域内人员是否穿戴反光衣及区域内是否放置灭火器检测，防范安全事故"],
+                        },
+                    },
+                ],
+            }
         }
     },
-    components:{
+    components: {
         pmBanner,
         pmDotCon,
+        pmScene
     }
 };
 </script>

@@ -1,85 +1,119 @@
-.m-imgCon{
+.m-imgCon {
     height: auto;
-    background:#F8F8F8;
+    background: #F8F8F8;
     .pb(50px);
-    h2{
+
+    h2 {
         .db;
         .x;
         .pt(75px);
         .pb(50px);
-        .fz(36px,50px,50px);    
+        .fz(36px, 50px, 50px);
     }
-    .m-tabs{
+
+    .m-tabs {
         .flex;
-        flex-wrap:wrap;
-        .ml(-23px);
+        flex-wrap: wrap;
+        gap: 20px;
+
         .m-item {
             cursor: default;
             .pr;
-            .ml(22px);
             .clip;
             flex-direction: column;
-            gap: 20px;
             box-sizing: border-box;
-            .size(385px,250px);
-            .r(5px);.mb(25px);
+            .size(385px, 250px);
+            .r(5px);
+            .mb(25px);
             box-shadow: 0px 0px 5px 1px #E6E6E6;
-            padding:0 33px 40px 33px;
-            background-color: #fff;;
+            padding: 0 33px 40px 33px;
+            background-color: #fff;
+            ;
+
             .u-pic {
                 .pa;
-                left:50%;
+                left: 50%;
                 .ml(-40px);
-                top:41px;
-                .size(80px,50px);
+                top: 41px;
+                .size(80px, 50px);
                 background-position: center;
                 background-repeat: no-repeat;
             }
+
             .u-title {
                 .db;
                 width: 100%;
-                .fz(21px,29px);
+                .fz(21px, 29px);
                 .x;
                 .pb(15px);
                 .pt(116px);
             }
+
             .u-desc {
                 .db;
                 width: 100%;
-                .fz(18px,25px);
+                .fz(18px, 25px);
                 .color(#848484);
             }
         }
     }
 }
+
 // 产品与服务
-.noimgCon{
-   .m-tabs{
-    .m-item{
-        .u-pic{
-            display: none;
-        }
-        .u-title{
-            .pt(41px);
+.noimgCon {
+    .m-tabs {
+        .m-item {
+            .u-pic {
+                display: none;
+            }
+
+            .u-title {
+                .pt(41px);
+            }
         }
     }
-   }
 }
+
+//云数据仓库-精品案例
+.p-cdw {
+    background-color: #fff;
+
+    .m-tabs {
+        .m-item {
+            .size(590px, 287px);
+
+            .u-pic {
+                .size(490px, 75px);
+                .lt(50%, 50px);
+                margin-left: calc(-490px / 2);
+            }
+
+            .u-title {
+                .pt(145px);
+
+            }
+        }
+    }
+}
+
 // bcs产品优势
-.bcsBg{
-    background:#fff;
-    .m-tabs{
-        .m-item{
-            box-shadow:none;
-            .u-pic{
-                top:0;
+.bcsBg {
+    background: #fff;
+
+    .m-tabs {
+        .m-item {
+            box-shadow: none;
+
+            .u-pic {
+                top: 0;
                 .size(92px);
                 .ml(-46px);
                 background-size: 80%;
             }
-            .u-title{
+
+            .u-title {
                 .pt(92px);
             }
         }
-       }
+    }
 }

@@ -10,13 +10,14 @@
         <products-pmDotCon :pmDotConTil="pmDotConTil" :pmDotCon="pmDotCon"></products-pmDotCon>
 
         <!-- 3、产品与服务  -->
-        <products-pmImgCon :pmImgConClass="pmImgConClass" :pmImgConTil="pmImgConTil" :pmImgCon="pmImgCon"></products-pmImgCon>
+        <products-pmImgCon :pmImgConClass="pmImgConClass" :pmImgConTil="pmImgConTil" :pmImgCon="pmImgCon">
+        </products-pmImgCon>
 
         <!-- 4、产品功能  -->
         <products-pmDotCon :pmDotConTil="pmDotConTil01" :pmDotCon="pmDotCon01"></products-pmDotCon>
 
         <!-- 5、应用场景  -->
-        <products-pmSceneUse1></products-pmSceneUse1>
+        <products-pmSceneUseS :pmSceneUseS="pmSceneUseS" :pmSceneUseSTil="pmSceneUseSTil"></products-pmSceneUseS>
 
         <!-- 公共底部 -->
         <common-footer></common-footer>
@@ -27,17 +28,18 @@
 import pmImgCon from '../../components/products/pm-imgCon.vue';
 import pmDotCon from '../../components/products/pm-dotCon.vue';
 import pmBanner from '../../components/products/pmBanner.vue';
+import pmSceneUseS from '../../components/products/pmSceneUseS.vue';
 export default {
     name: "products-BCS",
-    data(){
-        return{
+    data() {
+        return {
             // 可信跨链服务-banner
-            pmBanner:{
+            pmBanner: {
                 title: "可信跨链服务",
                 desc: "可信跨链服务(Trusted Cross-Chain Service)基于一系列制定的可信区块链标准跨链协议，保证跨链交易全栈可追溯，可扩展性及可靠性等，实现基于不同区块链内核所构建的同构及异构链之间的互联互通，打破区块链数据孤岛，助力不同企业联盟链可信互联，促进区块链产业生态可信融合。",
             },
             // 产品优势
-            pmDotConTil:"产品优势",//标题
+            pmDotConTil: "产品优势",//标题
             pmDotCon: [
                 {
                     title: "跨链操作可审计",
@@ -61,8 +63,8 @@ export default {
                 },
             ],
             // 产品与服务
-            pmImgConTil:"产品与服务",//标题
-            pmImgConClass:"noimgCon",//复写样式
+            pmImgConTil: "产品与服务",//标题
+            pmImgConClass: "noimgCon",//复写样式
             pmImgCon: [//内容数据
                 {
                     title: "区块链服务BCS(Hyperledger Fabric增强版)",
@@ -91,7 +93,7 @@ export default {
                 }
             ],
             // 产品功能
-            pmDotConTil01:"产品功能",//标题
+            pmDotConTil01: "产品功能",//标题
             pmDotCon01: [
                 {
                     title: "跨链数据迁移",
@@ -114,17 +116,37 @@ export default {
                     img: "/images/index/scene/03.svg",
                 },
             ],
+            // 应用场景
+            pmSceneUseSTil: "应用场景",
+            pmSceneUseS: {
+                title: "跨地域电子票据",
+                imgSrc: "/images/index/solution/01.svg",
+                list: [
+                    {
+                        til: "· 解决数据孤岛",
+                        desc: "随着区块链生态的发展，不同地市税局提出不同区块链解决方案，产生基于不同架构，安全算法等一系列区块链联盟。如何保证在跨链传递过程中数据的真实性，事务的一致性，不让单链成为限制发票全生命周期流转的限制，是需要解决的问题。",
+                    },
+                    {
+                        til: "· 提升客户价值",
+                        desc: "通过跨链服务，能够安全可信地进行区块链之间的数据流通，全生命周期追踪发票信息，保证税务开票实时性，避免虚开发票场景，提升数据时效性。",
+                    },
+                    {
+                        til: "· 方便易用接入门槛低",
+                        desc: "提供可视化平台大幅降低用户接入门槛。用户可通过可视化界面操作完成不同区块链之间的对接，快速实现跨链业务。",
+                    },
+                ],
+            },
         }
     },
-    components:{
+    components: {
         pmBanner,
         pmImgCon,
         pmDotCon,
+        pmSceneUseS
     }
 };
 </script>
 
 <style lang="less">
 @import "~@/assets/css/products.less";
-
 </style>

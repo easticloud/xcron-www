@@ -1,17 +1,21 @@
-.pm-dotCon{
-    height: 585px;
-    background:#FFF;
-    h2{
+.pm-dotCon {
+    height: auto;
+    background: #FFF;
+    .pb(50px);
+
+    h2 {
         .db;
         .x;
         .pt(75px);
         .pb(50px);
-        .fz(36px,50px,50px);    
+        .fz(36px, 50px, 50px);
     }
-    .m-tabs{
+
+    .m-tabs {
         .flex;
         justify-content: space-between;
-        flex-wrap:wrap;
+        flex-wrap: wrap;
+
         .m-item {
             .flex;
             .w(590px);
@@ -19,45 +23,56 @@
             .pr;
             height: 195px;
             .clip;
-            padding:0 25px 50px 115px;
+            padding: 0 35px 50px 115px;
             flex-direction: column;
             gap: 20px;
             box-sizing: border-box;
+
             .u-pic {
                 .pa;
-                left:0;
-                top:32px;
-                .size(85px,55px);
+                left: 0;
+                top: 32px;
+                .size(85px, 55px);
             }
+
             .u-title {
                 .db;
                 width: 100%;
-                .fz(21px,29px);
+                .fz(21px, 29px);
+                .pb(14px);
             }
+
             .u-desc {
                 .db;
                 width: 100%;
-                .fz(18px,25px);
+                .fz(18px, 25px);
                 .color(#848484);
+                white-space: pre-wrap;
             }
         }
     }
 }
+
 // AI在线服务
-.m-p-oSer{
+.m-p-oSer {
     .h(auto);
     .pb(25px);
-    .m-tabs{
-        .m-item{
+
+    .m-tabs {
+        .m-item {
             width: 590px;
-            height:auto;
+            height: auto;
             padding: 0 95px 50px 50px;
-            .u-pic{display: none;}
-            &::after{
+
+            .u-pic {
+                display: none;
+            }
+
+            &::after {
                 content: "";
                 .db;
                 .pa;
-                .lt(0,7px);
+                .lt(0, 7px);
                 .size(15px);
                 background-color: #CF0010;
                 .r(30px);
@@ -66,23 +81,125 @@
         }
     }
 }
+
 //权威认可auth
-.bcsAuth{
+.bcsAuth {
     background-color: #f8f8f8;
     .pb(75px);
     .h(auto);
-    .m-tabs{
-        .m-item{
-            .size(590px,200px);
+
+    .m-tabs {
+        .m-item {
+            .size(590px, 200px);
             .r(5px);
             box-sizing: border-box;
             background: #FFFFFF;
             box-shadow: 0px 0px 5px 1px #E6E6E6;
-            padding:30px 30px 0 201px;
+            padding: 30px 30px 0 201px;
             .mb(25px);
-            .u-pic{
+
+            .u-title {
+                .pb(15px);
+            }
+
+            .u-pic {
                 .size(145px);
-                .lt(31px,31px);
+                left: 30px;
+                // top: calc(-145px / 2);
+                top: 50%;
+                .mt(calc(-145px / 2))
+            }
+        }
+    }
+}
+
+.bcsAuth-1 {
+    background-color: #fff;
+    .h(auto);
+    .pb(75px);
+
+    .m-tabs {
+        gap: 23px;
+        justify-content: inherit;
+        flex-wrap: nowrap;
+
+        .m-item {
+            .size(385px, 160px);
+            .r(5px);
+            box-sizing: border-box;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 5px 1px #E6E6E6;
+            padding: 23px 20px 23px 105px;
+
+            .u-title {
+                .pb(10px);
+            }
+
+            .u-pic {
+                .size(65px);
+                left: 20px;
+                // top: calc(-145px / 2);
+                top: 50%;
+                .mt(calc(-65px / 2))
+            }
+        }
+    }
+}
+
+// 弹性云服务器-产品优势
+.ecs-dotcon {
+    .h(auto);
+    background-color: #F8F8F8;
+    .clip;
+    .pb(50px);
+
+    .m-tabs {
+        .w(100%);
+        .db;
+
+        .m-item {
+            .size(100%, 320px);
+            .r(5px);
+            .clip;
+            padding: 50px;
+            box-shadow: 0px 0px 5px 1px #E6E6E6;
+            background-color: #fff;
+            .mb(25px);
+
+            span {
+                .pt(15px);
+            }
+
+            .u-pic {
+                .size(400px, 320px);
+                top: 0;
+                bottom: 0;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            .u-desc {
+                .lh(32px);
+            }
+
+            .u-con {
+                .w(685px);
+                .pa;
+                .lt(50px, 40px);
+            }
+        }
+
+        .pic-l {
+            .u-con {
+                left: 459px;
+            }
+        }
+
+        .pic-r {
+            .u-pic {
+                right: 0;
+                left: auto;
             }
         }
     }
