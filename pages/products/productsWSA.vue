@@ -4,13 +4,13 @@
         <common-header></common-header>
 
         <!-- 1、bannar -->
-        <products-pmBanner :pmBanner="pmBanner"></products-pmBanner>
+        <pmBanner :pmBanner="pmBanner"></pmBanner>
 
         <!-- 2、产品优势  -->
-        <products-pmDotCon :pmDotConTil="pmDotConTil" :pmDotCon="pmDotCon"></products-pmDotCon>
+        <pmDotCon :pmDotConTil="pmDotConTil" :pmDotCon="pmDotCon"></pmDotCon>
 
         <!-- 3、应用场景  -->
-        <products-pmSceneUseS :pmSceneUseS="pmSceneUseS" :pmSceneUseSTil="pmSceneUseSTil"></products-pmSceneUseS>
+        <!-- <pmSceneUseS :pmSceneUseS="pmSceneUseS" :pmSceneUseSTil="pmSceneUseSTil"></pmSceneUseS> -->
 
         <!-- 公共底部 -->
         <common-footer></common-footer>
@@ -18,9 +18,9 @@
 </template>
 
 <script>
-import pmDotCon from '../../components/products/pm-dotCon.vue';
-import pmSceneUseS from '../../components/products/pmSceneUseS.vue';
-import pmBanner from '../../components/products/pmBanner.vue';
+import pmDotCon from "../../components/products/pm-dotCon.vue";
+import pmSceneUseS from "../../components/products/pmSceneUseS.vue";
+import pmBanner from "../../components/products/pmBanner.vue";
 export default {
     name: "products-WSA",
     data() {
@@ -31,7 +31,7 @@ export default {
                 desc: "全站加速(Whole Site Acceleration)是一种融合了动态和静态加速的网站加速解决方案。用户请求资源时，静态内容从边缘节点就近获取，动态内容通过动态加速技术智能选择最佳路由回源获取。CDN全站加速能有效提升动态页面的加载速度，避开网络拥堵路由，提高访问成功率，实现网站整体加速与实时优化",
             },
             // 产品优势
-            pmDotConTil: "产品优势",//标题
+            pmDotConTil: "产品优势", //标题
             pmDotCon: [
                 {
                     title: "节点丰富",
@@ -59,7 +59,8 @@ export default {
             pmSceneUseS: {
                 title: "全站加速",
                 imgSrc: "/images/index/solution/01.svg",
-                titletag: "适用于各行业动静态内容混合，含较多动态资源请求（如asp、jsp、php等格式的文件）的网站。\n通过智能网络路由及加速技术，以及CDN优质的全线路、跨区域覆盖网络，提升客户动静态混合、纯动态站点/APP、内容上传、API调用等场景下网络传输的性能、稳定性和访问体验",
+                titletag:
+                    "适用于各行业动静态内容混合，含较多动态资源请求（如asp、jsp、php等格式的文件）的网站。\n通过智能网络路由及加速技术，以及CDN优质的全线路、跨区域覆盖网络，提升客户动静态混合、纯动态站点/APP、内容上传、API调用等场景下网络传输的性能、稳定性和访问体验",
                 list: [
                     {
                         til: "· 动静态分离",
@@ -87,13 +88,13 @@ export default {
                     },
                 ],
             },
-        }
+        };
     },
     components: {
         pmBanner,
         pmDotCon,
-        pmSceneUseS
-    }
+        pmSceneUseS,
+    },
 };
 </script>
 

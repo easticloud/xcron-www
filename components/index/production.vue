@@ -23,7 +23,7 @@
                 <div class="m-children">
                     <div class="u-child" v-for="(child, i) in children" :key="i">
                         <span class="u-title">
-                            <span>{{ child.title }}</span>
+                            <a :href="child.link" target="_blank" class="u-child-title">{{ child.title }}</a>
                             <span class="u-sign" v-if="child.sign">{{ child.sign }}</span>
                         </span>
                         <span class="u-desc">{{ child.desc }}</span>
@@ -49,12 +49,14 @@ export default {
                         {
                             title: "智能AI边缘盒子",
                             sign: "自动化部署",
+                            link:'products/productsAI',
                             desc: "提供识别、抓拍、对比、报警等服务",
                             tag: ["算法适配", "海量储存"],
                         },
                         {
                             title: "AI在线服务",
                             sign: "",
+                            link:'products/productsAIS',
                             desc: "适用于图像识别、自然语言处理等多个领域",
                             tag: ["安全可靠", "简单易用"],
                         },
@@ -67,12 +69,14 @@ export default {
                         {
                             title: "区块链服务",
                             sign: "自研平台",
+                            link:'products/productsBCS',
                             desc: "高性能、高安全的区块链技术平台服务",
                             tag: ["云链结合", "高效灵活"],
                         },
                         {
                             title: "可信跨链服务",
                             sign: "",
+                            link:'products/productsTCS',
                             desc: "实现不同区块链内核的可信互联互通",
                             tag: ["可扩展性"],
                         },
@@ -85,18 +89,21 @@ export default {
                         {
                             title: "弹性云服务器",
                             sign: "多样性",
+                            link:'products/productsECS',
                             desc: "可随时自动获取、弹性伸缩的云服务器",
                             tag: ["安全可靠", "灵活高效"],
                         },
                         {
                             title: "裸金属服务器",
                             sign: "大容量",
+                            link:'products/productsBMS',
                             desc: "高性能、高安全的云上物理服务器",
                             tag: ["高效部署", "快速集成"],
                         },
                         {
                             title: "专属主机",
                             sign: "多配置",
+                            link:'products/productsDH',
                             desc: "专属物理主机创建的云服务器",
                             tag: ["安全合规", "节约成本"],
                         },
@@ -109,18 +116,21 @@ export default {
                         {
                             title: "云数据仓库",
                             sign: "生态兼容",
+                            link:'products/productsCDW',
                             desc: "极致性能、稳定、按需扩展的数据仓库服务",
                             tag: ["新一代", "全场景"],
                         },
                         {
                             title: "数据接入服务",
                             sign: "永久在线",
+                            link:'products/productsDIS',
                             desc: "实时数据接入、处理、转储服务",
                             tag: ["高效传输", "简单易用"],
                         },
                         {
                             title: "数据可视化",
                             sign: "",
+                            link:'products/productsDLV',
                             desc: "提供可视化组件定制和应用数据大屏",
                             tag: ["实时监测"],
                         },
@@ -133,18 +143,21 @@ export default {
                         {
                             title: "虚拟私有云",
                             sign: "100%隔离",
+                            link:'products/productsVPC',
                             desc: "隔离的、私密的虚拟网络环境",
                             tag: ["灵活易用", "轻松扩展"],
                         },
                         {
                             title: "云专线",
                             sign: "混合云",
+                            link:'products/productsDC',
                             desc: "搭建本地数据中心与VPC间的专属连接通道",
                             tag: ["高安全性", "无缝扩展"],
                         },
                         {
                             title: "全球加速",
                             sign: "灵活部署",
+                            link:'products/productsGA',
                             desc: "提供SLA稳定的加速传输",
                             tag: ["高合规", "高可靠", "低时延"],
                         },
@@ -157,12 +170,14 @@ export default {
                         {
                             title: "全站加速",
                             sign: "动静结合",
+                            link:'products/productsWSA',
                             desc: "提升网络传输的性能、稳定性和访问体验",
                             tag: ["节点丰富", "智能加速"],
                         },
                         {
                             title: "智能边缘云",
                             sign: "边云协同",
+                            link:'products/productsIEC',
                             desc: "部署在距用户更近的位置，提供低时延体验",
                             tag: ["广域覆盖", "卓越性能"],
                         },
@@ -175,6 +190,7 @@ export default {
                         {
                             title: "终端安全防护",
                             sign: "网端联动",
+                            link:'products/productsTSP',
                             desc: "联动网络侧的安全防御能力，为企业构建由网到端的全面闭环防护",
                             tag: ["实时响应", "专项防护"],
                         },
@@ -187,18 +203,21 @@ export default {
                         {
                             title: "云防火墙",
                             sign: "",
+                            link:'products/productsCF',
                             desc: "网络流量管控与入侵安全防护",
                             tag: ["安全", "可视", "极简"],
                         },
                         {
                             title: "企业主机安全",
                             sign: "",
+                            link:'products/productsHSS',
                             desc: "服务器贴身安全管家",
                             tag: ["合规", "高效", "稳定"],
                         },
                         {
                             title: "数据加密服务",
                             sign: "",
+                            link:'products/productsDEW',
                             desc: "云上数据加密和密钥托管服务",
                             tag: ["等保合规", "专属加密"],
                         },

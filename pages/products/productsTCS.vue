@@ -17,7 +17,7 @@
         <products-pmDotCon :pmDotConTil="pmDotConTil01" :pmDotCon="pmDotCon01"></products-pmDotCon>
 
         <!-- 5、应用场景  -->
-        <products-pmSceneUseS :pmSceneUseS="pmSceneUseS" :pmSceneUseSTil="pmSceneUseSTil"></products-pmSceneUseS>
+        <!-- <products-pmSceneUseS :pmSceneUseS="pmSceneUseS" :pmSceneUseSTil="pmSceneUseSTil"></products-pmSceneUseS> -->
 
         <!-- 公共底部 -->
         <common-footer></common-footer>

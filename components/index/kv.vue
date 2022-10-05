@@ -49,7 +49,7 @@ export default {
     },
     methods: {
         changeHandle(index) {
-            this.$store.commit("home/setKVMode", this.data[index].mode);
+            // this.$store.commit("home/setKVMode", this.data[index].mode);
         },
     },
 };
