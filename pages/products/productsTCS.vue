@@ -17,7 +17,7 @@
         <products-pmDotCon :pmDotConTil="pmDotConTil01" :pmDotCon="pmDotCon01"></products-pmDotCon>
 
         <!-- 5、应用场景  -->
-        <!-- <products-pmSceneUseS :pmSceneUseS="pmSceneUseS" :pmSceneUseSTil="pmSceneUseSTil"></products-pmSceneUseS> -->
+        <products-pmSceneUseS :pmSceneUseS="pmSceneUseS" :pmSceneUseSTil="pmSceneUseSTil"></products-pmSceneUseS>
 
         <!-- 公共底部 -->
         <common-footer></common-footer>
@@ -44,22 +44,22 @@ export default {
                 {
                     title: "跨链操作可审计",
                     desc: "跨链申请、授权等操作行为完整保存上链，交易过程记录本地账本，全流程自动、透明、可监督，支持事中校验、事后审计，保障多方权益。",
-                    img: "/images/index/scene/01.svg",
+                    img: "/images/products/productsTCS/01.png",
                 },
                 {
                     title: "跨链数据授权访问",
                     desc: "跨链账本数据以及链代码数据仅在所有者授权情况下才能进行访问，基于身份体系对跨链合约及账本查询和交易操作提供授权能力，在保护数据安全的同时，还保证数据的使用过程可以被追溯。",
-                    img: "/images/index/scene/02.svg",
+                    img: "/images/products/productsTCS/02.png",
                 },
                 {
                     title: "统一分布式跨链身份",
                     desc: "基于分布式身份体系支持跨链系统治理，为各个接入区块链配置通用标识，支持基于标识寻址发起跨链访问。",
-                    img: "/images/index/scene/03.svg",
+                    img: "/images/products/productsTCS/03.png",
                 },
                 {
                     title: "数据安全和隐私保护",
                     desc: "基于TEE的证明生成流程，保证跨链交互数据安全可靠，跨链中继侧不记录对应链的数据信息，支持跨链组件点对点数据交互，防止隐私泄露，有效保护跨链数据隐私。",
-                    img: "/images/index/scene/03.svg",
+                    img: "/images/products/productsTCS/04.png",
                 },
             ],
             // 产品与服务
@@ -98,29 +98,29 @@ export default {
                 {
                     title: "跨链数据迁移",
                     desc: "基于可信环境中授权信息，支持读取账本中的数据，将不同异构链或者同构链中的状态信息迁移到目的链中，所有迁移皆记录在账本中，实现数据可追溯，可审计，并支持对迁移完成数据进行校验，保证数据迁移正确性。",
-                    img: "/images/index/scene/01.svg",
+                    img: "/images/products/productsTCS/01.png",
                 },
                 {
                     title: "数据访问权限管理",
                     desc: "统一的身份管理体系，提供身份的创建、更新等功能。用户可以基于分布式身份体系完成区块链服务的注册，并对申请访问区块链进行授权操作，可以基于账本，链代码的查询及交易动作进行分别授权。",
-                    img: "/images/index/scene/02.svg",
+                    img: "/images/products/productsTCS/02.png",
                 },
                 {
                     title: "跨链互操作",
                     desc: "在可信环境中，用户可以授权访问其他区块链访问其跨链合约，经过跨链寻址，身份校验等一系列动作，实现合约的远程调用，完成业务场景中的复杂互操作。",
-                    img: "/images/index/scene/03.svg",
+                    img: "/images/products/productsTCS/03.png",
                 },
                 {
                     title: "同构异构链管理",
                     desc: "基于区块链跨链服务，实现不同类型，不同架构，不同安全算法区块链配置对接，生成相应接入服务。",
-                    img: "/images/index/scene/03.svg",
+                    img: "/images/products/productsTCS/04.png",
                 },
             ],
             // 应用场景
             pmSceneUseSTil: "应用场景",
             pmSceneUseS: {
                 title: "跨地域电子票据",
-                imgSrc: "/images/index/solution/01.svg",
+                imgSrc: "/images/products/productsTCS/bg.svg",
                 list: [
                     {
                         til: "· 解决数据孤岛",

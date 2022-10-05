@@ -1,10 +1,15 @@
 <template>
     <div class="m-p-scene" :class="pmScene.sceneClass">
         <div class="wp">
-            <h2>{{pmScene.til}}</h2>
+            <h2>{{ pmScene.til }}</h2>
             <div class="m-tabs">
-                <div class="m-item" v-for="(item, i) in pmScene.list" :key="i" :class="{active:pmScene.index == i}"
-                    @click="change(i)">
+                <div
+                    class="m-item"
+                    v-for="(item, i) in pmScene.list"
+                    :key="i"
+                    :class="{ active: index == i }"
+                    @click="change(i)"
+                >
                     <span class="u-label">{{ item.label }}</span>
                 </div>
             </div>
@@ -22,13 +27,15 @@
             <div class="m-Scontent" v-else>
                 <div class="m-item">
                     <span class="u-img" :style="`backgroundImage: url(${children.src})`"></span>
-                    <p class="u-title">{{ children.title }}<span class="u-titletag">{{children.titletag}}</span></p>
+                    <p class="u-title">
+                        {{ children.title }}<span class="u-titletag">{{ children.titletag }}</span>
+                    </p>
 
                     <div class="u-tags">
                         <template v-if="children.tag.length">
                             <p class="u-tag" v-for="(child, i) in children.tag" :key="i">
-                                <b>{{child.tagTil}}</b>
-                                {{child.tagCon}}
+                                <b>{{ child.tagTil }}</b>
+                                {{ child.tagCon }}
                             </p>
                         </template>
                     </div>
@@ -41,21 +48,21 @@
 <script>
 export default {
     props: {
-        pmScene: Object
+        pmScene: Object,
     },
     data() {
         return {
-
+            index: 0,
         };
     },
     computed: {
         children() {
-            return this.pmScene.list[this.pmScene.index].children;
+            return this.pmScene.list[this.index].children;
         },
     },
     methods: {
         change(i) {
-            this.pmScene.index = i;
+            this.index = i;
         },
     },
 };

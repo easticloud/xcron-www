@@ -25,7 +25,7 @@ export default {
             index: 0,
             sceneUse: {
                 title: "任何基于UAI-Inference支持的深度学习框架编写的人工智能预测程序。如：",
-                src: "/images/index/solution/01.svg",
+                src: "/images/products/productsAIS/01.jpeg",
                 tag: ["● 视频图像识别", "● 自然语言处理", "● 语音处理"],
             },
             list: [

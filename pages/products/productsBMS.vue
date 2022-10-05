@@ -68,35 +68,35 @@ export default {
                 {
                     title: "用更优的成本，享更多的服务",
                     desc: "• 裸金属服务器 \n只需支付裸金属实例费用，无需购买和安装任何软硬件，简化运维操作，无缝对接各类公有云服务 \n• 传统物理服务器 \n服务器、系统、数据库等软硬件费用 + 机房托管费用 + 运维操作成本",
-                    img: "/images/products/img.jpeg",
+                    img: "/images/products/productsBMS/01.jpeg",
                 },
                 {
                     title: "分钟级快速部署，自助式运维体验",
                     desc: "• 支持分钟级资源快速发放，按需申请，不受硬件资源约束，满足租户的资源弹性和快速部署需求  \n• 基于统一console控制台、开放API和SDK，支持自助式资源生命周期管理和运维",
-                    img: "/images/products/img.jpeg",
+                    img: "/images/products/productsBMS/02.jpeg",
                 },
                 {
                     title: "云上安全防护，保障企业数据安全",
                     desc: "• 免费提供DDoS防护、木马查杀、防暴力破解等服务，可轻松实现多用户对多服务器的访问控制 \n• 裸金属服务器是用户专属的计算资源，支持VPC、安全组隔离、主机安全能力；满足企业数据安全和监管的安全和可靠性诉求",
-                    img: "/images/index/scene/03.svg",
+                    img: "/images/products/productsBMS/03.jpeg",
                 },
                 {
                     title: "云上高可靠存储，为企业数据保驾护航",
                     desc: "• 采用云磁盘作为数据持久化，支持服务器重建，整体可用性、可靠性高于传统服务器 \n• 支持在线对裸金属服务器进行云硬盘挂载、卸载，满足用户对弹性存储的诉求；同时业界独家支持共享卷，更好支持集群场景应用 \n• 支持云磁盘作为系统盘和数据盘、硬盘备份恢复能力",
-                    img: "/images/products/img.jpeg",
+                    img: "/images/products/productsBMS/04.jpeg",
                 },
                 {
                     title: "云上升级换代，时刻保持技术领先",
                     desc: "• 云擎天架构加持，无虚拟化开销和性能损失，100%释放算力资源 \n• 深度定制化硬件，尽享云上硬件红利 \n• 业界独家支持共享云存储，更好满足集群应用需求 \n• 资源服务遍布全球，助力企业业务全球快速扩展",
-                    img: "/images/products/img.jpeg",
+                    img: "/images/products/productsBMS/05.jpeg",
                 },
             ],
             // 技术支撑
             pmPInfoTil: "擎天架构，为裸金属提供业界领先技术支撑",//标题
-            pmPInfoImg: "/images/products/pImg.png",
+            pmPInfoImg: "/images/products/productsBMS/bg.png",
             // 应用场景 
             pmScene: {
-                index: 0,
+                products: 0,
                 til: "应用场景",
                 isShow: false,
                 sceneClass: "m-Bms-scene",
@@ -106,7 +106,7 @@ export default {
                         children: {
                             title: "企业核心数据库场景",
                             titletag: "满足核心数据库对性能和安全的要求，云BMS提供多种规格的服务器，支持自动化挂载共享云硬盘。",
-                            src: "/images/index/solution/01.svg",
+                            src: "/images/products/productsBMS/01.svg",
                             tag: [
                                 {
                                     tagTil: "· 集群部署",
@@ -128,7 +128,7 @@ export default {
                         children: {
                             title: "高性能计算场景",
                             titletag: "针对高计算，高吞吐的场景特点，BMS支持最新Intel CPU的计算实例，结合100G网络，带来低时延的性能体验",
-                            src: "/images/index/solution/01.svg",
+                            src: "/images/products/productsBMS/02.svg",
                             tag: [
                                 {
                                     tagTil: "· 低时延",
@@ -150,7 +150,7 @@ export default {
                         children: {
                             title: "大数据存储与分析场景",
                             titletag: "大数据存储、分析等典型业务。支持裸金属本地存储和结合OBS服务的存算分离方案",
-                            src: "/images/index/solution/01.svg",
+                            src: "/images/products/productsBMS/03.svg",
                             tag: [
                                 {
                                     tagTil: "· 大数据专用实例",

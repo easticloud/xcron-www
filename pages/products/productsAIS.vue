@@ -77,27 +77,27 @@ export default {
                 {
                     title: "自动化部署工具",
                     desc: "提供自动化部署工具，一键从本地部署到UAI-Inference集群。",
-                    img: "/images/index/scene/01.svg",
+                    img: "/images/products/productsAIS/01.png",
                 },
                 {
                     title: "服务管理",
                     desc: "支持在线新增、更新、删除、启动、停止、恢复AI服务。",
-                    img: "/images/index/scene/01.svg",
+                    img: "/images/products/productsAIS/02.png",
                 },
                 {
                     title: "版本管理",
                     desc: "支持同一服务多版本部署，灰度切换，流量控制，版本回滚。",
-                    img: "/images/index/scene/01.svg",
+                    img: "/images/products/productsAIS/03.png",
                 },
                 {
                     title: "日志查询",
                     desc: "支持在线查询服务版本发布情况，服务运行情况。",
-                    img: "/images/index/scene/01.svg",
+                    img: "/images/products/productsAIS/04.png",
                 },
                 {
                     title: "监控报警",
                     desc: "支持对服务运行异常状态及时报警。",
-                    img: "/images/index/scene/01.svg",
+                    img: "/images/products/productsAIS/05.png",
                 }
             ],
         }

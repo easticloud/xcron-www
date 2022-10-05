@@ -39,37 +39,37 @@ export default {
                 {
                     title: "高效传输",
                     desc: "实时收集各种数据。支持百万并发连接，数据请求毫秒级响应。单分区支持最高每日百GB级别的写入量。轻松实现传输通道规格扩容",
-                    img: "/images/index/scene/01.svg",
+                    img: "/images/products/productsDIS/01.svg",
                 },
                 {
                     title: "简单易用",
                     desc: "服务秒级开通。用户配置SDK/Agent实现免编程数据采集，快速实现数据采集、传输",
-                    img: "/images/index/scene/02.svg",
+                    img: "/images/products/productsDIS/02.svg",
                 },
                 {
                     title: "安全可靠",
                     desc: "HTTPS加密传输。租户间资源及操作隔离，实现租户访问权限控制，保护系统和用户的隐私及数据安全。数据跨AZ存储，服务可用性99.9%",
-                    img: "/images/index/scene/03.svg",
+                    img: "/images/products/productsDIS/03.svg",
                 },
                 {
                     title: "无忧运维",
                     desc: "服务秒级开通。用户配置SDK/Agent实现免编程数据采集，快速实现数据采集、传输",
-                    img: "/images/index/scene/03.svg",
+                    img: "/images/products/productsDIS/03.svg",
                 },
             ],
             // 应用场景 
             pmScene: {
-                index: 0,
+                products: 0,
                 til: "应用场景",
                 isShow: false,
-                sceneClass: "m-Bms-scene",
+                sceneClass: "m-Bms-productsDIS",
                 list: [
                     {
                         label: "实时数据处理",
                         children: {
                             title: "实时数据处理",
                             titletag: "实时收集数据，缓存在通道中，分析平台实时或周期读取通道中的数据分析后将结果应用到业务系统，例如对实时采集城市各交通枢纽的车辆通行数据，基于分析可实现对停车场开放时长和交通资源的调配",
-                            src: "/images/index/solution/01.svg",
+                            src: "/images/products/productsDIS/1.svg",
                             tag: [
                                 {
                                     tagTil: "· 永久在线",
@@ -91,7 +91,7 @@ export default {
                         children: {
                             title: "实时文件传输",
                             titletag: "实时检测客户应用系统中产生的日志文件，并采集上传到云上，进行离线分析、存储查询及机器学习，可应用于日志分析、用户画像、营销推荐等场景。",
-                            src: "/images/index/solution/01.svg",
+                            src: "/images/products/productsDIS/2.svg",
                             tag: [
                                 {
                                     tagTil: "· 自动捕获增量数据",
@@ -113,7 +113,7 @@ export default {
                         children: {
                             title: "数据接入备份",
                             titletag: "将大量滚动日志文件传输到云端做备份，用于数据丢失或异常后的恢复和故障分析。同时大量小文本文件可合并转储为大文件，提高数据处理性能",
-                            src: "/images/index/solution/01.svg",
+                            src: "/images/products/productsDIS/3.svg",
                             tag: [
                                 {
                                     tagTil: "· 多种数据源支持",
@@ -138,22 +138,22 @@ export default {
                 {
                     title: "数据采集",
                     desc: "RestAPI、SDK、Agent对接多种数据源，线上线下数据实时采集",
-                    img: "/images/index/scene/01.svg",
+                    img: "/images/products/productsDIS/01.png",
                 },
                 {
                     title: "数据传输",
                     desc: "实时数据高并发、低延时、高可靠传输",
-                    img: "/images/index/scene/02.svg",
+                    img: "/images/products/productsDIS/02.png",
                 },
                 {
                     title: "数据处理",
                     desc: "预置数据抽取、汇聚、格式转换等Connector(处理算子)，对用户输入数据做预处理",
-                    img: "/images/index/scene/03.svg",
+                    img: "/images/products/productsDIS/03.png",
                 },
                 {
                     title: "数据缓存",
                     desc: "实时数据缓存1-3天，保证实时数据消费可靠性",
-                    img: "/images/index/scene/03.svg",
+                    img: "/images/products/productsDIS/04.png",
                 },
             ],
         }

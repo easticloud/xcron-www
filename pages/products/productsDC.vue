@@ -62,17 +62,17 @@ export default {
             ],
             // 应用场景 
             pmScene: {
-                index: 0,
+                products: 0,
                 til: "应用场景",
                 isShow: false,
-                sceneClass: "m-Bms-scene",
+                sceneClass: "m-Bms-productsDC",
                 list: [
                     {
                         label: "混合云部署",
                         children: {
                             title: "混合云部署",
                             titletag: "通过云专线将云下用户数据中心和云上VPC互联，利用云上的弹性，快速扩展能力，扩展应用层的计算能力",
-                            src: "/images/index/solution/01.svg",
+                            src: "/images/products/productsDC/01.png",
                             tag: [
                                 {
                                     tagTil: "· 混合云架构",
@@ -94,7 +94,7 @@ export default {
                         children: {
                             title: "多云互联",
                             titletag: "通过云专线将多云互联，业务部署在多云进行备份，提高业务的可靠性",
-                            src: "/images/index/solution/01.svg",
+                            src: "/images/products/productsDC/02.png",
                             tag: [
                                 {
                                     tagTil: "· 多云架构",
@@ -120,17 +120,17 @@ export default {
                 {
                     title: "可信云·云平台网络能力",
                     desc: "云专线解决方案获得中国信息通信研究院可信云·云平台网络能力认证",
-                    img: "/images/index/scene/01.svg",
+                    img: "/images/products/productsDC/1.png",
                 },
                 {
                     title: "网络安全等级保护",
                     desc: "网络安全等级保护是公安部用于指导国内各组织单位进行网络安全建设的依据",
-                    img: "/images/index/scene/01.svg",
+                    img: "/images/products/productsDC/2.png",
                 },
                 {
                     title: "中国网络安全审查",
                     desc: "中国网络安全审查是中华人民共和国网信办保障网络安全和数据安全、维护国家安全的要求",
-                    img: "/images/index/scene/01.svg",
+                    img: "/images/products/productsDC/3.png",
                 }
             ],
         }

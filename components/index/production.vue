@@ -3,7 +3,7 @@
         <div class="wp">
             <div class="m-title">
                 <h2>丰富、安全、稳定的产品及服务</h2>
-                <a href="" target="_blank" class="u-desc">查看全部产品 ></a>
+                <a href="/" target="_blank" class="u-desc">查看全部产品 ></a>
             </div>
             <div class="m-tabs">
                 <div

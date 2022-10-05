@@ -12,7 +12,7 @@
                     </div>
                 </div>
             </div>
-            <div class="m-Scontent" :v-if="pmSceneUseSTrue">
+            <div class="m-Scontent" v-if="pmSceneUseSTrue">
                 <div class="m-item">
                     <span class="u-img" :style="`backgroundImage: url(${pmSceneUseS01.imgSrc})`"></span>
                     <span class="u-title"><b>{{ pmSceneUseS01.title }}</b>{{pmSceneUseS01.titletag}}</span>

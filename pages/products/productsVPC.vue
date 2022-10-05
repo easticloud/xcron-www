@@ -68,27 +68,27 @@ export default {
                 {
                     title: "灵活组网，按需对网络进行规划和管理",
                     desc: "提供自定义路由和对等连接，能帮助客户更灵活的控制VPC内和VPC间通信 \n-自定义路由表中包含VPC内自定义路由规则，可用于判断网络流量的导向目的地址 \n-对等连接是指两个VPC之间的网络连接。可以使用私有IP地址在两个VPC之间进行通信",
-                    img: "/images/products/img.jpeg",
+                    img: "/images/products/productsVPC/01.jpeg",
                 },
                 {
                     title: "安全可靠，租户间100%隔离",
                     desc: "利用VxLAN协议使得VPC之间能够完成100%隔离\n子网，IP地址段，DHCP等子服务，客户可以根据自己需要选择搭配，自由定义",
-                    img: "/images/products/img.jpeg",
+                    img: "/images/products/productsVPC/02.jpeg",
                 },
                 {
                     title: "多种高速带宽类型，满足不同企业的个性化需求",
                     desc: "华为云为客户提供全动态BGP和静态BGP等多种带宽服务，满足不同客户诉求\n-全动态BGP带宽服务\n使用BGP协议接入国内多个运营商，支持多达21+线路。可以根据设定的寻路协议实时自动故障切换，保证网络稳定，网络时延低\n-静态BGP带宽服务\n云数据中心同时接入运营商BGP线路和静态线路，高速带宽，高性价比",
-                    img: "/images/index/scene/03.svg",
+                    img: "/images/products/productsVPC/03.jpeg",
                 },
                 {
                     title: "混合云架构，轻松构建混合云",
                     desc: "同时提供VPN和云专线服务，助力客户本地数据中心业务能够无缝扩展到云上",
-                    img: "/images/products/img.jpeg",
+                    img: "/images/products/productsVPC/04.jpeg",
                 },
                 {
                     title: "多重防护，基于主机侧和基于网络侧多重安全防护",
                     desc: "-安全组\n主机侧防护：通过对报文协议（TCP、UDP、ICMP）以及端口的过滤保证在数据中心下对虚拟机的访问进行严格的控制\n-ACL防火墙\n网络侧防护：VPC 的子网级别和VPC级别安全服务，支持黑白名单，可用来控制进出一个或多个子网的流量",
-                    img: "/images/products/img.jpeg",
+                    img: "/images/products/productsVPC/05.jpeg",
                 },
             ],
             // 权威认可
@@ -98,27 +98,27 @@ export default {
                 {
                     title: "云网能力技术最佳实践奖",
                     desc: "由中国信息通信研究院、中国标准化协会颁发的技术创新的系列奖项。KYON企业级云网络凭借极简敏捷的携网上云能力，以及数项技术创新，得到可信云权威评估机构的高度认可，斩获“2020可信云技术最佳实践奖”",
-                    img: "/images/index/scene/01.svg",
+                    img: "/images/products/productsVPC/icon.png",
                 },
                 {
                     title: "IPv6支持度优秀奖",
                     desc: "作为首批通过工信部IPv6认证的云厂商之一，16项云服务获得工信部认证的云服务IPv6支持能力测评证书，标志着云服务在IPv6网络下的各项能力均已走在行业前列",
-                    img: "/images/index/scene/01.svg",
+                    img: "/images/products/productsVPC/icon.png",
                 },
             ],
             // 应用场景 
             pmScene: {
-                index: 0,
+                products: 0,
                 til: "应用场景",
                 isShow: false,
-                sceneClass: "m-Bms-scene",
+                sceneClass: "m-Bms-productsVPC",
                 list: [
                     {
                         label: "云端专属网络",
                         children: {
                             title: "云端专属网络",
                             titletag: "基于云构建的云上私有网络环境，用户通过弹性IP访问云上私有网络环境，配置部署业务",
-                            src: "/images/index/solution/01.svg",
+                            src: "/images/products/productsVPC/01.svg",
                             tag: [
                                 {
                                     tagTil: "· 灵活配置",
@@ -136,7 +136,7 @@ export default {
                         children: {
                             title: "Web服务",
                             titletag: "基于云构建的云上私有网络环境，通过弹性负载均衡对外提供服务，支撑海量用户访问",
-                            src: "/images/index/solution/01.svg",
+                            src: "/images/products/productsVPC/02.svg",
                             tag: [
                                 {
                                     tagTil: "· 可支撑高并发连接",
@@ -154,7 +154,7 @@ export default {
                         children: {
                             title: "混合云部署",
                             titletag: "基于云提供的VPN/云专线服务，高速连接云上私有网络和用户自有IT设施，满足云上和自有设施间业务和数据的迁移，支撑混合云场景等",
-                            src: "/images/index/solution/01.svg",
+                            src: "/images/products/productsVPC/03.svg",
                             tag: [
                                 {
                                     tagTil: "· 选择多样化",
