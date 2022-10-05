@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70px" height="70px" viewBox="0 0 70 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>数据大屏</title>
+    <defs>
+        <linearGradient x1="100%" y1="27.6369704%" x2="14.4115551%" y2="82.4459877%" id="linearGradient-1">
+            <stop stop-color="#FF8888" offset="0%"></stop>
+            <stop stop-color="#CF0010" offset="100%"></stop>
+        </linearGradient>
+        <filter id="filter-2">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.811765 0 0 0 0 0.000000 0 0 0 0 0.062745 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="SDSF-产品中心（数据可视化）" transform="translate(-990.000000, -2060.000000)">
+            <g id="产品优势备份" transform="translate(360.000000, 1961.000000)">
+                <g id="编组-6备份-6" transform="translate(610.000000, 99.000000)">
+                    <g id="数据大屏" transform="translate(20.000000, 0.000000)">
+                        <rect id="矩形" x="0" y="0" width="70" height="70"></rect>
+                        <g id="编组-7" transform="translate(9.000000, 10.000000)">
+                            <rect id="矩形" stroke="#FFC8C8" fill="url(#linearGradient-1)" x="9.5" y="0.5" width="35" height="28" rx="5"></rect>
+                            <rect id="矩形" stroke-opacity="0.302418529" stroke="#FFC8C8" x="0.5" y="10.5" width="51" height="39" rx="5"></rect>
+                            <g id="工具" transform="translate(16.000000, 20.000000)"></g>
+                            <g filter="url(#filter-2)" id="数据大屏">
+                                <g transform="translate(17.249859, 19.249995)">
+                                    <rect id="矩形" fill="#000000" fill-rule="nonzero" opacity="0" x="0" y="0" width="18.5" height="18.5"></rect>
+                                    <g id="编组-8" transform="translate(0.000000, 2.000000)" fill-rule="nonzero" stroke="#979797" stroke-width="0.8">
+                                        <path d="M1.28497213e-12,0.867187486 C1.28497213e-12,0.388253059 0.388253079,-8.9928065e-15 0.867187507,-8.9928065e-15 L16.4765625,-8.9928065e-15 C16.9554969,-8.9928065e-15 17.34375,0.388253059 17.34375,0.867187486 L17.34375,11.2734375 C17.34375,11.7523719 16.9554969,12.140625 16.4765625,12.140625 L0.867187507,12.140625 C0.388253072,12.140625 1.28497213e-12,11.7523719 1.28497213e-12,11.2734375 L1.28497213e-12,0.867187486 Z M1.73437501,1.73437499 L1.73437501,10.40625 L15.609375,10.40625 L15.609375,1.73437499 L1.73437501,1.73437499 Z M4.33593751,13.4414062 L13.0078125,13.4414062 L13.0078125,15.1757812 L4.33593751,15.1757812 L4.33593751,13.4414062 Z" id="形状" fill="#000000"></path>
+                                        <path d="M6.7579922,4.15642968 C7.09662879,3.81789536 7.64555872,3.81789536 7.98419531,4.15642968 L9.97265626,6.14489062 L11.7070313,4.41051561 L12.9332344,5.63671874 L10.5857578,7.98419531 C10.2471212,8.32272964 9.69819129,8.32272964 9.3595547,7.98419531 L7.37109376,5.99573437 L5.63671876,7.73010936 L4.41051563,6.50390625 L6.7579922,4.15642968 Z" id="路径" fill="#0078FF"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
