@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
-    "serve": "nuxt",
+    "dev": "nuxt --port 60002",
+    "serve": "nuxt --port 60001",
     "build": "nuxt build",
     "start": "nuxt start",
     "ssg": "nuxt generate"
