@@ -55,12 +55,12 @@ export default {
                         {
                             title: "智能AI边缘盒子",
                             desc: "提供识别、抓拍、对比、报警等服务",
-                            link: "products/productsAI",
+                            link: "/products/productsAI",
                         },
                         {
                             title: "AI在线服务",
                             desc: "适用于图像识别、自然语言处理等服务",
-                            link: "products/productsAIS",
+                            link: "/products/productsAIS",
                         },
                     ],
                 },
@@ -70,12 +70,12 @@ export default {
                         {
                             title: "区块链服务",
                             desc: "高性能、高安全的区块链技术平台服务",
-                            link: "products/productsBCS",
+                            link: "/products/productsBCS",
                         },
                         {
                             title: "可信跨链服务",
                             desc: "实现不同区块链内核的可信互联互通",
-                            link: "products/productsTCS",
+                            link: "/products/productsTCS",
                         },
                     ],
                 },
@@ -85,17 +85,17 @@ export default {
                         {
                             title: "弹性云服务器",
                             desc: "可随时自动获取、弹性伸缩的云服务器",
-                            link: "products/productsECS",
+                            link: "/products/productsECS",
                         },
                         {
                             title: "裸金属服务器",
                             desc: "高性能、高安全的云上物理服务器",
-                            link: "products/productsBMS",
+                            link: "/products/productsBMS",
                         },
                         {
                             title: "专属主机",
                             desc: "专属物理主机创建的云服务器",
-                            link: "products/productsDH",
+                            link: "/products/productsDH",
                         },
                     ],
                 },
@@ -105,26 +105,26 @@ export default {
                         {
                             title: "云数据仓库",
                             desc: "极致性能、稳定、按需扩展的数据仓库服务",
-                            link: "products/productsCDW",
+                            link: "/products/productsCDW",
                         },
                         {
                             title: "数据接入服务",
                             desc: "实时数据接入、处理、转储服务",
-                            link: "products/productsDIS",
+                            link: "/products/productsDIS",
                         },
                         {
                             title: "数据可视化",
                             desc: "提供可视化组件定制和应用数据大屏",
-                            link: "products/productsDLV",
+                            link: "/products/productsDLV",
                         },
                     ],
                 },
                 {
                     title: "网络",
                     children: [
-                        { title: "虚拟私有云", desc: "隔离的、私密的虚拟网络环境", link: "products/productsVPC" },
-                        { title: "云专线", desc: "搭建本地数据中心与VPC间的专属连接通道", link: "products/productsDC" },
-                        { title: "全球加速", desc: "提供SLA稳定的加速传输", link: "products/productsGA" },
+                        { title: "虚拟私有云", desc: "隔离的、私密的虚拟网络环境", link: "/products/productsVPC" },
+                        { title: "云专线", desc: "搭建本地数据中心与VPC间的专属连接通道", link: "/products/productsDC" },
+                        { title: "全球加速", desc: "提供SLA稳定的加速传输", link: "/products/productsGA" },
                     ],
                 },
                 {
@@ -133,12 +133,12 @@ export default {
                         {
                             title: "全站加速",
                             desc: "提升网络传输的性能、稳定性和访问体验",
-                            link: "products/productsWSA",
+                            link: "/products/productsWSA",
                         },
                         {
                             title: "智能边缘云",
                             desc: "部署在距用户更近的位置，提供低时延体验",
-                            link: "products/productsIEC",
+                            link: "/products/productsIEC",
                         },
                     ],
                 },
@@ -148,16 +148,16 @@ export default {
                         {
                             title: "终端安全防护",
                             desc: "联动网络侧的安全防御能力，为企业构建由网到端的全面闭环防护",
-                            link: "products/productsTSP",
+                            link: "/products/productsTSP",
                         },
                     ],
                 },
                 {
                     title: "安全",
                     children: [
-                        { title: "云防火墙", desc: "网络流量管控与入侵安全防护", link: "products/productsCF" },
-                        { title: "企业主机安全", desc: "服务器贴身安全管家", link: "products/productsHSS" },
-                        { title: "数据加密服务", desc: "云上数据加密和密钥托管服务", link: "products/productsDEW" },
+                        { title: "云防火墙", desc: "网络流量管控与入侵安全防护", link: "/products/productsCF" },
+                        { title: "企业主机安全", desc: "服务器贴身安全管家", link: "/products/productsHSS" },
+                        { title: "数据加密服务", desc: "云上数据加密和密钥托管服务", link: "/products/productsDEW" },
                     ],
                 },
             ],
