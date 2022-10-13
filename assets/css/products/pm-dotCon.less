@@ -3,12 +3,17 @@
     background: #FFF;
     .pb(50px);
 
+    .wp {
+        font-weight: 400;
+    }
+
     h2 {
         .db;
         .x;
         .pt(75px);
         .pb(50px);
         .fz(36px, 50px, 50px);
+        font-weight: 400;
     }
 
     .m-tabs {
@@ -42,6 +47,7 @@
                 width: 100%;
                 .fz(21px, 29px);
                 .pb(14px);
+                font-weight: 500;
             }
 
             .u-desc {
@@ -64,22 +70,27 @@
         .m-item {
             width: 590px;
             height: auto;
-            padding: 0 95px 50px 50px;
+            padding: 0 38px 0 85px;
+            margin-bottom: 50px;
 
             .u-pic {
-                display: none;
+                .size(60px);
+                background-size: cover;
+                top: 50%;
+                transform: translateY(-50%);
+
             }
 
-            &::after {
-                content: "";
-                .db;
-                .pa;
-                .lt(0, 7px);
-                .size(15px);
-                background-color: #CF0010;
-                .r(30px);
-                .clip;
-            }
+            // &::after {
+            //     content: "";
+            //     .db;
+            //     .pa;
+            //     .lt(0, 7px);
+            //     .size(15px);
+            //     background-color: #CF0010;
+            //     .r(30px);
+            //     .clip;
+            // }
         }
     }
 }
@@ -111,7 +122,7 @@
                 top: 40%;
                 .mt(calc(-145px / 2));
                 background-size: cover;
-                
+
             }
         }
     }
@@ -163,7 +174,7 @@
         .db;
 
         .m-item {
-            .size(100%, 320px);
+            .size(100%, 337px);
             .r(5px);
             .clip;
             padding: 50px;

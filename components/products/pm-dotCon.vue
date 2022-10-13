@@ -4,7 +4,8 @@
             <h2>{{pmDotConTil}}</h2>
             <div class="m-tabs">
                 <div class="m-item" v-for="(item, i) in pmDotCon" :key="i"
-                    :class="item.index % 2 == 0 ? 'pic-r' : 'pic-l'">
+                    :class="item.imgCss=='pic-l'?'pic-l':'pic-r'">
+                    <!-- item.index % 2 == 0 ? 'pic-r' : 'pic-l' -->
                     <span class="u-pic" :style="`backgroundImage: url(${item.img})`"></span>
                     <div class="u-con">
                         <span class="u-title">
@@ -31,17 +32,17 @@ export default {
         };
     },
     methods: {
-        function1() {
-            let t = this;
-            t.pmDotCon.forEach((el, i) => {
-                el.index = i;
-                // console.log(el.index)
-            })
-        },
+        // function1() {
+        //     let t = this;
+        //     t.pmDotCon.forEach((el, i) => {
+        //         el.index = i;
+        //         // console.log(el.index)
+        //     })
+        // },
     },
     mounted() {
-        let t = this;
-        t.function1();
+        // let t = this;
+        // t.function1();
     }
 };
 </script>

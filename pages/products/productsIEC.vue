@@ -15,6 +15,9 @@
         <!-- 4、功能描述  -->
         <products-pmDotCon :pmDotConTil="pmDotConTil01" :pmDotCon="pmDotCon01"></products-pmDotCon>
 
+        <!-- 5、服务支持-->
+        <products-pmService></products-pmService>
+
         <!-- 公共底部 -->
         <common-footer></common-footer>
     </div>
@@ -32,6 +35,7 @@ export default {
             pmBanner: {
                 title: "智能边缘云",
                 desc: "智能边缘云（Intelligent EdgeCloud）部署在距离企业和热点用户区域更近的位置，具有与中心云一致的体验，为时延敏感型业务如互动娱乐、在线教育、媒体创作等提供低于10ms的时延体验，支持全局智能管理及调度。",
+                img: "/images/products/productsIEC/b1.jpg",
             },
             // 产品优势
             pmDotConTil: "产品优势",//标题
@@ -39,22 +43,22 @@ export default {
                 {
                     title: "广域覆盖",
                     desc: "基于覆盖中国大陆主要省市和主流运营商的优质节点资源进行部署，用户可以将时延敏感业务就近接入部署，保证确定性时延，提升业务体验",
-                    img: "/images/index/scene/01.svg",
+                    img: "/images/products/productsIEC/01.png",
                 },
                 {
                     title: "多样算力",
                     desc: "面向丰富的边缘业务场景，提供多样化的算力类型，用户可以根据业务要求选择合适的算力",
-                    img: "/images/index/scene/02.svg",
+                    img: "/images/products/productsIEC/02.png",
                 },
                 {
                     title: "卓越性能",
                     desc: "基于擎天架构打造，软硬结合提供卓越性能。单实例pps转发性能达千万级，提供昇腾AI加速型实例推理性能领先业界2倍",
-                    img: "/images/index/scene/03.svg",
+                    img: "/images/products/productsIEC/03.png",
                 },
                 {
                     title: "边云协同",
                     desc: "在提供核心的计算、存储、网络服务的基础上，与多种高阶云服务深度融合与协同，使客户可以更快的构建场景化的解决方案",
-                    img: "/images/index/scene/03.svg",
+                    img: "/images/products/productsIEC/04.png",
                 },
             ],
             // 应用场景 
@@ -144,32 +148,32 @@ export default {
                 {
                     title: "边缘算力",
                     desc: "提供C6系列高性能通用算力、G5系列GPU算力、Ai系列AI推理算力、D3系列存储型算力，满足边缘业务当前和持续演进的业务需求",
-                    img: "/images/index/scene/01.svg",
+                    img: "/images/products/productsIEC/05.png",
                 },
                 {
                     title: "边缘网络",
                     desc: "提供VPC、子网、网络ACL、安全组、虚IP、EIP等完善的边缘网络能力，方便客户进行灵活网络的方案配置和管理",
-                    img: "/images/index/scene/02.svg",
+                    img: "/images/products/productsIEC/06.png",
                 },
                 {
                     title: "统一管理",
                     desc: "一站式实现分布式多节点业务的统一创建、更新、伸缩、运维等管理操作",
-                    img: "/images/index/scene/03.svg",
+                    img: "/images/products/productsIEC/07.png",
                 },
                 {
                     title: "批量部署",
                     desc: "分钟级完成批量化边缘业务的自动部署",
-                    img: "/images/index/scene/03.svg",
+                    img: "/images/products/productsIEC/08.png",
                 },
                 {
                     title: "高效运维",
                     desc: "功能全面的服务控制台和API接口，方便管理边缘资源，实时查阅运维监控指标",
-                    img: "/images/index/scene/03.svg",
+                    img: "/images/products/productsIEC/09.png",
                 },
                 {
                     title: "安全可靠",
                     desc: "高可用、高容错的边缘计算平台，算力和网络实现多租户安全隔离",
-                    img: "/images/index/scene/03.svg",
+                    img: "/images/products/productsIEC/10.png",
                 },
             ],
         }

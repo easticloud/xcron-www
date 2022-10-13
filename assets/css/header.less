@@ -1,31 +1,40 @@
 .c-header {
     position: relative;
     background-color: #fff;
+
     .wp {
         .flex;
         justify-content: space-between;
         align-items: center;
+
         .m-box {
             .flex;
             align-items: center;
             gap: 50px;
             .h(100px);
+
             .u-link {
                 position: relative;
-                .fz(18px,100px);
+                .fz(18px, 100px);
                 .color(#3c3c3c);
                 .nobreak;
                 opacity: 0.8;
-                .u-txt{
+
+                .u-txt {
                     .db;
+                    font-weight: 400;
                 }
-                &:hover {
+
+                &:hover,
+                .active {
                     opacity: 1;
+                    font-weight: 600;
+
                     &::after {
                         content: "";
                         .db;
                         .pa;
-                        .size(100%,2px);
+                        .size(100%, 2px);
                         .lb(0);
                         background-color: #cf0010;
                     }

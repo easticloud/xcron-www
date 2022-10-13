@@ -49,13 +49,18 @@ export default {
 </script>
 
 <style scope lang="less">
+.m-index-item .m-title h2 {
+    font-weight: 400;
+}
+
 .m-content {
     .flex;
     .mt(50px);
     flex-wrap: wrap;
     justify-content: space-between;
+
     .m-item {
-        .size(20%,120px);
+        .size(20%, 120px);
         .flex;
         padding: 20px;
         box-sizing: border-box;
@@ -63,9 +68,10 @@ export default {
         justify-content: center;
     }
 }
+
 .m-contact {
-    .fz(36px,150px);
-    .size(100%,150px);
+    .fz(36px, 150px);
+    .size(100%, 150px);
     .flex;
     .mt(75px);
     .color(#fff);
@@ -73,13 +79,20 @@ export default {
     align-items: center;
     justify-content: center;
     background-color: #848484;
+
+    span {
+        font-weight: 400;
+    }
+
     .u-btn {
-        .size(200px,65px);
+        .size(200px, 65px);
         .r(5px);
-        .fz(24px,65px);
+        .fz(24px, 65px);
         .x;
         .color(#fff);
         background-color: #cf0010;
+        font-weight: 500;
+
         &:hover {
             filter: brightness(110%);
         }

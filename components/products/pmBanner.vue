@@ -1,23 +1,24 @@
 <template>
-    <div class="m-p-banner">
+    <div class="m-p-banner" :style="`backgroundImage: url(${pmBanner.img})`">
         <div class="wp">
             <h2>{{pmBanner.title}}</h2>
             <p>{{pmBanner.desc}}</p>
+            <!-- <span :style="`backgroundImage: url(${pmBanner.img})`"></span> -->
         </div>
     </div>
 </template>
 
 <script>
 export default {
-    props:{
-        pmBanner:Object,
+    props: {
+        pmBanner: Object,
     },
     data() {
         return {
         };
     },
     methods: {
-      
+
     },
 };
 </script>

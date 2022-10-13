@@ -20,6 +20,9 @@
         <!-- 5、联系我们Contact  -->
         <products-contactUs></products-contactUs>
 
+        <!-- 6、服务支持-->
+        <products-pmService></products-pmService>
+
         <!-- 公共底部 -->
         <common-footer></common-footer>
     </div>
@@ -38,6 +41,7 @@ export default {
             pmBanner: {
                 title: "云专线",
                 desc: "云专线（Direct Connect）用于搭建用户本地数据中心与VPC之间高速、低时延、稳定安全的专属连接通道，充分利用服务优势的同时，继续使用现有的IT设施，实现灵活一体，可伸缩的混合云计算环境。",
+                img: "/images/products/productsDC/b1.jpg",
             },
             // 了解云专线
             pAboutBCSTil: "了解云专线",

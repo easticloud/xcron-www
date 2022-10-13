@@ -21,6 +21,9 @@
         <products-pmDotCon :pmDotConClass="pmDotConClass01" :pmDotConTil="pmDotConTil01" :pmDotCon="pmDotCon01">
         </products-pmDotCon>
 
+        <!-- 6、服务支持-->
+        <products-pmService></products-pmService>
+
         <!-- 公共底部 -->
         <common-footer></common-footer>
     </div>
@@ -39,6 +42,7 @@ export default {
             pmBanner: {
                 title: "弹性云服务器",
                 desc: "弹性云服务器（Elastic Cloud Server, ECS）是一种云上可随时自助获取、可弹性伸缩的计算服务，可帮助您打造安全、可靠、灵活、高效的应用环境。",
+                img: "/images/products/productsECS/b1.jpg",
             },
             // 了解弹性云服务器
             pAboutBCSTil: "了解弹性云服务器",
@@ -69,26 +73,31 @@ export default {
                     title: "弹性灵活，助您低成本轻松上云",
                     desc: "-用户可通过Web页面或开放API，同时管理一个、数百个、甚至数千个弹性云服务器实例 \n-用户可根据业务需求自行定义弹性伸缩策略，通过可视化控制台配置定时或周期性的监控策略，动态调整弹性云服务器实例，满足业务需求的同时，减少资源投入 \n-提供按需、包周期、竞价等多种计费模式，满足各类业务使用需求",
                     img: "/images/products/productsECS/01.jpeg",
+                    imgCss: "pic-r",
                 },
                 {
                     title: "性能强劲，为企业提供旗舰级产品",
                     desc: "-最大提供208vCPU，4096G内存，引领业界顶级算力 \n-业界首推千万级PPS转发实例，单实例最大内网带宽可达44Gbps \n-千台弹性云服务器分钟级极速发放",
                     img: "/images/products/productsECS/02.jpeg",
+                    imgCss: "pic-l",
                 },
                 {
                     title: "多规格类型，满足不同企业的个性化需求",
                     desc: "-提供X86、鲲鹏、昇腾、异构等多种类型的弹性云服务器 \n-提供公共、私有、共享三种镜像，还可以使用镜像市场提供的包含各类软件的优质第三方镜像 \n-所有弹性云服务器和镜像可一键部署，无需配置，满足用户建站、应用开发、可视化管理等个性化需求",
                     img: "/images/products/productsECS/03.jpeg",
+                    imgCss: "pic-r",
                 },
                 {
                     title: "数据可靠，提供坚实的基础数据平台",
                     desc: "-数据持久性高达99.9999999%，保证数据安全可靠，保护您的业务免受故障影响 \n-提供极速型SSD、超高IO、通用型SSD、高IO等多种性能规格的云硬盘，可根据业务需要灵活选择不同规格 \n-支持共享云硬盘、云硬盘加密、云硬盘备份、云服务器备份、快照等功能，可满足不同业务场景的需求",
                     img: "/images/products/productsECS/04.jpeg",
+                    imgCss: "pic-l",
                 },
                 {
                     title: "多重防护，专业保护您的数据安全",
                     desc: "-帮助用户快速发现安全弱点和威胁，并给出最佳安全实践建议，有效减少或避免由于网络中病毒和恶意攻击带来的损失 \n-通过专业的防DDoS设备为客户互联网应用提供精细化的抵御DDoS攻击能力 \n-联合全球知名数字证书服务机构，为您提供的一站式安全套接层（SSL）证书和传输层安全（TLS）证书的全生命周期管理服务，实现网站的可信身份认证与安全数据传输",
                     img: "/images/products/productsECS/05.jpeg",
+                    imgCss: "pic-r",
                 },
             ],
             // 技术支撑

@@ -4,8 +4,8 @@
             <div class="wp">
                 <h2>产品展示</h2>
                 <div class="m-picture-con">
-                    <p><img class="u-img" src="../../assets/img/img.jpeg" /></p>
-                    <p><img class="u-img" src="../../assets/img/img.jpeg" /></p>
+                    <p><img class="u-img" src="../../static/images/products/productsAI/01.jpg" /></p>
+                    <p><img class="u-img" src="../../static/images/products/productsAI/02.jpg" /></p>
                 </div>
             </div>
         </div>

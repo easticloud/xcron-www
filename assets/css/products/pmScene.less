@@ -3,6 +3,10 @@
     .pb(75px);
     .pt(75px);
 
+    .wp {
+        font-weight: 400;
+    }
+
     h2 {
         .db;
         .x;
@@ -18,7 +22,7 @@
         padding: 0 20px;
         box-sizing: border-box;
         .pr;
-        gap: 50px;
+        gap: 123px;
 
         &::after {
             border-bottom: 2px solid #E6E6E6;
@@ -34,8 +38,9 @@
             .flex;
             .fz(18px);
             .pointer;
+            width: 170px;
+            .x;
             position: relative;
-            min-width: 170px;
             justify-content: center;
 
             &:hover,
@@ -47,8 +52,8 @@
                     .db;
                     .pa;
                     .lb(50%, -20px);
-                    .size(170px, 3px);
-                    .ml(-85px);
+                    .size(100%, 3px);
+                    transform: translateX(-50%);
                     z-index: 3;
                     box-sizing: border-box;
                     border-left: 1px solid #fff;
@@ -69,7 +74,8 @@
         .pr;
         box-sizing: border-box;
         padding: 50px;
-        .m-item{
+
+        .m-item {
             min-height: 188px;
         }
 
@@ -103,6 +109,7 @@
                 .mb(17px);
                 .db;
                 .w(100%);
+                font-weight: 500;
             }
 
             .u-tags {

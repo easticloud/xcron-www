@@ -21,6 +21,9 @@
         <!-- 5、应用场景  -->
         <products-pmScene :pmScene="pmScene"></products-pmScene>
 
+        <!-- 6、服务支持-->
+        <products-pmService></products-pmService>
+
         <!-- 公共底部 -->
         <common-footer></common-footer>
     </div>
@@ -39,6 +42,7 @@ export default {
             pmBanner: {
                 title: "虚拟私有云",
                 desc: "虚拟私有云（Virtual Private Cloud）是用户在云上申请的隔离的、私密的虚拟网络环境。用户可以基于VPC构建独立的云上网络空间，配合弹性公网IP、云连接、云专线等服务实现与Internet、云内私网、跨云私网互通，帮您打造可靠、稳定、高效的专属云上网络",
+                img: "/images/products/productsVPC/b1.jpg",
             },
             // 了解虚拟私有云
             pAboutBCSTil: "了解虚拟私有云",
@@ -69,6 +73,7 @@ export default {
                     title: "灵活组网，按需对网络进行规划和管理",
                     desc: "提供自定义路由和对等连接，能帮助客户更灵活的控制VPC内和VPC间通信 \n-自定义路由表中包含VPC内自定义路由规则，可用于判断网络流量的导向目的地址 \n-对等连接是指两个VPC之间的网络连接。可以使用私有IP地址在两个VPC之间进行通信",
                     img: "/images/products/productsVPC/01.jpeg",
+                    imgCss: "pic-l",
                 },
                 {
                     title: "安全可靠，租户间100%隔离",
@@ -79,6 +84,7 @@ export default {
                     title: "多种高速带宽类型，满足不同企业的个性化需求",
                     desc: "华为云为客户提供全动态BGP和静态BGP等多种带宽服务，满足不同客户诉求\n-全动态BGP带宽服务\n使用BGP协议接入国内多个运营商，支持多达21+线路。可以根据设定的寻路协议实时自动故障切换，保证网络稳定，网络时延低\n-静态BGP带宽服务\n云数据中心同时接入运营商BGP线路和静态线路，高速带宽，高性价比",
                     img: "/images/products/productsVPC/03.jpeg",
+                    imgCss: "pic-l",
                 },
                 {
                     title: "混合云架构，轻松构建混合云",
@@ -89,6 +95,7 @@ export default {
                     title: "多重防护，基于主机侧和基于网络侧多重安全防护",
                     desc: "-安全组\n主机侧防护：通过对报文协议（TCP、UDP、ICMP）以及端口的过滤保证在数据中心下对虚拟机的访问进行严格的控制\n-ACL防火墙\n网络侧防护：VPC 的子网级别和VPC级别安全服务，支持黑白名单，可用来控制进出一个或多个子网的流量",
                     img: "/images/products/productsVPC/05.jpeg",
+                    imgCss: "pic-l",
                 },
             ],
             // 权威认可

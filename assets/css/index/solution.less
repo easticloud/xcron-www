@@ -1,7 +1,17 @@
 .m-index-solution {
+    .wp {
+        font-weight: 400;
+
+        .u-desc {
+            font-weight: 300;
+        }
+
+    }
+
     .m-tabs {
         .flex;
         .mt(50px);
+
         .m-item {
             .flex;
             .fz(18px);
@@ -11,18 +21,21 @@
             align-items: center;
             justify-content: center;
             gap: 5px;
+
             .u-img {
                 .size(18px);
             }
+
             &:hover,
             &.active {
                 .color(#CF0010);
+
                 &::after {
                     content: "";
                     .db;
                     .pa;
-                    .lb(50%,-20px);
-                    .size(170px,3px);
+                    .lb(50%, -20px);
+                    .size(170px, 3px);
                     .ml(-75px);
                     box-sizing: border-box;
                     border-left: 1px solid #fff;
@@ -32,11 +45,12 @@
             }
         }
     }
+
     .m-content {
         .flex;
         .pr;
         .mt(40px);
-        .size(100%,280px);
+        .size(100%, 280px);
         justify-content: space-between;
         background-color: #f8f8f8;
         background-repeat: no-repeat;
@@ -44,37 +58,44 @@
         background-size: auto 280px;
         .r(5px);
         overflow: hidden;
+
         .u-img {
             .h(280px);
         }
+
         .m-item {
             .flex;
             .h(280px);
             .pl(60px);
-            .fz(18px,1.8);
+            .fz(18px, 1.8);
             min-width: 500px;
             box-sizing: border-box;
             flex-direction: column;
             align-items: flex-start;
+
             .u-bgimg {
                 .h(280px);
                 .pl(60px);
-                .fz(18px,1.8);
+                .fz(18px, 1.8);
                 min-width: 500px;
                 .flex;
             }
+
             .u-title {
                 .fz(24px);
                 .mb(10px);
             }
+
             .u-desc {
                 .color(#848484);
                 .mb(20px);
             }
+
             .u-tags {
                 .flex;
                 min-height: 32px;
                 gap: 10px;
+
                 .u-tag {
                     .r(2px);
                     .lh(20px);
@@ -84,6 +105,7 @@
                 }
             }
         }
+
         .u-others {
             .flex;
             .pa;
@@ -93,20 +115,23 @@
             width: 100%;
             flex-wrap: wrap;
             justify-content: space-between;
+
             &:after {
                 content: "";
                 width: 50%;
             }
+
             .u-other {
                 .db;
                 .pointer;
                 .bold;
-                .size(50%,140px);
+                .size(50%, 140px);
                 .lh(140px);
                 text-align: center;
                 letter-spacing: 2px;
                 box-sizing: border-box;
                 border: 1px dashed #f3f3f3;
+
                 &:hover {
                     color: #fff;
                     border: 0;

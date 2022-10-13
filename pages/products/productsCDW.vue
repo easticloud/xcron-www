@@ -21,6 +21,9 @@
         <!-- 5、应用场景  -->
         <products-pmScene :pmScene="pmScene"></products-pmScene>
 
+        <!-- 6、服务支持-->
+        <products-pmService></products-pmService>
+
         <!-- 公共底部 -->
         <common-footer></common-footer>
     </div>
@@ -40,6 +43,7 @@ export default {
             pmBanner: {
                 title: "云数据仓库",
                 desc: "新一代、全场景数据仓库，一站式分析，性能、容量无限扩展守护高价值数据、创享高价值分析，企业数字化转型坚实伙伴。",
+                img: "/images/products/productsCDW/b1.jpg",
             },
             // 了解弹性云服务器
             pAboutBCSTil: "了解云数据仓库",
@@ -70,21 +74,25 @@ export default {
                     title: "新一代云数仓，超强扩展，极致算力，多层级高可靠技术",
                     desc: "全国首个金融云数仓，2021 IDC 中国金融行业技术应用场景创新奖“金融新基建”优秀案例; \n集群规模超强扩展能力，存储10PB级业务数据; \n多层级全并行计算，实现算的更快，满足业务更高的SLA要求; \n软件多层级HA、多层级备份、硬件全冗余设计，保证系统的鲁棒性，业务7x24全天候在线。",
                     img: "/images/products/productsCDW/01.png",
+                    imgCss: "pic-r",
                 },
                 {
                     title: "高并发交互式查询秒级响应，分析师工作效率全面提升",
                     desc: "单集群480节点，装机容量20PB，支撑数据分析、集市、BI等各种场景； \n通过分布式查询优化，实现高并发点查询秒级/毫秒级响应； \n资源融合统一，灵活调配，多层级并行计算，效率最优.",
                     img: "/images/products/productsCDW/02.jpeg",
+                    imgCss: "pic-l",
                 },
                 {
                     title: "HTAP混合负载，按需弹性，湖仓一体",
                     desc: "混合负载：“一库两用”，支持超过100万QPS、10万TPS高并发混合读写，支持事务强一致； \n资源管理：可以根据业务优先级进行资源动态分配，实现“快慢通道”； \按需扩容：弹性按需扩容，灵活应对用户数据及负载潮汐变化；\n仓湖一体：DWS可以直接读写OBS对象存储系统的数据，支持数据冷热分级。",
                     img: "/images/products/productsCDW/03.jpg",
+                    imgCss: "pic-r",
                 },
                 {
                     title: "复杂即席查询，实时数据分析，一站式平台",
                     desc: "复杂SQL实时查询，10+表格联合运算，秒级返回结果； \n实时入仓批流融合60万/秒/节点，T+0完成数据分析； \n多源数据融合，一站式统一平台，助力非传统数仓工程师便捷使用数据。",
                     img: "/images/products/productsCDW/04.jpeg",
+                    imgCss: "pic-l",
                 },
             ],
             // 精品案例

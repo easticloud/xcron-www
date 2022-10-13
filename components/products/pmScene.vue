@@ -3,13 +3,8 @@
         <div class="wp">
             <h2>{{ pmScene.til }}</h2>
             <div class="m-tabs">
-                <div
-                    class="m-item"
-                    v-for="(item, i) in pmScene.list"
-                    :key="i"
-                    :class="{ active: index == i }"
-                    @click="change(i)"
-                >
+                <div class="m-item" v-for="(item, i) in pmScene.list" :key="i" :class="{ active: index == i }"
+                    @click="change(i)">
                     <span class="u-label">{{ item.label }}</span>
                 </div>
             </div>

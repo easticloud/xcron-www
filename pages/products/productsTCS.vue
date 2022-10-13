@@ -19,6 +19,9 @@
         <!-- 5、应用场景  -->
         <products-pmSceneUseS :pmSceneUseS="pmSceneUseS" :pmSceneUseSTil="pmSceneUseSTil"></products-pmSceneUseS>
 
+        <!-- 6、服务支持-->
+        <products-pmService></products-pmService>
+
         <!-- 公共底部 -->
         <common-footer></common-footer>
     </div>
@@ -30,13 +33,14 @@ import pmDotCon from '../../components/products/pm-dotCon.vue';
 import pmBanner from '../../components/products/pmBanner.vue';
 import pmSceneUseS from '../../components/products/pmSceneUseS.vue';
 export default {
-    name: "products-BCS",
+    name: "products-TCS",
     data() {
         return {
             // 可信跨链服务-banner
             pmBanner: {
                 title: "可信跨链服务",
                 desc: "可信跨链服务(Trusted Cross-Chain Service)基于一系列制定的可信区块链标准跨链协议，保证跨链交易全栈可追溯，可扩展性及可靠性等，实现基于不同区块链内核所构建的同构及异构链之间的互联互通，打破区块链数据孤岛，助力不同企业联盟链可信互联，促进区块链产业生态可信融合。",
+                img: "/images/products/productsTCS/b1.jpg",
             },
             // 产品优势
             pmDotConTil: "产品优势",//标题
@@ -44,22 +48,22 @@ export default {
                 {
                     title: "跨链操作可审计",
                     desc: "跨链申请、授权等操作行为完整保存上链，交易过程记录本地账本，全流程自动、透明、可监督，支持事中校验、事后审计，保障多方权益。",
-                    img: "/images/products/productsTCS/01.png",
+                    img: "/images/products/productsTCS/05.svg",
                 },
                 {
                     title: "跨链数据授权访问",
                     desc: "跨链账本数据以及链代码数据仅在所有者授权情况下才能进行访问，基于身份体系对跨链合约及账本查询和交易操作提供授权能力，在保护数据安全的同时，还保证数据的使用过程可以被追溯。",
-                    img: "/images/products/productsTCS/02.png",
+                    img: "/images/products/productsTCS/06.svg",
                 },
                 {
                     title: "统一分布式跨链身份",
                     desc: "基于分布式身份体系支持跨链系统治理，为各个接入区块链配置通用标识，支持基于标识寻址发起跨链访问。",
-                    img: "/images/products/productsTCS/03.png",
+                    img: "/images/products/productsTCS/07.svg",
                 },
                 {
                     title: "数据安全和隐私保护",
                     desc: "基于TEE的证明生成流程，保证跨链交互数据安全可靠，跨链中继侧不记录对应链的数据信息，支持跨链组件点对点数据交互，防止隐私泄露，有效保护跨链数据隐私。",
-                    img: "/images/products/productsTCS/04.png",
+                    img: "/images/products/productsTCS/08.svg",
                 },
             ],
             // 产品与服务

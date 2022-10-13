@@ -1,32 +1,46 @@
 .m-index-production {
+
+    .wp,
+    .m-content {
+        font-weight: 400;
+    }
+}
+
+.m-index-production {
     .m-tabs {
         .flex;
         .mt(50px);
         justify-content: space-between;
+
         .m-item {
             .flex;
             min-width: 150px;
             position: relative;
             flex-direction: column;
             align-items: center;
+
             .u-img {
                 .size(80px);
             }
+
             .u-label {
                 .fz(18px);
             }
+
             &:hover,
             &.active {
                 .pointer;
+
                 .u-label {
                     .color(#CF0010);
                 }
+
                 &::after {
                     content: "";
                     .db;
                     .pa;
-                    .lb(50%,-20px);
-                    .size(150px,3px);
+                    .lb(50%, -20px);
+                    .size(150px, 3px);
                     .ml(-75px);
                     box-sizing: border-box;
                     border-left: 1px solid #fff;
@@ -36,35 +50,44 @@
             }
         }
     }
+
     .m-content {
         .mt(50px);
         background-color: #f8f8f8;
+
         .wp {
             .w(100%);
         }
+
         .m-children {
             .flex;
             min-height: 270px;
             justify-content: flex-start;
             align-items: center;
             gap: 80px;
+
             .u-child {
                 .flex;
                 flex-direction: column;
                 gap: 8px;
                 .fz(18px);
+
                 .u-title {
                     .flex;
                     .h(40px);
                     .fz(21px);
                     gap: 10px;
                     align-items: center;
+
                     .u-child-title {
-                        .color(#3c3c3c); 
-                        &:hover{
+                        .color(#3c3c3c);
+                        font-weight: 500;
+
+                        &:hover {
                             text-decoration: underline;
                         }
                     }
+
                     .u-sign {
                         .fz(18px);
                         .r(2px);
@@ -73,13 +96,16 @@
                         border: 1px solid #cf0010;
                     }
                 }
+
                 .u-desc {
                     .color(#848484);
                     .mb(20px);
                 }
+
                 .u-tags {
                     .flex;
                     gap: 10px;
+
                     .u-tag {
                         .r(2px);
                         .color(#B2B2B2);
@@ -90,4 +116,8 @@
             }
         }
     }
+}
+
+.m-index-item .m-title .u-desc {
+    font-weight: 300;
 }

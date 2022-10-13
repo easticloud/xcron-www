@@ -10,13 +10,19 @@
         <products-pAboutBCS :pAboutBCSTil="pAboutBCSTil" :pAboutBCS="pAboutBCS"></products-pAboutBCS>
 
         <!-- 3、产品与服务  -->
-        <products-pmImgCon :pmImgConClass="pmImgConClass" :pmImgConTil="pmImgConTil" :pmImgCon="pmImgCon"></products-pmImgCon>
-        
+        <products-pmImgCon :pmImgConClass="pmImgConClass" :pmImgConTil="pmImgConTil" :pmImgCon="pmImgCon">
+        </products-pmImgCon>
+
         <!-- 4、产品优势  -->
-        <products-pmImgCon :pmImgConClass="pmImgConClass01" :pmImgConTil="pmImgConTil01" :pmImgCon="pmImgCon01"></products-pmImgCon>
+        <products-pmImgCon :pmImgConClass="pmImgConClass01" :pmImgConTil="pmImgConTil01" :pmImgCon="pmImgCon01">
+        </products-pmImgCon>
 
         <!-- 5、权威认可  -->
-        <products-pmDotCon :pmDotConClass="pmDotConClass" :pmDotConTil="pmDotConTil" :pmDotCon="pmDotCon"></products-pmDotCon>
+        <products-pmDotCon :pmDotConClass="pmDotConClass" :pmDotConTil="pmDotConTil" :pmDotCon="pmDotCon">
+        </products-pmDotCon>
+
+        <!-- 6、服务支持-->
+        <products-pmService></products-pmService>
 
         <!-- 公共底部 -->
         <common-footer></common-footer>
@@ -30,36 +36,37 @@ import pmBanner from '../../components/products/pmBanner.vue';
 import pAboutBCS from '../../components/products/pAboutBCS.vue';
 export default {
     name: "products-BCS",
-    data(){
-        return{
+    data() {
+        return {
             // 区块链服务-banner
-            pmBanner:{
+            pmBanner: {
                 title: "区块链服务",
                 desc: "区块链是构建信任的基石，是实现信用传递，价值传递的可信网络。区块链聚焦构建安全、可靠的区块链基础设施，让企业、政府快速、高效的搭建区块链网络及行业应用，实现资金流、物流、信息流的可信快速流动，高效可信协同，助力降低协作成本，提升效率。",
+                img: "/images/products/productsBCS/b1.jpg",
             },
             // 了解区块链服务
-            pAboutBCSTil:"了解区块链服务",
-            pAboutBCS:[
+            pAboutBCSTil: "了解区块链服务",
+            pAboutBCS: [
                 {
-                    til:"100000+",
-                    desc:"10万级TPS秒级共识",
+                    til: "100000+",
+                    desc: "10万级TPS秒级共识",
                 },
                 {
-                    til:"10000+",
-                    desc:"支持10000+节点扩展",
+                    til: "10000+",
+                    desc: "支持10000+节点扩展",
                 },
                 {
-                    til:"400+",
-                    desc:"已落地400+应用场景",
+                    til: "400+",
+                    desc: "已落地400+应用场景",
                 },
                 {
-                    til:"可信",
-                    desc:"满足金融级可信和协同要求",
+                    til: "可信",
+                    desc: "满足金融级可信和协同要求",
                 },
             ],
             // 产品与服务
-            pmImgConTil:"产品与服务",//标题
-            pmImgConClass:"noimgCon",//复写样式
+            pmImgConTil: "产品与服务",//标题
+            pmImgConClass: "noimgCon",//复写样式
             pmImgCon: [//内容数据
                 {
                     title: "区块链服务BCS(区块链引擎)",
@@ -93,8 +100,8 @@ export default {
                 }
             ],
             // 产品优势
-            pmImgConTil01:"产品优势",//标题
-            pmImgConClass01:"bcsBg",//复写样式
+            pmImgConTil01: "产品优势",//标题
+            pmImgConClass01: "bcsBg",//复写样式
             pmImgCon01: [//内容数据
                 {
                     title: "场景丰富",
@@ -128,8 +135,8 @@ export default {
                 },
             ],
             // 权威认可
-            pmDotConTil:"权威认可",//标题
-            pmDotConClass:"bcsAuth",//复写样式
+            pmDotConTil: "权威认可",//标题
+            pmDotConClass: "bcsAuth",//复写样式
             pmDotCon: [//内容数据
                 {
                     title: "通过可信区块链双项测评",
@@ -154,7 +161,7 @@ export default {
             ],
         }
     },
-    components:{
+    components: {
         pmBanner,
         pmImgCon,
         pmDotCon,
@@ -165,5 +172,4 @@ export default {
 
 <style lang="less">
 @import "~@/assets/css/products.less";
-
 </style>

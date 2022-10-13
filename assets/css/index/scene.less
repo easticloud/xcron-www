@@ -1,8 +1,18 @@
 .m-index-scene {
+    .wp {
+        font-weight: 400;
+
+        .m-tabs .m-item .u-title {
+
+            font-weight: 500;
+        }
+    }
+
     .m-tabs {
         .flex;
         justify-content: space-between;
         .mt(50px);
+
         .m-item {
             .flex;
             .w(285px);
@@ -14,61 +24,74 @@
             gap: 20px;
             box-sizing: border-box;
             padding: 200px 20px 20px 20px;
-            border: 1px solid rgba(151, 151, 151, 0.8);
+            border: 1px solid #e6e6e6;
             background-repeat: no-repeat;
             background-position: top center;
+
             // background-size: 100% 185px;
-            .u-line{
+            .u-line {
                 .pa;
-                .lt(0,175px);
+                .lt(0, 175px);
                 right: 0;
-                .size(100%,20px);
+                .size(100%, 20px);
                 .db;
                 background-color: #fff;
                 .r(5px);
                 overflow: hidden;
             }
+
             .u-img {
-                .size(100%,150px);
+                .size(100%, 150px);
             }
+
             .u-title {
                 .flex;
                 .fz(21px);
                 gap: 10px;
                 align-items: center;
                 padding: 0 20px;
+
                 .u-icon {
                     .size(30px);
                 }
             }
+
             .u-desc {
                 .fz(16px);
                 .color(#848484);
                 padding: 0 20px;
+                font-weight: 400;
             }
         }
     }
+
     .m-content {
         .mt(50px);
         min-height: 380px;
         background-color: #f8f8f8;
+
         .wp {
             position: relative;
             .w(100%);
+            font-weight: 500;
         }
+
         .m-box {
-            .size(650px,200px);
+            .size(650px, 200px);
             .flex;
             .r(5px);
             flex-direction: column;
             justify-content: center;
-            border: 1px solid #848484;
+            border: 1px solid #e6e6e6;
+
+
             .m-list {
                 .flex;
                 .w(500px);
                 .mb(30px);
                 gap: 10px;
                 flex-wrap: wrap;
+
                 .u-item {
                     .w(180px);
                     .pl(40px);
@@ -76,49 +99,59 @@
                     background: url(../../../static/images/index/scene/dot.svg) left center no-repeat;
                 }
             }
+
             .m-btn {
                 .flex;
                 gap: 20px;
+
                 .u-btn {
                     .color(#cf0010);
                     .r(2px);
                     padding: 5px 12px;
                     border: 1px solid #cf0010;
+
                     &.red {
                         .color(#fff);
                         background-color: #cf0010;
                     }
                 }
             }
+
             .u-title {
                 .fz(21px);
                 font-weight: 500;
+
                 b {
                     .color(#cf0010);
                     font-weight: 500;
                 }
             }
+
             .m-item {
                 .flex;
                 .fz(18px);
                 width: 100%;
-                gap:50px;
+                gap: 50px;
                 box-sizing: border-box;
                 padding: 0 90px;
                 justify-content: space-between;
+
                 .u-item {
                     .flex;
                     flex-direction: column;
+
                     .u-num {
                         .fz(21px);
                         .pr(30px);
                         font-weight: 500;
                         background: url(../../../static/images/index/scene/up.svg) center right no-repeat;
+
                         b {
                             .fz(36px);
                             font-weight: 500;
                         }
                     }
+
                     .u-desc {
                         .color(#848484);
                         .x;
@@ -133,9 +166,10 @@
                 box-sizing: border-box;
                 background-color: #fff;
             }
+
             &.m-right {
                 .pa;
-                .rt(0,75px);
+                .rt(0, 75px);
                 align-items: center;
                 background-color: #f8f8f8;
             }

@@ -16,6 +16,9 @@
         <products-pmSceneUseS :pmSceneUseS="pmSceneUseS" :pmSceneUseSTil="pmSceneUseSTil"
             :pmSceneUseSTrue="pmSceneUseSTrue" :pmSceneUseS01="pmSceneUseS01"></products-pmSceneUseS>
 
+        <!-- 5、服务支持-->
+        <products-pmService></products-pmService>
+
         <!-- 公共底部 -->
         <common-footer></common-footer>
     </div>
@@ -34,6 +37,7 @@ export default {
             pmBanner: {
                 title: "企业主机安全",
                 desc: "企业主机安全（Host Security Service）是服务器贴身安全管家，通过资产管理、漏洞管理、基线检查、入侵检测、程序运行认证、文件完整性校验，安全运营、网页防篡改等功能，帮助企业更方便地管理主机安全风险，实时发现黑客入侵行为，以及满足等保合规要求。",
+                img: "/images/products/productsHSS/b1.jpg",
             },
             // 了解企业主机安全
             pAboutBCSTil: "了解企业主机安全",

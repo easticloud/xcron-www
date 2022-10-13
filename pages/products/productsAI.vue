@@ -15,6 +15,9 @@
         <!-- 4、场景介绍  -->
         <products-pmScene :pmScene="pmScene"></products-pmScene>
 
+        <!-- 5、服务支持-->
+        <products-pmService></products-pmService>
+
         <!-- 公共底部 -->
         <common-footer></common-footer>
     </div>
@@ -31,6 +34,7 @@ export default {
             pmBanner: {
                 title: "智能AI边缘盒子",
                 desc: "一款基于寒武纪220系列模块设计的计算平台，采用嵌入式设计原理，搭载AI处理芯片，内嵌基于深度学习的算法，提供识别、抓拍、比对、报警等服务。可广泛部署在边缘区域，以及时、快速、精准的做智能化分析。",
+                img: "/images/products/productsAI/b1.jpg"
             },
             // 产品优势
             pmDotConTil: "产品优势",//标题
