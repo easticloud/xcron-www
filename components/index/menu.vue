@@ -20,7 +20,7 @@
                         <el-input class="u-input" placeholder="搜索云产品" v-model="search"> </el-input>
                     </div>
                     <div class="m-content">
-                        <a :href="item.link" target="_blank" class="m-item" v-for="(item, i) in children" :key="i">
+                        <a :href="item.link" class="m-item" v-for="(item, i) in children" :key="i">
                             <span class="u-title">{{ item.title }}</span>
                             <span class="u-desc">{{ item.desc }}</span>
                         </a>
@@ -31,7 +31,7 @@
                 <div class="m-list-solution">
                     <div class="m-item" v-for="(item, i) in solution" :key="i">
                         <img class="u-img" :src="item.icon" />
-                        <a :href="item.link" target="_blank" class="u-txt">
+                        <a :href="item.link" class="u-txt">
                             <span class="u-label">{{ item.label }}</span>
                             <span class="u-desc">{{ item.desc }}</span>
                         </a>
@@ -123,7 +123,11 @@ export default {
                     title: "网络",
                     children: [
                         { title: "虚拟私有云", desc: "隔离的、私密的虚拟网络环境", link: "/products/productsVPC" },
-                        { title: "云专线", desc: "搭建本地数据中心与VPC间的专属连接通道", link: "/products/productsDC" },
+                        {
+                            title: "云专线",
+                            desc: "搭建本地数据中心与VPC间的专属连接通道",
+                            link: "/products/productsDC",
+                        },
                         { title: "全球加速", desc: "提供SLA稳定的加速传输", link: "/products/productsGA" },
                     ],
                 },
