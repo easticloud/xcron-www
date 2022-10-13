@@ -31,7 +31,7 @@ export default {
     props: {
         pmSceneUseS: Object,
         pmSceneUseSTil: String,
-        pmSceneUseSTrue: String,
+        pmSceneUseSTrue: Boolean,
         pmSceneUseS01: Object
     },
     data() {

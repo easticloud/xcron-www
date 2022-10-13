@@ -63,22 +63,22 @@ export default {
                 {
                     title: "极简部署",
                     desc: "作为一款云原生SaaS服务，可以对公网资产、内部资产自动安全盘点，一键开启防护，支持原有安全策略一键导入，可随业务按需动态扩容。",
-                    img: "/images/products/productsCF/1-2x.png",
+                    img: "/images/products/productsCF/01.svg",
                 },
                 {
                     title: "智能防护",
                     desc: "集成全网威胁漏洞库，并通过自带的入侵防御引擎（IPS），对恶意流量进行实时检测和防御。",
-                    img: "/images/products/productsCF/2-2x.png",
+                    img: "/images/products/productsCF/02.svg",
                 },
                 {
                     title: "可视可溯",
                     desc: "全场景流量日志、访问日志、入侵攻击日志记录，并通过报表分析呈现，支持审计及高级威胁溯源分析。",
-                    img: "/images/products/productsCF/3-2x.png",
+                    img: "/images/products/productsCF/03.svg",
                 },
                 {
                     title: "丰富生态",
                     desc: "支持无缝集成第三方厂家威胁检测分析引擎，云上云下统一生态，客户原线下安全策略资产无缝平移。",
-                    img: "/images/products/productsCF/4-2x.png",
+                    img: "/images/products/productsCF/04.svg",
                 },
             ],
             // 应用场景 
@@ -93,7 +93,7 @@ export default {
                         children: {
                             title: "场景介绍",
                             titletag: "通过云防火墙，对已开放公网访问的服务资产进行安全盘点，可一键开启入侵检测与防御",
-                            src: "/images/index/solution/01.svg",
+                            src: "/images/products/productsCF/s1.svg",
                             tag: [
                                 {
                                     tagTil: "· 公网资产自动盘点",
@@ -111,7 +111,7 @@ export default {
                         children: {
                             title: "场景介绍",
                             titletag: "云防火墙支持基于域名的访问控制，可对主动外联行为进行精准管控",
-                            src: "/images/index/solution/01.svg",
+                            src: "/images/products/productsCF/s2.svg",
                             tag: [
                                 {
                                     tagTil: "· 外联行为全记录",
@@ -129,7 +129,7 @@ export default {
                         children: {
                             title: "场景介绍",
                             titletag: "云防火墙支持VPC间流量的访问控制，实现内部业务互访活动的可视化与安全防护",
-                            src: "/images/index/solution/01.svg",
+                            src: "/images/products/productsCF/s3.svg",
                             tag: [
                                 {
                                     tagTil: "· 智能防护",

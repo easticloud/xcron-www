@@ -43,22 +43,22 @@ export default {
                 {
                     title: "广域覆盖",
                     desc: "基于覆盖中国大陆主要省市和主流运营商的优质节点资源进行部署，用户可以将时延敏感业务就近接入部署，保证确定性时延，提升业务体验",
-                    img: "/images/products/productsIEC/01.png",
+                    img: "/images/products/productsIEC/01.svg",
                 },
                 {
                     title: "多样算力",
                     desc: "面向丰富的边缘业务场景，提供多样化的算力类型，用户可以根据业务要求选择合适的算力",
-                    img: "/images/products/productsIEC/02.png",
+                    img: "/images/products/productsIEC/02.svg",
                 },
                 {
                     title: "卓越性能",
                     desc: "基于擎天架构打造，软硬结合提供卓越性能。单实例pps转发性能达千万级，提供昇腾AI加速型实例推理性能领先业界2倍",
-                    img: "/images/products/productsIEC/03.png",
+                    img: "/images/products/productsIEC/03.svg",
                 },
                 {
                     title: "边云协同",
                     desc: "在提供核心的计算、存储、网络服务的基础上，与多种高阶云服务深度融合与协同，使客户可以更快的构建场景化的解决方案",
-                    img: "/images/products/productsIEC/04.png",
+                    img: "/images/products/productsIEC/04.svg",
                 },
             ],
             // 应用场景 
@@ -73,7 +73,7 @@ export default {
                         children: {
                             title: "互动直播",
                             titletag: "互动直播场景将音视频转码、弹幕分发、内容审核等处理能力部署在边缘站点，可以显著提升业务处理质量，优化响应效率，降低流量成本。",
-                            src: "/images/index/solution/01.svg",
+                            src: "/images/products/productsIEC/s1.svg",
                             tag: [
                                 {
                                     tagTil: "· 多样算力",
@@ -91,7 +91,7 @@ export default {
                         children: {
                             title: "在线教育",
                             titletag: "在线教育场景为老师与学生提供实时互动的视频教育体验，需要在边缘侧提供区域间稳定互联的低时延通信链路，从而有效支撑师生间多点对多点实时互动。",
-                            src: "/images/index/solution/01.svg",
+                            src: "/images/products/productsIEC/s2.svg",
                             tag: [
                                 {
                                     tagTil: "· 边云网络",
@@ -109,7 +109,7 @@ export default {
                         children: {
                             title: "应用加速",
                             titletag: "应用加速场景如游戏加速、App加速等，需要根据端到端时延要求，选择靠近最终用户的边缘站点，并通过优化端到端的网络选路，降低端到端时延。",
-                            src: "/images/index/solution/01.svg",
+                            src: "/images/products/productsIEC/s3.svg",
                             tag: [
                                 {
                                     tagTil: "· 弹性扩展",
@@ -127,7 +127,7 @@ export default {
                         children: {
                             title: "自建CDN",
                             titletag: "前互联网企业或服务商自建CDN网络时，大多采取租赁IDC的模式，需要建设和维护遍布多地域的大量站点。边缘云服务提供覆盖中国大陆的边缘算力网络，以及全局管理和自动化运维能力，帮助用户快速搭建和维护CDN网络。",
-                            src: "/images/index/solution/01.svg",
+                            src: "/images/products/productsIEC/s4.svg",
                             tag: [
                                 {
                                     tagTil: "· 广域覆盖",
