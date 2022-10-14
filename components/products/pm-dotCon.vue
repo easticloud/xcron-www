@@ -1,11 +1,14 @@
 <template>
     <div class="pm-dotCon" :class="pmDotConClass">
         <div class="wp">
-            <h2>{{pmDotConTil}}</h2>
+            <h2>{{ pmDotConTil }}</h2>
             <div class="m-tabs">
-                <div class="m-item" v-for="(item, i) in pmDotCon" :key="i"
-                    :class="item.imgCss=='pic-l'?'pic-l':'pic-r'">
-                    <!-- item.index % 2 == 0 ? 'pic-r' : 'pic-l' -->
+                <div
+                    class="m-item"
+                    v-for="(item, i) in newData"
+                    :key="i"
+                    :class="item.index && item.index % 2 === 0 ? 'pic-r' : 'pic-l'"
+                >
                     <span class="u-pic" :style="`backgroundImage: url(${item.img})`"></span>
                     <div class="u-con">
                         <span class="u-title">
@@ -27,23 +30,16 @@ export default {
         pmDotConClass: String,
     },
     data() {
-        return {
-
-        };
+        return {};
     },
-    methods: {
-        // function1() {
-        //     let t = this;
-        //     t.pmDotCon.forEach((el, i) => {
-        //         el.index = i;
-        //         // console.log(el.index)
-        //     })
-        // },
+    computed: {
+        newData() {
+            return this.pmDotCon.map((item, i) => {
+                item.index = i;
+                return item;
+            });
+        },
     },
-    mounted() {
-        // let t = this;
-        // t.function1();
-    }
 };
 </script>
 
