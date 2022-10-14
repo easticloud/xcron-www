@@ -35,7 +35,7 @@ export default {
     computed: {
         newData() {
             return this.pmDotCon.map((item, i) => {
-                item.index = i;
+                item.index = i + 1;
                 return item;
             });
         },
