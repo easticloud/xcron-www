@@ -38,7 +38,7 @@
             </div>
         </div>
         <div class="m-copyright">
-            <span class="u-txt">© 2022 江苏实点实分网络科技有限公司 丨 苏ICP备15031332号</span>
+            <span class="u-txt">© 2022 江苏实点实分网络科技有限公司 丨 <a href="https://beian.miit.gov.cn/" target="_blank">苏ICP备15031332号</a></span>
         </div>
     </div>
 </template>

@@ -38,10 +38,6 @@
                                 <td class="f-col" style="width: 70%">Linux系统</td>
                             </tr>
                             <tr>
-                                <td></td>
-                                <td class="f-col" style="width: 70%"></td>
-                            </tr>
-                            <tr>
                                 <td>视频编码</td>
                                 <td class="f-col" style="width: 70%">H.264/H.265</td>
                             </tr>

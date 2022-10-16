@@ -60,7 +60,7 @@ export default {
                 },
                 {
                     title: "企业场景",
-                    desc: "为企业提供多场景、一站式上云服务，满足企业各发展阶段的需求，为您推荐场景组合购",
+                    desc: "为企业提供多场景、一站式上云服务，满足企业各发展阶段的需求，为您推荐场景组合购。",
                     src: "/images/index/scene/02.svg",
                     icon: "/images/index/scene/icon-2.svg",
                 },
@@ -72,7 +72,7 @@ export default {
                 },
                 {
                     title: "行业场景",
-                    desc: "从行业维度出发，基于行业内的业务痛点，业务场景，为用户提供相应的场景组合购买推荐",
+                    desc: "从行业维度出发，基于行业内的业务痛点，业务场景，为用户提供相应的场景组合购买推荐。",
                     src: "/images/index/scene/04.svg",
                     icon: "/images/index/scene/icon-4.svg",
                 },

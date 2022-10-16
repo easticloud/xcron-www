@@ -34,7 +34,7 @@ export default {
             // 专属主机-banner
             pmBanner: {
                 title: "专属主机",
-                desc: "专属主机（Dedicated Host ）是指其上创建云服务器的所有资源完全供您专用的物理服务器，满足您对计算的隔离和性能的要求，并支持自带软件许可功能",
+                desc: "专属主机（Dedicated Host ）是指其上创建云服务器的所有资源完全供您专用的物理服务器，满足您对计算的隔离和性能的要求，并支持自带软件许可功能。",
                 img: "/images/products/products_dh/b1.jpg",
             },
             // 产品优势
@@ -61,7 +61,7 @@ export default {
                     img: "/images/products/products_dh/4.svg",
                 },
             ],
-            // 应用场景 
+            // 应用场景
             pmScene: {
                 products: 0,
                 til: "应用场景",
