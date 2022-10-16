@@ -34,7 +34,7 @@ export default {
             // 数据可视化-banner
             pmBanner: {
                 title: "数据可视化",
-                img: "/images/products/productsDLV/b1.jpg",
+                img: "/images/products/products_dlv/b1.jpg",
                 desc: "数据可视化服务（Data Lake Visualization）是一站式数据可视化平台，适配云上云下多种数据源，提供丰富多样的2D、3D可视化组件，采用拖拽式自由布局，旨在帮助您快速定制和应用属于您自己的数据大屏",
             },
             // 产品优势
@@ -43,22 +43,22 @@ export default {
                 {
                     title: "丰富多样的可视化组件",
                     desc: "提供丰富的可视化组件，包括常用的数据图表、图形、控件等",
-                    img: "/images/products/productsDLV/05.svg",
+                    img: "/images/products/products_dlv/05.svg",
                 },
                 {
                     title: "专业级地理信息可视化",
                     desc: "支持绘制地理轨迹、地理飞线、热力分布、地域区块、3D地球等效果，支持地理数据多层叠加",
-                    img: "/images/products/productsDLV/06.svg",
+                    img: "/images/products/products_dlv/06.svg",
                 },
                 {
                     title: "可视化编辑器",
                     desc: "拖拽即可完成组件自由配置与布局、所见即所得，无需编程就能轻松搭建可视化大屏，并且依据投放设备分辨率，自由定制大屏尺寸",
-                    img: "/images/products/productsDLV/07.svg",
+                    img: "/images/products/products_dlv/07.svg",
                 },
                 {
                     title: "多种数据源支持",
                     desc: "无缝集成云数据仓库服务、数据湖探索、关系型数据库、对象存储服务等，支持本地CSV、在线API及企业内部私有云数据",
-                    img: "/images/products/productsDLV/08.svg",
+                    img: "/images/products/products_dlv/08.svg",
                 },
             ],
             // 应用场景 
@@ -66,14 +66,14 @@ export default {
                 products: 0,
                 til: "应用场景",
                 isShow: false,
-                sceneClass: "m-Bms-productsDLV",
+                sceneClass: "m-Bms-products_dlv",
                 list: [
                     {
                         label: "安全态势场景",
                         children: {
                             title: "安全态势感知",
                             titletag: "从微观到宏观，全面呈现，让一切入侵有迹可循，为云上企业的安全事件处置提供可视化的决策依据",
-                            src: "/images/products/productsDLV/1.png",
+                            src: "/images/products/products_dlv/1.png",
                             tag: [
                                 {
                                     tagTil: "· 实时业务态势",
@@ -91,7 +91,7 @@ export default {
                         children: {
                             title: "经营管理看板",
                             titletag: "通过接入企业经营数据，可以对企业的生产情况、产品质量情况、产品的销售情况了如指掌，为企业管理者提供可视化的决策依据",
-                            src: "/images/products/productsDLV/2.png",
+                            src: "/images/products/products_dlv/2.png",
                             tag: [
                                 {
                                     tagTil: "· 经营状态实时可见",
@@ -112,22 +112,22 @@ export default {
                 {
                     title: "数据连接管理",
                     desc: "创建数据连接，提供数据大屏所需动态数据",
-                    img: "/images/products/productsDLV/01.png",
+                    img: "/images/products/products_dlv/01.png",
                 },
                 {
                     title: "数据大屏管理",
                     desc: "基于多种场景模板创建管理您的数据大屏",
-                    img: "/images/products/productsDLV/02.png",
+                    img: "/images/products/products_dlv/02.png",
                 },
                 {
                     title: "可视化编辑器",
                     desc: "画布、可视化界面编辑器和所见及所得的大屏编辑区域，是数据湖可视化最主要的功能区域。用户通过画布可实现对组件布局编排、样式配置以及数据源与图表之间绑定",
-                    img: "/images/products/productsDLV/03.png",
+                    img: "/images/products/products_dlv/03.png",
                 },
                 {
                     title: "公开与加密发布",
                     desc: "开发过程支持预览，开发完成后可支持公开与加密发布",
-                    img: "/images/products/productsDLV/04.png",
+                    img: "/images/products/products_dlv/04.png",
                 },
             ],
         }

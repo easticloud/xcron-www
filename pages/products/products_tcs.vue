@@ -40,7 +40,7 @@ export default {
             pmBanner: {
                 title: "可信跨链服务",
                 desc: "可信跨链服务(Trusted Cross-Chain Service)基于一系列制定的可信区块链标准跨链协议，保证跨链交易全栈可追溯，可扩展性及可靠性等，实现基于不同区块链内核所构建的同构及异构链之间的互联互通，打破区块链数据孤岛，助力不同企业联盟链可信互联，促进区块链产业生态可信融合。",
-                img: "/images/products/productsTCS/b1.jpg",
+                img: "/images/products/products_tcs/b1.jpg",
             },
             // 产品优势
             pmDotConTil: "产品优势",//标题
@@ -48,22 +48,22 @@ export default {
                 {
                     title: "跨链操作可审计",
                     desc: "跨链申请、授权等操作行为完整保存上链，交易过程记录本地账本，全流程自动、透明、可监督，支持事中校验、事后审计，保障多方权益。",
-                    img: "/images/products/productsTCS/05.svg",
+                    img: "/images/products/products_tcs/05.svg",
                 },
                 {
                     title: "跨链数据授权访问",
                     desc: "跨链账本数据以及链代码数据仅在所有者授权情况下才能进行访问，基于身份体系对跨链合约及账本查询和交易操作提供授权能力，在保护数据安全的同时，还保证数据的使用过程可以被追溯。",
-                    img: "/images/products/productsTCS/06.svg",
+                    img: "/images/products/products_tcs/06.svg",
                 },
                 {
                     title: "统一分布式跨链身份",
                     desc: "基于分布式身份体系支持跨链系统治理，为各个接入区块链配置通用标识，支持基于标识寻址发起跨链访问。",
-                    img: "/images/products/productsTCS/07.svg",
+                    img: "/images/products/products_tcs/07.svg",
                 },
                 {
                     title: "数据安全和隐私保护",
                     desc: "基于TEE的证明生成流程，保证跨链交互数据安全可靠，跨链中继侧不记录对应链的数据信息，支持跨链组件点对点数据交互，防止隐私泄露，有效保护跨链数据隐私。",
-                    img: "/images/products/productsTCS/08.svg",
+                    img: "/images/products/products_tcs/08.svg",
                 },
             ],
             // 产品与服务
@@ -102,29 +102,29 @@ export default {
                 {
                     title: "跨链数据迁移",
                     desc: "基于可信环境中授权信息，支持读取账本中的数据，将不同异构链或者同构链中的状态信息迁移到目的链中，所有迁移皆记录在账本中，实现数据可追溯，可审计，并支持对迁移完成数据进行校验，保证数据迁移正确性。",
-                    img: "/images/products/productsTCS/01.png",
+                    img: "/images/products/products_tcs/01.png",
                 },
                 {
                     title: "数据访问权限管理",
                     desc: "统一的身份管理体系，提供身份的创建、更新等功能。用户可以基于分布式身份体系完成区块链服务的注册，并对申请访问区块链进行授权操作，可以基于账本，链代码的查询及交易动作进行分别授权。",
-                    img: "/images/products/productsTCS/02.png",
+                    img: "/images/products/products_tcs/02.png",
                 },
                 {
                     title: "跨链互操作",
                     desc: "在可信环境中，用户可以授权访问其他区块链访问其跨链合约，经过跨链寻址，身份校验等一系列动作，实现合约的远程调用，完成业务场景中的复杂互操作。",
-                    img: "/images/products/productsTCS/03.png",
+                    img: "/images/products/products_tcs/03.png",
                 },
                 {
                     title: "同构异构链管理",
                     desc: "基于区块链跨链服务，实现不同类型，不同架构，不同安全算法区块链配置对接，生成相应接入服务。",
-                    img: "/images/products/productsTCS/04.png",
+                    img: "/images/products/products_tcs/04.png",
                 },
             ],
             // 应用场景
             pmSceneUseSTil: "应用场景",
             pmSceneUseS: {
                 title: "跨地域电子票据",
-                imgSrc: "/images/products/productsTCS/bg.svg",
+                imgSrc: "/images/products/products_tcs/bg.svg",
                 list: [
                     {
                         til: "· 解决数据孤岛",

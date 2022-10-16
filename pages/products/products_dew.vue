@@ -36,7 +36,7 @@ export default {
             pmBanner: {
                 title: "数据加密服务",
                 desc: "数据加密服务（Data Encryption Workshop）是一个综合的云上数据加密服务。它可以提供专属加密、密钥管理、密钥对管理、凭据管理功能。其密钥由硬件安全模块（HSM） 保护，并与许多服务集成。用户也可以借此服务开发自己的加密应用。",
-                img: "/images/products/productsDEW/b1.jpg",
+                img: "/images/products/products_dew/b1.jpg",
             },
             // 了解数据加密服务
             pAboutBCSTil: "了解数据加密服务",
@@ -64,22 +64,22 @@ export default {
                 {
                     title: "专属加密",
                     desc: "提供基础版和专业版专属加密服务，满足不同业务场景需求",
-                    img: "/images/products/productsDEW/01.png",
+                    img: "/images/products/products_dew/01.png",
                 },
                 {
                     title: "密钥管理",
                     desc: "全生命周期密钥管理，满足不同云服务下的加密需求",
-                    img: "/images/products/productsDEW/02.png",
+                    img: "/images/products/products_dew/02.png",
                 },
                 {
                     title: "密钥对管理",
                     desc: "分为私钥本地保存和私钥托管两种方式，满足不同业务场景需求",
-                    img: "/images/products/productsDEW/03.png",
+                    img: "/images/products/products_dew/03.png",
                 },
                 {
                     title: "凭据管理",
                     desc: " 对敏感凭据的全生命周期和统一管理",
-                    img: "/images/products/productsDEW/04.png",
+                    img: "/images/products/products_dew/04.png",
                 },
             ],
             // 应用场景 
@@ -94,7 +94,7 @@ export default {
                         children: {
                             title: "密钥管理（KMS）",
                             titletag: "通过经过认证的第三方硬件安全模块（HSM），轻松创建和控制用于加密数据的密钥，与使用OBS、EVS、IMS等服务集成，以帮助您保护这些产品存储的数据",
-                            src: "/images/products/productsDEW/01.svg",
+                            src: "/images/products/products_dew/01.svg",
                             tag: [
                                 {
                                     tagTil: "· 应用广泛",
@@ -120,7 +120,7 @@ export default {
                         children: {
                             title: "专属加密（云加密机）",
                             titletag: "高合规性要求的加密场景，可以选择基于国家密码局认证或FIPS 140-2 第 3 级验证的硬件加密机，对租户业务进行专属加密，默认提供双机以提高可靠性",
-                            src: "/images/products/productsDEW/02.svg",
+                            src: "/images/products/products_dew/02.svg",
                             tag: [
                                 {
                                     tagTil: "· 合规遵从",
@@ -146,7 +146,7 @@ export default {
                         children: {
                             title: "密钥对管理（Key Pair）",
                             titletag: "登录时有高安全性要求的场景，用户通过管理控制台创建或者导入自己的密钥对后，在购买弹性云服务器时，可选择通过密钥对方式登录，并且该密钥对可重置和替换",
-                            src: "/images/products/productsDEW/03.svg",
+                            src: "/images/products/products_dew/03.svg",
                             tag: [
                                 {
                                     tagTil: "· 安全性更高",
@@ -168,7 +168,7 @@ export default {
                         children: {
                             title: "凭据管理（CSMS）",
                             titletag: "用户或应用程序可以通过CSMS创建、检索、更新、删除凭据，轻松实现对敏感凭据的全生命周期和统一管理",
-                            src: "/images/products/productsDEW/04.svg",
+                            src: "/images/products/products_dew/04.svg",
                             tag: [
                                 {
                                     tagTil: "· 凭据加密保护",

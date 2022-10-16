@@ -5,10 +5,18 @@
         "baseUrl": "./",
         "moduleResolution": "node",
         "paths": {
-            "@/*": ["src/*"]
+            "@/*": [
+                "src/*"
+            ]
         },
         "resolveJsonModule": true,
+        "jsx": "preserve",
         "allowSyntheticDefaultImports": true,
-        "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
+        "lib": [
+            "esnext",
+            "dom",
+            "dom.iterable",
+            "scripthost"
+        ]
     }
 }

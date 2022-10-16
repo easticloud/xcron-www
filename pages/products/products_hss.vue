@@ -37,7 +37,7 @@ export default {
             pmBanner: {
                 title: "企业主机安全",
                 desc: "企业主机安全（Host Security Service）是服务器贴身安全管家，通过资产管理、漏洞管理、基线检查、入侵检测、程序运行认证、文件完整性校验，安全运营、网页防篡改等功能，帮助企业更方便地管理主机安全风险，实时发现黑客入侵行为，以及满足等保合规要求。",
-                img: "/images/products/productsHSS/b1.jpg",
+                img: "/images/products/products_hss/b1.jpg",
             },
             // 了解企业主机安全
             pAboutBCSTil: "了解企业主机安全",
@@ -71,7 +71,7 @@ export default {
                         children: {
                             title: "等保测评要求",
                             titletag: "《网络安全法》第二十一条：国家实行网络安全等级保护制度。网络安全等级保护制度中对主机的入侵防范，恶意代码防范，漏洞扫描，都有明确要求。\n等保备案需要有企业主机安全的购买和使用记录，等保测评时需要测试企业的主机安全防护能力是否满足要求。",
-                            src: "/images/products/productsHSS/s1.svg",
+                            src: "/images/products/products_hss/s1.svg",
                             tag: [
                                 {
                                     tagTil: "· 满足入侵防范条款",
@@ -89,7 +89,7 @@ export default {
                         children: {
                             title: "统一安全管理",
                             titletag: "提供统一的主机安全管理功能，帮助用户更方便地查看与处置云主机的安全事件，以及配置下发安全策，降低安全风险与管理运营成本。",
-                            src: "/images/products/productsHSS/s2.svg",
+                            src: "/images/products/products_hss/s2.svg",
                             tag: [
                                 {
                                     tagTil: "· 跨云部署，统一管理",
@@ -111,7 +111,7 @@ export default {
                         children: {
                             title: "主动风险预防及防御",
                             titletag: "通过清点主机安全资产，管理主机漏洞与不安全配置，预防安全风险；通过网络、应用、文件主动防护引擎主动防御安全风险。",
-                            src: "/images/products/productsHSS/s3.svg",
+                            src: "/images/products/products_hss/s3.svg",
                             tag: [
                                 {
                                     tagTil: "· 安全风险预防",
@@ -137,7 +137,7 @@ export default {
                         children: {
                             title: "黑客入侵检测与响应",
                             titletag: "提供主机全攻击路径检测能力，能够实时、准确地感黑客知入侵事件，并提供入侵事件的响应手段，对业务系统“零”影响，有效应对APT攻击等高级威胁。",
-                            src: "/images/products/productsHSS/s4.svg",
+                            src: "/images/products/products_hss/s4.svg",
                             tag: [
                                 {
                                     tagTil: "· 勒索、挖矿程序查杀",
@@ -162,7 +162,7 @@ export default {
             pmSceneUseS: {
                 imgR: "imgR",
                 title: "勒索病毒防治",
-                imgSrc: "/images/products/productsHSS/m1.png",
+                imgSrc: "/images/products/products_hss/m1.png",
                 titletag: "防勒索病毒是一个长期而持久的过程，企业主机安全 HSS升级2.0版本后，通过事前（安全体检与加固）、事中（主动防御）、事后（备份恢复）三部曲，为您防御勒索病毒的入侵，营造主机资产安全运行环境。",
                 list: [
                     {
@@ -181,7 +181,7 @@ export default {
             },
             pmSceneUseS01: {
                 title: "应用防护",
-                imgSrc: "/images/products/productsHSS/m2.png",
+                imgSrc: "/images/products/products_hss/m2.png",
                 titletag: "应用防护功能旨在为运行时的应用提供安全防御。您无需修改应用程序文件，只需将探针注入到应用程序，即可为应用提供强大的安全防护能力。",
                 list: [
                     {

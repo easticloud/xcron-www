@@ -32,7 +32,7 @@ export default {
             pmBanner: {
                 title: "全站加速",
                 desc: "全站加速(Whole Site Acceleration)是一种融合了动态和静态加速的网站加速解决方案。用户请求资源时，静态内容从边缘节点就近获取，动态内容通过动态加速技术智能选择最佳路由回源获取。CDN全站加速能有效提升动态页面的加载速度，避开网络拥堵路由，提高访问成功率，实现网站整体加速与实时优化",
-                img: "/images/products/productsWSA/b1.jpg",
+                img: "/images/products/products_wsa/b1.jpg",
             },
             // 产品优势
             pmDotConTil: "产品优势", //标题
@@ -40,29 +40,29 @@ export default {
                 {
                     title: "节点丰富",
                     desc: "中国大陆2000+加速节点，中国大陆境外800+加速节点，全网带宽输出能力不低于150Tbps",
-                    img: "/images/products/productsWSA/01.svg",
+                    img: "/images/products/products_wsa/01.svg",
                 },
                 {
                     title: "智能加速",
                     desc: "全球更加精准的IP库，具有不断进化的能力，调度精准率最高99.99%；大数据实时反馈服务质量，动态调整用户的节点",
-                    img: "/images/products/productsWSA/02.svg",
+                    img: "/images/products/products_wsa/02.svg",
                 },
                 {
                     title: "操作简单",
                     desc: "接入方式简单快速，提供自助化的域名管理，并且支持多种可定制配置项，方便客户进行统计分析、日志管理、自定义缓存策略等操作",
-                    img: "/images/products/productsWSA/03.svg",
+                    img: "/images/products/products_wsa/03.svg",
                 },
                 {
                     title: "安全防护",
                     desc: "中立、安全、可靠的云加速服务。支持全网HTTPS安全传输，网站防盗链等高级安全控制功能",
-                    img: "/images/products/productsWSA/04.svg",
+                    img: "/images/products/products_wsa/04.svg",
                 },
             ],
             // 应用场景
             pmSceneUseSTil: "应用场景",
             pmSceneUseS: {
                 title: "全站加速",
-                imgSrc: "/images/products/productsWSA/s1.svg",
+                imgSrc: "/images/products/products_wsa/s1.svg",
                 titletag:
                     "适用于各行业动静态内容混合，含较多动态资源请求（如asp、jsp、php等格式的文件）的网站。\n通过智能网络路由及加速技术，以及CDN优质的全线路、跨区域覆盖网络，提升客户动静态混合、纯动态站点/APP、内容上传、API调用等场景下网络传输的性能、稳定性和访问体验",
                 list: [

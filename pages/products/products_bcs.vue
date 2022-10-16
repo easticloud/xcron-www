@@ -42,7 +42,7 @@ export default {
             pmBanner: {
                 title: "区块链服务",
                 desc: "区块链是构建信任的基石，是实现信用传递，价值传递的可信网络。区块链聚焦构建安全、可靠的区块链基础设施，让企业、政府快速、高效的搭建区块链网络及行业应用，实现资金流、物流、信息流的可信快速流动，高效可信协同，助力降低协作成本，提升效率。",
-                img: "/images/products/productsBCS/b1.jpg",
+                img: "/images/products/products_bcs/b1.jpg",
             },
             // 了解区块链服务
             pAboutBCSTil: "了解区块链服务",
@@ -106,32 +106,32 @@ export default {
                 {
                     title: "场景丰富",
                     desc: "提供安全计算、可信数据共享、分布式身份管理等服务，提升多方可信协作效率。",
-                    img: "/images/products/productsBCS/01.svg",
+                    img: "/images/products/products_bcs/01.svg",
                 },
                 {
                     title: "开放共赢",
                     desc: "专注于区块链底层技术和平台服务能力搭建，和各行业合作伙伴携手合作，共同推进区块链场景落地，帮助企业实现商业成功。",
-                    img: "/images/products/productsBCS/02.svg",
+                    img: "/images/products/products_bcs/02.svg",
                 },
                 {
                     title: "安全可靠",
                     desc: "提供自主研发的区块链平台，在共识算法、同态加密、零知识证明、高速网络连接、海量存储等方面具有自主知识产权的专利和技术积累。",
-                    img: "/images/products/productsBCS/03.svg",
+                    img: "/images/products/products_bcs/03.svg",
                 },
                 {
                     title: "高效灵活",
                     desc: "10万级TPS性能和10000+的联盟节点网络，混合云、边缘云等部署管理能力，充分满足差异化组网诉求等",
-                    img: "/images/products/productsBCS/04.svg",
+                    img: "/images/products/products_bcs/04.svg",
                 },
                 {
                     title: "简单易用",
                     desc: "帮助企业实现自动化配置、部署区块链应用，并提供区块链全生命周期管理，让您简单使用区块链系统，专注于上层应用的创新和开发",
-                    img: "/images/products/productsBCS/05.svg",
+                    img: "/images/products/products_bcs/05.svg",
                 },
                 {
                     title: "云链结合",
                     desc: "提供各种区块链需要的无限可扩展的资源和丰富多样的云计算产品、定制化的各行业解决方案，可以给企业带来更大的便利和价值",
-                    img: "/images/products/productsBCS/06.svg",
+                    img: "/images/products/products_bcs/06.svg",
                 },
             ],
             // 权威认可
@@ -141,22 +141,22 @@ export default {
                 {
                     title: "通过可信区块链双项测评",
                     desc: "2021年12月通过中国通信院第六批可信区块链功能专项、性能专项两项测评，同事时性能评测局第一位，获得权威认可。",
-                    img: "/images/products/productsBCS/01.png",
+                    img: "/images/products/products_bcs/01.png",
                 },
                 {
                     title: "可信云最佳实践奖",
                     desc: "凭借业界领先的区块链技术，作为第一个应用区块链技术解决政务数据共享难题的厂商，得到权威机构的高度认可。",
-                    img: "/images/products/productsBCS/01.png",
+                    img: "/images/products/products_bcs/01.png",
                 },
                 {
                     title: "十佳区块链技术服务商",
                     desc: "在第二届全球供应链数字经济峰会上，荣获区块链应用分会委员会高度认可，并颁发荣誉证书。",
-                    img: "/images/products/productsBCS/02.png",
+                    img: "/images/products/products_bcs/02.png",
                 },
                 {
                     title: "2021区块链技术领军企业",
                     desc: "中国西部数字经济博览会暨第二届中国西安区块链产业发展论坛中，荣获2021区块链技术应用领军企业荣誉。",
-                    img: "/images/products/productsBCS/03.png",
+                    img: "/images/products/products_bcs/03.png",
                 },
             ],
         }
