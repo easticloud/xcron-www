@@ -26,9 +26,9 @@
             .w(590px);
             cursor: default;
             .pr;
-            height: 195px;
+            height: auto;
             .clip;
-            padding: 0 35px 50px 115px;
+            padding: 0 38px 50px 85px;
             flex-direction: column;
             gap: 20px;
             box-sizing: border-box;
@@ -36,10 +36,11 @@
             .u-pic {
                 .pa;
                 left: 0;
-                top: 12px;
-                .size(75px);
+                top: 0;
+                .size(60px);
                 background-repeat: no-repeat;
-                background-size: 75px;
+                background-size: cover;
+                background-position: center;
             }
 
             .u-title {
@@ -47,6 +48,7 @@
                 width: 100%;
                 .fz(18px, 20px);
                 font-weight: 500;
+                padding-bottom: 14px;
             }
 
             .u-desc {
@@ -71,30 +73,22 @@
         .m-item {
             width: 590px;
             height: auto;
-            padding: 0 38px 0 85px;
-            margin-bottom: 50px;
 
-            .u-pic {
-                .size(60px);
-                background-size: cover;
-                top: 50%;
-                transform: translateY(-50%);
-
-            }
-
-            // &::after {
-            //     content: "";
-            //     .db;
-            //     .pa;
-            //     .lt(0, 7px);
-            //     .size(15px);
-            //     background-color: #CF0010;
-            //     .r(30px);
-            //     .clip;
-            // }
         }
+
+        // &::after {
+        //     content: "";
+        //     .db;
+        //     .pa;
+        //     .lt(0, 7px);
+        //     .size(15px);
+        //     background-color: #CF0010;
+        //     .r(30px);
+        //     .clip;
+        // }
     }
 }
+
 
 //权威认可auth
 .bcsAuth {
@@ -104,12 +98,12 @@
 
     .m-tabs {
         .m-item {
-            .size(590px, 200px);
+            .size(590px, auto);
             .r(5px);
             box-sizing: border-box;
             background: #FFFFFF;
             box-shadow: 0px 0px 5px 1px #E6E6E6;
-            padding: 30px 30px 0 201px;
+            padding: 30px 30px 30px 201px;
             .mb(25px);
 
             .u-title {
@@ -119,9 +113,8 @@
             .u-pic {
                 .size(145px);
                 left: 30px;
-                // top: calc(-145px / 2);
-                top: 40%;
-                .mt(calc(-145px / 2));
+                top: 50%;
+                transform: translateY(-50%);
                 background-size: cover;
 
             }

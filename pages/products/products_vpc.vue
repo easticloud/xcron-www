@@ -189,12 +189,4 @@ export default {
 
 <style lang="less">
 @import "~@/assets/css/products.less";
-
-.bcsAuth {
-    background-color: #fff;
-
-    .m-tabs .m-item {
-        height: 270px;
-    }
-}
 </style>

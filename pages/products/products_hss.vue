@@ -226,4 +226,12 @@ export default {
         }
     }
 }
+
+.m-p-aboutBCS {
+    .h(403px);
+
+    .m-bcs {
+        gap: 35px;
+    }
+}
 </style>

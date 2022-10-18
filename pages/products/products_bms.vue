@@ -198,7 +198,7 @@ export default {
     height: 427px;
 }
 
-.bcsAuth .m-tabs .m-item {
-    height: 240px;
+.m-p-aboutBCS .m-bcs {
+    gap: 90px;
 }
 </style>

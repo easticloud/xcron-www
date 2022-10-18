@@ -2,7 +2,7 @@
     <div class="m-p-pInfo">
         <div class="wp">
             <h2>{{pmPInfoTil}}</h2>
-            <div class="infoImg"><img :src=pmPInfoImg alt=""></div>
+            <div class="infoImg" :style="`backgroundImage: url(${pmPInfoImg})`"></div>
         </div>
     </div>
 </template>

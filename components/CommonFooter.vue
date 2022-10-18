@@ -26,7 +26,9 @@
             <div class="m-item">
                 <span class="u-title">联系我们</span>
                 <span>咨询热线：</span>
-                <div class="u-phone">025-86702988</div>
+                <div class="u-phone" style="background:url('/images/index/footer/phone.png') no-repeat left center">
+                    025-86702988
+                </div>
                 <span>邮箱：SDSF@025108.com </span>
                 <span>商务合作：15335159292（胡经理）</span>
                 <span>渠道合作：15335159298（王经理）</span>
@@ -38,7 +40,8 @@
             </div>
         </div>
         <div class="m-copyright">
-            <span class="u-txt">© 2022 江苏实点实分网络科技有限公司 丨 <a href="https://beian.miit.gov.cn/" target="_blank">苏ICP备15031332号</a></span>
+            <span class="u-txt">© 2022 江苏实点实分网络科技有限公司 丨 <a href="https://beian.miit.gov.cn/"
+                    target="_blank">苏ICP备15031332号</a></span>
         </div>
     </div>
 </template>

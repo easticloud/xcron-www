@@ -4,12 +4,14 @@
             <h2>场景使用</h2>
             <div class="m-Scontent">
                 <div class="m-item">
-                    <span class="u-img" :style="`backgroundImage: url(${sceneUse.src})`"></span>
-                    <span class="u-title">{{ sceneUse.title }}</span>
-                    <div class="u-tags">
-                        <template v-if="sceneUse.tag.length">
-                            <span class="u-tag" v-for="(child, i) in sceneUse.tag" :key="i">{{ child }}</span>
-                        </template>
+                    <span class="u-img"><img :src="sceneUse.src" /></span>
+                    <div class="u-con">
+                        <span class="u-title">{{ sceneUse.title }}</span>
+                        <div class="u-tags">
+                            <template v-if="sceneUse.tag.length">
+                                <span class="u-tag" v-for="(child, i) in sceneUse.tag" :key="i">{{ child }}</span>
+                            </template>
+                        </div>
                     </div>
                 </div>
                 <!-- <img class="u-img" v-if="children.src" :src="children.src" /> -->

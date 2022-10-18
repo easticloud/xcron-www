@@ -1,5 +1,5 @@
 <template>
-    <div class="m-index-menu" v-if="type">
+    <div class="m-index-menu" v-if="type" @mouseleave.stop="type =''">
         <div class="wp">
             <template v-if="type == 'production'">
                 <div class="m-list-production">

@@ -16,8 +16,8 @@
 
     .m-tabs {
         display: flex;
-        justify-content: center; // 内容自适应：上下居中
-        align-items: center; // 子项对齐方式：左右居中
+        justify-content: center; // 内容自适应：居中
+        align-items: center; // 子项对齐方式：上下居中
         .w(100%);
         padding: 0 20px;
         box-sizing: border-box;
@@ -71,29 +71,25 @@
         .r(5px);
         background-color: #fff;
         overflow: hidden;
-        .pr;
         box-sizing: border-box;
         padding: 50px;
 
-        .m-item {
-            min-height: 188px;
-        }
-
         .u-img {
-            .w(446px);
-            min-height: 225px;
-            .pa;
-            .lt(74px, 50px);
-            bottom: 50px;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: contain;
+            .w(500px);
+            padding-right: 85px;
+            .flex;
+            align-items: center;
+
+            img {
+                .dbi;
+                max-width: inherit;
+                .size(500px, auto);
+            }
         }
 
         .m-item {
-            .pl(550px);
             .fz(18px, 1.8);
-            .db;
+            .flex;
 
             .u-bgimg {
                 .h(280px);
@@ -130,11 +126,22 @@
                     .db;
                     .fz(16px, 35px);
                     font-weight: 300;
+
+                    b {
+                        .pt(5px);
+                        .db;
+                        color: #3c3c3c;
+                        font-weight: bold;
+                        line-height: 25px;
+                    }
                 }
             }
         }
     }
 }
+
+// 
+
 
 // 裸金属
 .m-Bms-scene {
@@ -147,7 +154,7 @@
                     color: #848484;
                     .fz(16px, 1.8);
                     .db;
-                    margin-top:8px;
+                    margin-top: 8px;
                     font-weight: 300;
                 }
             }
@@ -155,14 +162,6 @@
             .u-tags {
                 .u-tag {
                     .pb(15px);
-
-                    b {
-                        .pt(5px);
-                        .db;
-                        color: #3c3c3c;
-                        font-weight: bold;
-                        line-height: 25px;
-                    }
                 }
             }
         }

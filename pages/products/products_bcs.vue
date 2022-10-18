@@ -79,7 +79,7 @@ export default {
                     img: "",
                 },
                 {
-                    title: "区块链BCS(Hyperledger Fabric增强版)",
+                    title: "区块链BCS \n(Hyperledger Fabric增强版)",
                     desc: "基于软硬协同、自主创新、安全可控技术，简单易用， 通过Kubernetes管理，数分钟内即可完成区块链网络的构建。",
                     img: "",
                 },

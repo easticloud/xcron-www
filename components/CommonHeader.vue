@@ -4,14 +4,9 @@
             <nuxt-link to="/"><img src="../assets/img/logo.svg" alt="Xcron" /></nuxt-link>
             <div class="m-box">
                 <nuxt-link class="u-link" target="_blank" v-for="(item, i) in list" :key="i" :to="item.href">
-                    <span
-                        class="u-txt"
-                        :class="activeIndex == i ? 'active' : ''"
-                        @click="activeHandle(i)"
-                        @mouseover="change(item.key)"
-                    >
-                        {{ item.label }}</span
-                    >
+                    <span class="u-txt" :class="activeIndex == i ? 'active' : ''" @click="activeHandle(i)"
+                        @mouseover="change(item.key)">
+                        {{ item.label }}</span>
                 </nuxt-link>
             </div>
         </div>
@@ -39,7 +34,9 @@ export default {
     methods: {
         change(key) {
             this.type = key == "production" || key == "solution" ? key : "";
+            this.isshow = "display:block";
         },
+
         activeHandle(index) {
             //把我们自定义的下标赋值
             this.activeIndex = index;

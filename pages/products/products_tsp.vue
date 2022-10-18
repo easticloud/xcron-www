@@ -114,9 +114,7 @@ export default {
 .m-imgCon {
     background-color: #fff;
 
-    .m-tabs .m-item {
-        height: 310px;
-    }
+
 }
 
 .ecs-dotcon {

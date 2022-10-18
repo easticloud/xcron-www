@@ -10,29 +10,35 @@
             </div>
             <div class="m-Scontent" v-if="pmScene.isShow">
                 <div class="m-item">
-                    <span class="u-img" :style="`backgroundImage: url(${children.src})`"></span>
-                    <span class="u-title">{{ children.title }}</span>
-                    <div class="u-tags">
-                        <template v-if="children.tag.length">
-                            <p class="u-tag" v-for="(child, i) in children.tag" :key="i">{{ child }}</p>
-                        </template>
+                    <span class="u-img">
+                        <img :src="children.src" />
+                    </span>
+                    <div class="u-con">
+                        <span class="u-title">{{ children.title }}</span>
+                        <div class="u-tags">
+                            <template v-if="children.tag.length">
+                                <p class="u-tag" v-for="(child, i) in children.tag" :key="i">{{ child }}</p>
+                            </template>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="m-Scontent" v-else>
                 <div class="m-item">
-                    <span class="u-img" :style="`backgroundImage: url(${children.src})`"></span>
-                    <p class="u-title">
-                        {{ children.title }}<span class="u-titletag">{{ children.titletag }}</span>
-                    </p>
+                    <span class="u-img"><img :src="children.src" /></span>
+                    <div class="u-con">
+                        <p class="u-title">
+                            {{ children.title }}<span class="u-titletag">{{ children.titletag }}</span>
+                        </p>
 
-                    <div class="u-tags">
-                        <template v-if="children.tag.length">
-                            <p class="u-tag" v-for="(child, i) in children.tag" :key="i">
-                                <b>{{ child.tagTil }}</b>
-                                {{ child.tagCon }}
-                            </p>
-                        </template>
+                        <div class="u-tags">
+                            <template v-if="children.tag.length">
+                                <p class="u-tag" v-for="(child, i) in children.tag" :key="i">
+                                    <b>{{ child.tagTil }}</b>
+                                    {{ child.tagCon }}
+                                </p>
+                            </template>
+                        </div>
                     </div>
                 </div>
             </div>

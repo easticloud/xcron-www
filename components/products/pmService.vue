@@ -1,10 +1,10 @@
 <template>
     <div class="m-p-service">
         <div class="wp">
-            <p><span><img src="../../assets/img/img.jpeg" alt="" /></span>7*24小时服务</p>
-            <p><span><img src="../../assets/img/img.jpeg" alt="" /></span>免费备案</p>
-            <p><span><img src="../../assets/img/img.jpeg" alt="" /></span>无忧退订</p>
-            <p><span><img src="../../assets/img/img.jpeg" alt="" /></span>全周期专业服务</p>
+            <p><span><img src="@/static/images/footer/s01.svg" alt="7*24小时服务" /></span>7*24小时服务</p>
+            <p><span><img src="@/static/images/footer/s02.svg" alt="免费备案" /></span>免费备案</p>
+            <p><span><img src="@/static/images/footer/s04.svg" alt="无忧退订" /></span>无忧退订</p>
+            <p><span><img src="@/static/images/footer/s03.svg" alt="全周期专业服务" /></span>全周期专业服务</p>
         </div>
     </div>
 </template>

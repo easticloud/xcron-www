@@ -16,7 +16,7 @@
 
         <!-- 4、解决方案 -->
         <index-solution></index-solution>
-        
+
         <!-- 5、客户 -->
         <index-partner></index-partner>
 
