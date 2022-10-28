@@ -3,8 +3,7 @@ export const state = () => ({
 });
 
 export const mutations = {
-    fn(state,value) {
+    fn(state, value) {
         state.key = value;
     },
 };
-

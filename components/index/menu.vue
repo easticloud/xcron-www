@@ -1,12 +1,18 @@
 <template>
-    <div class="m-index-menu" v-if="type" @mouseleave.stop="type =''">
+    <div class="m-index-menu" v-if="type">
         <div class="wp">
             <template v-if="type == 'production'">
                 <div class="m-list-production">
                     <a class="u-more" href="" target="_blank">查看全部产品 ></a>
-                    <span class="u-list" v-for="(item, i) in production" :key="i" :class="{ active: index == i }"
-                        @click="change(i)">
-                        {{ item.title }}</span>
+                    <span
+                        class="u-list"
+                        v-for="(item, i) in production"
+                        :key="i"
+                        :class="{ active: index == i }"
+                        @click="change(i)"
+                    >
+                        {{ item.title }}</span
+                    >
                 </div>
                 <div class="m-search">
                     <div class="u-search">
@@ -200,7 +206,8 @@ export default {
     },
     computed: {
         children() {
-            return this.production[this.index].children;
+            const list = this.production;
+            return this.search ? list.filter((item) => item.title.includes(this.search)) : list[this.index].children;
         },
     },
 
