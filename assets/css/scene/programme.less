@@ -1,0 +1,84 @@
+.m-scene-programme {
+    .pt(50px);
+    .m-programme-content {
+        .flex;
+        .r(5px);
+        .clip;
+        background-color: #fff;
+        .u-img-box {
+            .flex;
+            .w(600px);
+            flex-shrink: 0;
+            align-items: center;
+            justify-content: center;
+            background-color: #f2f2f2;
+            .u-img {
+                flex: 1;
+            }
+        }
+        .m-programme-box {
+            padding: 50px;
+            .m-box {
+                .flex;
+                padding: 24px 0;
+                flex-direction: column;
+                gap: 10px;
+                border-bottom: 1px solid #e6e6e6;
+                .u-title {
+                    .fz(24px,33px);
+                    .mb(10px);
+                    font-weight: 500;
+                    &.u-scene {
+                        .mb(0);
+                    }
+                }
+                .u-desc {
+                    .fz(18px,30px);
+                    .color(#848484);
+                    font-weight: 400;
+                }
+                .m-list {
+                    .flex;
+                    flex-direction: column;
+                    gap: 12px;
+                    .u-item {
+                        .flex;
+                        gap: 12px;
+                        .u-img {
+                            .size(20px);
+                            .mt(3px);
+                        }
+                        .u-txt {
+                            .flex;
+                            gap: 3px;
+                            flex-direction: column;
+                            .u-label {
+                                .fz(18px,30px);
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+                .m-product {
+                    .flex;
+                    gap: 20px;
+                    .u-product {
+                        .flex;
+                        gap: 8px;
+                        align-items: center;
+                        .u-img {
+                            .size(20px);
+                        }
+                    }
+                }
+                &:first-child {
+                    .pt(0);
+                }
+                &:last-child {
+                    border: 0;
+                    .pb(0);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.m-scene-header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    .m-header-content {
+        .flex;
+        .h(450px);
+        justify-content: center;
+        flex-direction: column;
+
+        h1 {
+            .fz(52px,73px);
+            .mb(17px);
+        }
+        .u-desc {
+            .fz(21px,30px);
+            .mb(52px);
+            max-width: 720px;
+        }
+        .u-button {
+            .fz(24px,65px);
+            .size(200px,65px);
+            .r(5px);
+            .x;
+            background-color: #cf0010;
+            color: #fff;
+            &:hover {
+                filter: brightness(110%);
+            }
+        }
+    }
+    &.u-hot {
+        .h(550px);
+        background-image: url(../../../static/images/scene/banner/hot.jpg);
+        h1,
+        .u-desc {
+            .color(#F8F8F8);
+        }
+    }
+    &.u-enterprise {
+        background-image: url(../../../static/images/scene/banner/enterprise.jpg);
+    }
+    &.u-industry {
+        background-image: url(../../../static/images/scene/banner/industry.jpg);
+    }
+    &.u-common {
+        background-image: url(../../../static/images/scene/banner/common.jpg);
+    }
+}

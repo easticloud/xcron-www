@@ -1,0 +1,24 @@
+.m-scene-tabs {
+    background-color: #848484;
+    .size(100%,100px);
+    .m-tabs-content {
+        .flex;
+        .u-item {
+            flex: 1;
+            box-sizing: border-box;
+            .fz(24px,100px);
+            border: 1px solid transparent;
+            .x;
+            .pointer;
+            .color(#fff);
+            &:hover {
+                background-color: #3c3c3c;
+                border-right: 1px solid #fff;
+                border-left: 1px solid #fff;
+            }
+            &.active {
+                background-color: #3c3c3c;
+            }
+        }
+    }
+}

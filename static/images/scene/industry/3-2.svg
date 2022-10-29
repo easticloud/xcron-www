@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>接入成本高</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="SDSF-行业场景" transform="translate(-360.000000, -825.000000)" fill-rule="nonzero">
+            <g id="编组-8" transform="translate(360.000000, 725.000000)">
+                <g id="接入成本高" transform="translate(0.000000, 100.000000)">
+                    <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="60" height="60"></rect>
+                    <g id="折线图2" transform="translate(3.000000, 4.000000)">
+                        <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="53" height="53"></rect>
+                        <path d="M11.0416666,41.9583334 L11.0416666,8.83333335 L6.625,8.83333335 L6.625,44.1666666 C6.625,45.3862955 7.61370452,46.375 8.83333335,46.375 L44.1666666,46.375 L44.1666666,41.9583334 L11.0416666,41.9583334 Z" id="路径" fill="#3C3C3C"></path>
+                        <path d="M41.9583334,11.0416666 C41.9583334,24.4572916 31.0822917,35.3333334 17.6666666,35.3333334 L17.6666666,30.9166666 C28.6431875,30.9166666 37.5416666,22.0181875 37.5416666,11.0416666 L41.9583334,11.0416666 L41.9583334,11.0416666 Z" id="路径" fill="#CF0010"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

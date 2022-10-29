@@ -1,0 +1,56 @@
+.m-scene-service {
+    .size(385px,340px);
+    .r(5px);
+    .clip;
+    .flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    box-sizing: border-box;
+
+    .m-box {
+        .flex;
+        .fz(18px,30px);
+        gap: 10px;
+        padding: 50px 30px 0 30px;
+        font-weight: 400;
+        flex-direction: column;
+        .u-title {
+            .fz(24px,33px);
+            font-weight: 500;
+        }
+        .u-desc {
+            .color(#848484);
+        }
+        .m-price {
+            .flex;
+            .color(#CF0010);
+            .mb(10px);
+            gap: 3px;
+            align-items: baseline;
+            .u-number {
+                .fz(36px,50px);
+                font-weight: 500;
+            }
+        }
+        .u-tag .u-txt {
+            .dbi;
+            .fz(18px,35px);
+            .r(2px);
+            .color(#B2B2B2);
+            padding: 0 12px;
+            border: 1px solid #b2b2b2;
+        }
+    }
+    .u-button {
+        .db;
+        .size(100%,60px);
+        .fz(21px,60px);
+        .color(#fff);
+        .x;
+        background: linear-gradient(298deg, #fd8e8c 0%, #cf0010 100%);
+        &:hover {
+            filter: brightness(110%);
+        }
+    }
+}

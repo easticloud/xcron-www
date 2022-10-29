@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>智能AI</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.811765 0 0 0 0 0.000000 0 0 0 0 0.062745 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="SDSF-通用场景" transform="translate(-1011.000000, -1449.000000)">
+            <g id="域名注册备份-3" transform="translate(360.000000, 725.000000)">
+                <g id="智能AI" transform="translate(651.000000, 719.000000)" filter="url(#filter-1)">
+                    <g transform="translate(0.000000, 5.000000)">
+                        <rect id="矩形" fill="#000000" fill-rule="nonzero" opacity="0" x="0" y="0" width="20" height="20"></rect>
+                        <path d="M4.34666667,18 L15.6533333,18 C16.9333333,18 18,16.9333333 18,15.6533333 L18,4.34666667 C18,3.06666667 16.9333333,2 15.6533333,2 L4.34666667,2 C3.06666667,2 2,3.06666667 2,4.34666667 L2,15.6533333 C2,16.9333333 3.024,18 4.34666667,18 Z M3,4.29230769 C3,3.60307692 3.56,3 4.29230769,3 L15.7076923,3 C16.3969231,3 17,3.56 17,4.29230769 L17,15.7076923 C17,16.3969231 16.44,17 15.7076923,17 L4.29230769,17 C3.60307692,17 3,16.44 3,15.7076923 L3,4.29230769 Z" id="形状" stroke="#979797" stroke-width="0.3" fill="#707070" fill-rule="nonzero"></path>
+                        <path d="M12.75,6.53125 L13.53125,6.53125 L13.53125,13.46875 L12.75,13.46875 L12.75,6.53125 Z M7.5,11.25 L10.28125,11.25 L11.125,13.46875 L11.875,13.46875 L9.21875,6.53125 L8.5625,6.53125 L5.84375,13.46875 L6.625,13.46875 L7.5,11.25 Z M8.90625,7.6875 L9.96875,10.46875 L7.8125,10.46875 L8.90625,7.6875 Z" id="形状" stroke="#979797" stroke-width="0.3" fill="#707070" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
