@@ -18,10 +18,10 @@
     </div>
 </template>
 <script>
-import Header from "@/components/scene/header";
-import Tabs from "@/components/scene/tabs";
-import Programme from "@/components/scene/programme";
-import Recommend from "@/components/scene/recommend";
+import Header from "@/components/scenes/header";
+import Tabs from "@/components/scenes/tabs";
+import Programme from "@/components/scenes/programme";
+import Recommend from "@/components/scenes/recommend";
 export default {
     components: { Header, Tabs, Programme, Recommend },
     data() {

@@ -34,8 +34,8 @@
     </div>
 </template>
 <script>
-import Header from "@/components/scene/header";
-import Service from "@/components/scene/service";
+import Header from "@/components/scenes/header";
+import Service from "@/components/scenes/service";
 export default {
     components: { Header, Service },
     data() {
