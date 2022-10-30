@@ -8,7 +8,7 @@ export default {
         },
         meta: [
             { charset: "utf-8" },
-            { name: "viewport", content: "width=device-width, initial-scale=1" },
+            // { name: "viewport", content: "width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" },
             { hid: "description", name: "description", content: description },
             { name: "format-detection", content: "telephone=no" },
         ],
@@ -16,8 +16,8 @@ export default {
     },
 
     // Global CSS: https://go.nuxtjs.dev/config-css
-    css: ["element-ui/lib/theme-chalk/index.css", "csslab/reset.css"],
-    buildModules: ["@nuxtjs/style-resources","@nuxtjs/svg"],
+    css: ["element-ui/lib/theme-chalk/index.css", "csslab/reset.css", './assets/css/app.less'],
+    buildModules: ["@nuxtjs/style-resources", "@nuxtjs/svg"],
     styleResources: {
         less: ["csslab/base.less", "./assets/css/var.less"],
     },
