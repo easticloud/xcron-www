@@ -68,7 +68,7 @@ export default {
                         },
                         {
                             title: "AI在线服务",
-                            desc: "适用于图像识别、自然语言处理等服务",
+                            desc: "适用于图像识别、自然语言处理等...",
                             link: "/products/products_ais",
                         },
                     ],
