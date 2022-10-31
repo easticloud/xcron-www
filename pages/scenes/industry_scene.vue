@@ -2,7 +2,7 @@
     <div class="p-scene">
         <!-- 公共头部 -->
         <common-header></common-header>
-        <!-- 企业场景 -->
+        <!-- 行业场景 -->
         <div class="m-industry-scene">
             <Header :data="header" />
             <Tabs :data="tabs" :index="tabsIndex" @change="changeTab" />

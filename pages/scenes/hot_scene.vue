@@ -2,7 +2,7 @@
     <div class="p-scene">
         <!-- 公共头部 -->
         <common-header></common-header>
-        <!-- 企业场景 -->
+        <!-- 热门场景 -->
         <div class="m-hot-scene">
             <Header :data="header" />
             <div class="wp m-hot-content">
