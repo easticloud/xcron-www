@@ -121,7 +121,7 @@ export default {
                 {
                     trend: {
                         title: "行业趋势",
-                        img: require("/static/images/programme/other/health.png"),
+                        img: require("/static/images/programme/other/health.jpg"),
                         list: [
                             {
                                 title: "新技术加速行业进入精准医疗时代",

@@ -5,7 +5,6 @@
         .u-desc {
             font-weight: 300;
         }
-
     }
 
     .m-tabs {
@@ -84,6 +83,17 @@
             .u-title {
                 .fz(24px);
                 .mb(10px);
+                .pointer;
+                .color(#3c3c3c);
+                position: relative;
+                &:hover::after {
+                    content: "";
+                    .pa;
+                    .lb(0);
+                    .size(100%,2px);
+                    .tm(0.6);
+                    background-color: #3c3c3c;
+                }
             }
 
             .u-desc {
@@ -128,6 +138,7 @@
                 .bold;
                 .size(50%, 140px);
                 .lh(140px);
+                color: #3c3c3c;
                 text-align: center;
                 letter-spacing: 2px;
                 box-sizing: border-box;

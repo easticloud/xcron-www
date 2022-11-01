@@ -67,17 +67,17 @@ export default {
                         desc: "将多年在ICT领域的技术积累开发给客户，致力于提供稳定可靠、安全可信、持续创新的云服务。",
                     },
                     {
-                        bgImg: require("/static/images/programme/cloud/2-1.svg"),
+                        bgImg: require("/static/images/programme/cloud/2-2.svg"),
                         title: "各行各业成熟实践经验",
                         desc: "我们具备互联网、制造、金融、农业等16大行业的实践经验，确保能切实为您的公司创造价值。",
                     },
                     {
-                        bgImg: require("/static/images/programme/cloud/2-1.svg"),
+                        bgImg: require("/static/images/programme/cloud/2-3.svg"),
                         title: "携手顶尖合作伙伴",
                         desc: "与用友、SAP、金蝶等业界顶尖合作伙伴一道，为您提供高质量多规格的云上ERP构建方案。",
                     },
                     {
-                        bgImg: require("/static/images/programme/cloud/2-1.svg"),
+                        bgImg: require("/static/images/programme/cloud/2-4.svg"),
                         title: "尊重数据主权",
                         desc: "拥有全球化合规治理经验以及业界最佳实践，为客户提供符合法律法规及业界标准要求的业务运行环境及服务。",
                     },
