@@ -1,10 +1,7 @@
 <template>
     <div class="p-products">
-        <!-- 公共头部 -->
-        <common-header></common-header>
-
-        <!-- 1、云数据仓库bannar -->
-        <products-pmBanner :pmBanner="pmBanner"></products-pmBanner>
+        <!-- 1、云数据仓库banner -->
+        <products-banner banner-key="cdw"></products-banner>
 
         <!-- 2、了解云数据仓库  -->
         <products-pAboutBCS :pAboutBCS="pAboutBCS" :pAboutBCSTil="pAboutBCSTil" :pAboutBCSClass="pAboutBCSClass">
@@ -20,31 +17,15 @@
 
         <!-- 5、应用场景  -->
         <products-pmScene :pmScene="pmScene"></products-pmScene>
-
-        <!-- 6、服务支持-->
-        <products-pmService></products-pmService>
-
-        <!-- 公共底部 -->
-        <common-footer></common-footer>
     </div>
 </template>
 
 <script>
-import pmDotCon from '../../components/products/pm-dotCon.vue';
-import pmBanner from '../../components/products/pmBanner.vue';
-import pAboutBCS from '../../components/products/pAboutBCS.vue';
-import pmImgCon from '../../components/products/pm-imgCon.vue';
-import pmScene from '../../components/products/pmScene.vue'
 export default {
     name: "products-CDW",
+    layout: "products",
     data() {
         return {
-            // 云数据仓库-banner
-            pmBanner: {
-                title: "云数据仓库",
-                desc: "新一代、全场景数据仓库，一站式分析，性能、容量无限扩展守护高价值数据、创享高价值分析，企业数字化转型坚实伙伴。",
-                img: "/images/products/products_cdw/b1.jpg",
-            },
             // 了解弹性云服务器
             pAboutBCSTil: "了解云数据仓库",
             pAboutBCSClass: "m-p-ECS",
@@ -120,7 +101,7 @@ export default {
                     img: "/images/products/products_cdw/zhongyuan.jpeg",
                 }
             ],
-            // 应用场景 
+            // 应用场景
             pmScene: {
                 products: 0,
                 til: "应用场景",
@@ -219,17 +200,9 @@ export default {
             },
         }
     },
-    components: {
-        pmBanner,
-        pmDotCon,
-        pAboutBCS,
-        pmImgCon,
-        pmScene
-    }
 };
 </script>
 
 <style lang="less">
 @import "~@/assets/css/products.less";
-
 </style>

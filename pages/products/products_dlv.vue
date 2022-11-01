@@ -1,10 +1,7 @@
 <template>
     <div class="p-products">
-        <!-- 公共头部 -->
-        <common-header></common-header>
-
-        <!-- 1、bannar -->
-        <products-pmBanner :pmBanner="pmBanner"></products-pmBanner>
+        <!-- 1、banner -->
+        <products-banner :data="pmBanner"></products-banner>
 
         <!-- 2、产品优势  -->
         <products-pmDotCon :pmDotConTil="pmDotConTil" :pmDotCon="pmDotCon"></products-pmDotCon>
@@ -14,21 +11,13 @@
 
         <!-- 4、功能描述  -->
         <products-pmDotCon :pmDotConTil="pmDotConTil01" :pmDotCon="pmDotCon01"></products-pmDotCon>
-
-        <!-- 5、服务支持-->
-        <products-pmService></products-pmService>
-
-        <!-- 公共底部 -->
-        <common-footer></common-footer>
     </div>
 </template>
 
 <script>
-import pmDotCon from '../../components/products/pm-dotCon.vue';
-import pmBanner from '../../components/products/pmBanner.vue';
-import pmScene from '../../components/products/pmScene.vue';
 export default {
     name: "products-DLV",
+    layout: 'products',
     data() {
         return {
             // 数据可视化-banner
@@ -61,7 +50,7 @@ export default {
                     img: "/images/products/products_dlv/08.svg",
                 },
             ],
-            // 应用场景 
+            // 应用场景
             pmScene: {
                 products: 0,
                 til: "应用场景",
@@ -132,11 +121,6 @@ export default {
             ],
         }
     },
-    components: {
-        pmBanner,
-        pmDotCon,
-        pmScene
-    }
 };
 </script>
 

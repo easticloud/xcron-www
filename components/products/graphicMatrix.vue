@@ -1,11 +1,14 @@
 <template>
-    <div class="pm-dotCon" :class="pmDotConClass">
+    <div class="pm-dotCon" :class="customClass">
         <div class="wp">
-            <h2>{{pmDotConTil}}</h2>
+            <h2>{{ data.title }}</h2>
             <div class="m-tabs">
-                <div class="m-item" v-for="(item, i) in newData" :key="i"
-                    :class="item.index % 2 == 0 ? 'pic-r' : 'pic-l'">
-                    <!-- item.index % 2 == 0 ? 'pic-r' : 'pic-l' -->
+                <div
+                    class="m-item"
+                    v-for="(item, i) in data.children"
+                    :key="i"
+                    :class="(i + 1) % 2 == 0 ? 'pic-r' : 'pic-l'"
+                >
                     <span class="u-pic" :style="`backgroundImage: url(${item.img})`"></span>
                     <div class="u-con">
                         <span class="u-title">
@@ -20,20 +23,24 @@
 </template>
 
 <script>
+import { matrix } from "@/assets/data/product.json";
 export default {
+    name: "graphicMatrix",
     props: {
-        pmDotCon: Array,
-        pmDotConTil: String,
-        pmDotConClass: String,
+        matrixKey: {
+            type: String,
+            default: "",
+        },
+        customClass: {
+            type: String,
+            default: "",
+        },
     },
     computed: {
-        newData() {
-            return this.pmDotCon.map((item, i) => {
-                item.index = i + 1;
-                return item;
-            })
-        }
-    }
+        data() {
+            return matrix[this.matrixKey] || {};
+        },
+    },
 };
 </script>
 

@@ -1,10 +1,7 @@
 <template>
     <div class="p-products">
-        <!-- 公共头部 -->
-        <common-header></common-header>
-
-        <!-- 1、bannar -->
-        <products-pmBanner :pmBanner="pmBanner"></products-pmBanner>
+        <!-- 1、banner -->
+        <products-banner banner-key="ais"></products-banner>
 
         <!-- 2、产品优势  -->
         <products-pmDotCon :pmDotConTil="pmDotConTil" :pmDotCon="pmDotCon" :pmDotConClass="pmDotConClass">
@@ -15,28 +12,15 @@
 
         <!-- 4、场景使用  -->
         <products-pmSceneUse></products-pmSceneUse>
-
-        <!-- 5、服务支持-->
-        <products-pmService></products-pmService>
-
-        <!-- 公共底部 -->
-        <common-footer></common-footer>
     </div>
 </template>
 
 <script>
-import pmBanner from '../../components/products/pmBanner.vue';
-import pmDotCon from '../../components/products/pm-dotCon.vue';
-import pmImgCon from '../../components/products/pm-imgCon.vue';
 export default {
     name: "products-AIS",
+    layout: "products",
     data() {
         return {
-            pmBanner: {
-                title: "AI在线服务",
-                desc: "AI 在线服务是面向AI在线inference服务的大规模分布式计算平台：提供海量计算节点，自动负载均衡，动态扩缩容；基于UCloud云生态构建，提供高可用性、高安全性和高功能性保障；按需收费，灵活便捷；适用于图像识别、自然语言处理等多个AI领域。",
-                img: "/images/products/products_ais/b1.jpg"
-            },
             // AI在线服务
             pmDotConTil: "产品优势",//标题
             pmDotConClass: "m-p-oSer",//复写样式
@@ -106,11 +90,6 @@ export default {
                 }
             ],
         }
-    },
-    components: {
-        pmBanner,
-        pmDotCon,
-        pmImgCon
     }
 };
 </script>

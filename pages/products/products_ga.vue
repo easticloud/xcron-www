@@ -1,31 +1,20 @@
 <template>
     <div class="p-products">
-        <!-- 公共头部 -->
-        <common-header></common-header>
-
-        <!-- 1、bannar -->
-        <products-pmBanner :pmBanner="pmBanner"></products-pmBanner>
+        <!-- 1、banner -->
+        <products-banner banner-key="ga"></products-banner>
 
         <!-- 2、产品优势  -->
         <products-pmDotCon :pmDotConTil="pmDotConTil" :pmDotCon="pmDotCon"></products-pmDotCon>
 
         <!-- 3、应用场景  -->
         <products-pmScene :pmScene="pmScene"></products-pmScene>
-
-        <!-- 4、服务支持-->
-        <products-pmService></products-pmService>
-
-        <!-- 公共底部 -->
-        <common-footer></common-footer>
     </div>
 </template>
 
 <script>
-import pmDotCon from '../../components/products/pm-dotCon.vue';
-import pmBanner from '../../components/products/pmBanner.vue';
-import pmScene from '../../components/products/pmScene.vue';
 export default {
     name: "products-GA",
+    layout: 'products',
     data() {
         return {
             // 全球加速-banner
@@ -58,7 +47,7 @@ export default {
                     img: "/images/products/products_ga/04.svg",
                 },
             ],
-            // 应用场景 
+            // 应用场景
             pmScene: {
                 index: 0,
                 til: "应用场景",
@@ -113,11 +102,6 @@ export default {
             },
         }
     },
-    components: {
-        pmBanner,
-        pmDotCon,
-        pmScene
-    }
 };
 </script>
 

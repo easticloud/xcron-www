@@ -1,10 +1,7 @@
 <template>
     <div class="p-products">
-        <!-- 公共头部 -->
-        <common-header></common-header>
-
-        <!-- 1、bannar -->
-        <products-pmBanner :pmBanner="pmBanner"></products-pmBanner>
+        <!-- 1、banner -->
+        <products-banner banner-key="tcs"></products-banner>
 
         <!-- 2、产品优势  -->
         <products-pmDotCon :pmDotConTil="pmDotConTil" :pmDotCon="pmDotCon"></products-pmDotCon>
@@ -18,22 +15,13 @@
 
         <!-- 5、应用场景  -->
         <products-pmSceneUseS :pmSceneUseS="pmSceneUseS" :pmSceneUseSTil="pmSceneUseSTil"></products-pmSceneUseS>
-
-        <!-- 6、服务支持-->
-        <products-pmService></products-pmService>
-
-        <!-- 公共底部 -->
-        <common-footer></common-footer>
     </div>
 </template>
 
 <script>
-import pmImgCon from '../../components/products/pm-imgCon.vue';
-import pmDotCon from '../../components/products/pm-dotCon.vue';
-import pmBanner from '../../components/products/pmBanner.vue';
-import pmSceneUseS from '../../components/products/pmSceneUseS.vue';
 export default {
     name: "products-TCS",
+    layout: "products",
     data() {
         return {
             // 可信跨链服务-banner
@@ -142,12 +130,6 @@ export default {
             },
         }
     },
-    components: {
-        pmBanner,
-        pmImgCon,
-        pmDotCon,
-        pmSceneUseS
-    }
 };
 </script>
 

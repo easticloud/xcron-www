@@ -3,8 +3,8 @@
         <!-- 公共头部 -->
         <common-header></common-header>
 
-        <!-- 1、云专线bannar -->
-        <products-pmBanner :pmBanner="pmBanner"></products-pmBanner>
+        <!-- 1、云专线banner -->
+        <products-banner banner-key="dc"></products-banner>
 
         <!-- 2、了解云专线  -->
         <products-pAboutBCS :pAboutBCS="pAboutBCS" :pAboutBCSTil="pAboutBCSTil" :pAboutBCSClass="pAboutBCSClass">
@@ -29,10 +29,6 @@
 </template>
 
 <script>
-import pAboutBCS from '../../components/products/pAboutBCS.vue';
-import pmScene from '../../components/products/pmScene.vue';
-import pmDotCon from '../../components/products/pm-dotCon.vue';
-import pmBanner from '../../components/products/pmBanner.vue';
 export default {
     name: "products-DC",
     data() {
@@ -64,7 +60,7 @@ export default {
                     desc: "主力region专线单线路最大支持100Gbps带宽连接，满足各类用户带宽需求",
                 },
             ],
-            // 应用场景 
+            // 应用场景
             pmScene: {
                 products: 0,
                 til: "应用场景",
@@ -139,12 +135,6 @@ export default {
             ],
         }
     },
-    components: {
-        pmBanner,
-        pAboutBCS,
-        pmScene,
-        pmDotCon
-    }
 };
 </script>
 

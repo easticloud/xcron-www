@@ -22,7 +22,7 @@ export default {
 </script>
 
 <style scope lang="less">
-@import "../../assets/css/products/pmBanner.less";
+@import "../../assets/css/products/product-banner.less";
 
 .m-p-service {
     .size(100%, 150px);

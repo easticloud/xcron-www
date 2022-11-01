@@ -1,10 +1,7 @@
 <template>
     <div class="p-products">
-        <!-- 公共头部 -->
-        <common-header></common-header>
-
-        <!-- 1、终端安全防护bannar -->
-        <products-pmBanner :pmBanner="pmBanner"></products-pmBanner>
+        <!-- 1、终端安全防护banner -->
+        <products-banner banner-key="tsp"></products-banner>
 
         <!-- 2、产品优势-->
         <products-pmDotCon :pmDotConTil="pmDotConTil01" :pmDotCon="pmDotCon01"></products-pmDotCon>
@@ -15,21 +12,13 @@
 
         <!-- 4、产品功能  -->
         <products-pmImgCon :pmImgConTil="pmImgConTil" :pmImgCon="pmImgCon"></products-pmImgCon>
-
-        <!-- 5、服务支持-->
-        <products-pmService></products-pmService>
-
-        <!-- 公共底部 -->
-        <common-footer></common-footer>
     </div>
 </template>
 
 <script>
-import pmDotCon from '../../components/products/pm-dotCon.vue';
-import pmImgCon from '../../components/products/pm-imgCon.vue';
-import pmBanner from '../../components/products/pmBanner.vue';
 export default {
     name: "products-TSP",
+    layout: 'products',
     data() {
         return {
             // 终端安全防护-banner
@@ -100,11 +89,6 @@ export default {
             ],
         }
     },
-    components: {
-        pmBanner,
-        pmDotCon,
-        pmImgCon
-    }
 };
 </script>
 

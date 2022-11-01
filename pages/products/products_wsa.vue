@@ -1,31 +1,20 @@
 <template>
     <div class="p-products">
-        <!-- 公共头部 -->
-        <common-header></common-header>
-
-        <!-- 1、bannar -->
-        <products-pmBanner :pmBanner="pmBanner"></products-pmBanner>
+        <!-- 1、banner -->
+        <products-banner banner-key="wsa"></products-banner>
 
         <!-- 2、产品优势  -->
         <products-pmDotCon :pmDotConTil="pmDotConTil" :pmDotCon="pmDotCon"></products-pmDotCon>
 
         <!-- 3、应用场景  -->
         <products-pmSceneUseS :pmSceneUseS="pmSceneUseS" :pmSceneUseSTil="pmSceneUseSTil"></products-pmSceneUseS>
-
-        <!-- 4、服务支持-->
-        <products-pmService></products-pmService>
-
-        <!-- 公共底部 -->
-        <common-footer></common-footer>
     </div>
 </template>
 
 <script>
-import pmDotCon from "../../components/products/pm-dotCon.vue";
-import pmSceneUseS from "../../components/products/pmSceneUseS.vue";
-import pmBanner from "../../components/products/pmBanner.vue";
 export default {
     name: "products-WSA",
+    layout: "products",
     data() {
         return {
             // 全站加速-banner
@@ -93,11 +82,6 @@ export default {
                 ],
             },
         };
-    },
-    components: {
-        pmBanner,
-        pmDotCon,
-        pmSceneUseS,
     },
 };
 </script>

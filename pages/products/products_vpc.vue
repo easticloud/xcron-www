@@ -1,10 +1,7 @@
 <template>
     <div class="p-products">
-        <!-- 公共头部 -->
-        <common-header></common-header>
-
-        <!-- 1、虚拟私有云bannar -->
-        <products-pmBanner :pmBanner="pmBanner"></products-pmBanner>
+        <!-- 1、虚拟私有云banner -->
+        <products-banner banner-key="vpc"></products-banner>
 
         <!-- 2、了解虚拟私有云  -->
         <products-pAboutBCS :pAboutBCS="pAboutBCS" :pAboutBCSTil="pAboutBCSTil" :pAboutBCSClass="pAboutBCSClass">
@@ -20,22 +17,13 @@
 
         <!-- 5、应用场景  -->
         <products-pmScene :pmScene="pmScene"></products-pmScene>
-
-        <!-- 6、服务支持-->
-        <products-pmService></products-pmService>
-
-        <!-- 公共底部 -->
-        <common-footer></common-footer>
     </div>
 </template>
 
 <script>
-import pmDotCon from '../../components/products/pm-dotCon.vue';
-import pmBanner from '../../components/products/pmBanner.vue';
-import pAboutBCS from '../../components/products/pAboutBCS.vue';
-import pmScene from '../../components/products/pmScene.vue'
 export default {
     name: "products-VPC",
+    layout: "products",
     data() {
         return {
             // 虚拟私有云-banner
@@ -113,7 +101,7 @@ export default {
                     img: "/images/products/products_vpc/icon.png",
                 },
             ],
-            // 应用场景 
+            // 应用场景
             pmScene: {
                 products: 0,
                 til: "应用场景",
@@ -178,12 +166,6 @@ export default {
             },
         }
     },
-    components: {
-        pmBanner,
-        pmDotCon,
-        pAboutBCS,
-        pmScene
-    }
 };
 </script>
 

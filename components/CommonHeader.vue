@@ -52,7 +52,7 @@ export default {
         },
         clean() {
             this.type = "";
-        },
+        }
     },
 };
 </script>
