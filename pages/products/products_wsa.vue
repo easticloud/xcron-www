@@ -4,7 +4,7 @@
         <products-banner banner-key="wsa"></products-banner>
 
         <!-- 2、产品优势  -->
-        <products-pmDotCon :pmDotConTil="pmDotConTil" :pmDotCon="pmDotCon"></products-pmDotCon>
+        <products-graphic-matrix matrix-key="wsa"></products-graphic-matrix>
 
         <!-- 3、应用场景  -->
         <products-pmSceneUseS :pmSceneUseS="pmSceneUseS" :pmSceneUseSTil="pmSceneUseSTil"></products-pmSceneUseS>
@@ -17,13 +17,6 @@ export default {
     layout: "products",
     data() {
         return {
-            // 全站加速-banner
-            pmBanner: {
-                title: "全站加速",
-                desc: "全站加速(Whole Site Acceleration)是一种融合了动态和静态加速的网站加速解决方案。用户请求资源时，静态内容从边缘节点就近获取，动态内容通过动态加速技术智能选择最佳路由回源获取。CDN全站加速能有效提升动态页面的加载速度，避开网络拥堵路由，提高访问成功率，实现网站整体加速与实时优化",
-                img: "/images/products/products_wsa/b1.jpg",
-            },
-            // 产品优势
             pmDotConTil: "产品优势", //标题
             pmDotCon: [
                 {

@@ -1,10 +1,10 @@
 <template>
     <div class="p-products">
         <!-- 1、banner -->
-        <products-banner :data="pmBanner"></products-banner>
+        <products-banner banner-key="dlv"></products-banner>
 
         <!-- 2、产品优势  -->
-        <products-pmDotCon :pmDotConTil="pmDotConTil" :pmDotCon="pmDotCon"></products-pmDotCon>
+        <products-graphic-matrix matrix-key="dlv"></products-graphic-matrix>
 
         <!-- 3、应用场景  -->
         <products-pmScene :pmScene="pmScene"></products-pmScene>
@@ -20,36 +20,6 @@ export default {
     layout: 'products',
     data() {
         return {
-            // 数据可视化-banner
-            pmBanner: {
-                title: "数据可视化",
-                img: "/images/products/products_dlv/b1.jpg",
-                desc: "数据可视化服务（Data Lake Visualization）是一站式数据可视化平台，适配云上云下多种数据源，提供丰富多样的2D、3D可视化组件，采用拖拽式自由布局，旨在帮助您快速定制和应用属于您自己的数据大屏",
-            },
-            // 产品优势
-            pmDotConTil: "产品优势",//标题
-            pmDotCon: [
-                {
-                    title: "丰富多样的可视化组件",
-                    desc: "提供丰富的可视化组件，包括常用的数据图表、图形、控件等",
-                    img: "/images/products/products_dlv/05.svg",
-                },
-                {
-                    title: "专业级地理信息可视化",
-                    desc: "支持绘制地理轨迹、地理飞线、热力分布、地域区块、3D地球等效果，支持地理数据多层叠加",
-                    img: "/images/products/products_dlv/06.svg",
-                },
-                {
-                    title: "可视化编辑器",
-                    desc: "拖拽即可完成组件自由配置与布局、所见即所得，无需编程就能轻松搭建可视化大屏，并且依据投放设备分辨率，自由定制大屏尺寸",
-                    img: "/images/products/products_dlv/07.svg",
-                },
-                {
-                    title: "多种数据源支持",
-                    desc: "无缝集成云数据仓库服务、数据湖探索、关系型数据库、对象存储服务等，支持本地CSV、在线API及企业内部私有云数据",
-                    img: "/images/products/products_dlv/08.svg",
-                },
-            ],
             // 应用场景
             pmScene: {
                 products: 0,

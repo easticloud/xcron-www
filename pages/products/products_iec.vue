@@ -4,7 +4,7 @@
         <products-banner banner-key="iec"></products-banner>
 
         <!-- 2、产品优势  -->
-        <products-pmDotCon :pmDotConTil="pmDotConTil" :pmDotCon="pmDotCon"></products-pmDotCon>
+        <products-graphic-matrix matrix-key="iec"></products-graphic-matrix>
 
         <!-- 3、应用场景  -->
         <products-pmScene :pmScene="pmScene"></products-pmScene>
@@ -20,36 +20,6 @@ export default {
     layout: 'products',
     data() {
         return {
-            // 智能边缘云-banner
-            pmBanner: {
-                title: "智能边缘云",
-                desc: "智能边缘云（Intelligent EdgeCloud）部署在距离企业和热点用户区域更近的位置，具有与中心云一致的体验，为时延敏感型业务如互动娱乐、在线教育、媒体创作等提供低于10ms的时延体验，支持全局智能管理及调度。",
-                img: "/images/products/products_iec/b1.jpg",
-            },
-            // 产品优势
-            pmDotConTil: "产品优势",//标题
-            pmDotCon: [
-                {
-                    title: "广域覆盖",
-                    desc: "基于覆盖中国大陆主要省市和主流运营商的优质节点资源进行部署，用户可以将时延敏感业务就近接入部署，保证确定性时延，提升业务体验",
-                    img: "/images/products/products_iec/01.svg",
-                },
-                {
-                    title: "多样算力",
-                    desc: "面向丰富的边缘业务场景，提供多样化的算力类型，用户可以根据业务要求选择合适的算力",
-                    img: "/images/products/products_iec/02.svg",
-                },
-                {
-                    title: "卓越性能",
-                    desc: "基于擎天架构打造，软硬结合提供卓越性能。单实例pps转发性能达千万级，提供昇腾AI加速型实例推理性能领先业界2倍",
-                    img: "/images/products/products_iec/03.svg",
-                },
-                {
-                    title: "边云协同",
-                    desc: "在提供核心的计算、存储、网络服务的基础上，与多种高阶云服务深度融合与协同，使客户可以更快的构建场景化的解决方案",
-                    img: "/images/products/products_iec/04.svg",
-                },
-            ],
             // 应用场景
             pmScene: {
                 index: 0,

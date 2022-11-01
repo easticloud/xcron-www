@@ -4,7 +4,7 @@
         <products-banner banner-key="ga"></products-banner>
 
         <!-- 2、产品优势  -->
-        <products-pmDotCon :pmDotConTil="pmDotConTil" :pmDotCon="pmDotCon"></products-pmDotCon>
+        <products-graphic-matrix matrix-key="ga"></products-graphic-matrix>
 
         <!-- 3、应用场景  -->
         <products-pmScene :pmScene="pmScene"></products-pmScene>
@@ -17,12 +17,6 @@ export default {
     layout: 'products',
     data() {
         return {
-            // 全球加速-banner
-            pmBanner: {
-                title: "全球加速",
-                desc: "全球加速（Global accelerator），简称GA，为全球化业务用户提供应用加速服务，通过提供统一的公网IP和高可靠、低延时、易管理、安全合规的网络服务，使终端用户在全球能快速访问云上应用，获得优质体验。",
-                img: "/images/products/products_ga/b1.jpg",
-            },
             // 产品优势
             pmDotConTil: "产品优势",//标题
             pmDotCon: [

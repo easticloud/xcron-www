@@ -4,7 +4,7 @@
         <products-banner banner-key="dh"></products-banner>
 
         <!-- 2、产品优势  -->
-        <products-pmDotCon :pmDotConTil="pmDotConTil" :pmDotCon="pmDotCon"></products-pmDotCon>
+        <products-graphic-matrix matrix-key="dh"></products-graphic-matrix>
 
         <!-- 3、应用场景  -->
         <products-pmScene :pmScene="pmScene"></products-pmScene>
@@ -20,36 +20,6 @@ export default {
     layout: 'products',
     data() {
         return {
-            // 专属主机-banner
-            pmBanner: {
-                title: "专属主机",
-                desc: "专属主机（Dedicated Host ）是指其上创建云服务器的所有资源完全供您专用的物理服务器，满足您对计算的隔离和性能的要求，并支持自带软件许可功能。",
-                img: "/images/products/products_dh/b1.jpg",
-            },
-            // 产品优势
-            pmDotConTil: "产品优势",//标题
-            pmDotCon: [
-                {
-                    title: "独享资源",
-                    desc: "专属主机在主机级别资源独享，主机资源可见，其上无其他租户的云服务器竞争主机资源",
-                    img: "/images/products/products_dh/1.svg",
-                },
-                {
-                    title: "安全合规",
-                    desc: "计算资源在主机级别物理隔离，带来更高安全级别的同时，满足企业特殊的合规性要求",
-                    img: "/images/products/products_dh/2.svg",
-                },
-                {
-                    title: "可控放置",
-                    desc: "专属主机上可灵活规划云服务器，多台专属主机，更可通过业务需求规划云服务器，提高业务可靠性",
-                    img: "/images/products/products_dh/3.svg",
-                },
-                {
-                    title: "节约成本",
-                    desc: "专属主机帮助您利用现有的核心、虚拟机的软件许可，从而降低成本，节省开支",
-                    img: "/images/products/products_dh/4.svg",
-                },
-            ],
             // 应用场景
             pmScene: {
                 products: 0,

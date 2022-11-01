@@ -1,8 +1,5 @@
 <template>
     <div class="p-products">
-        <!-- 公共头部 -->
-        <!-- <common-header></common-header> -->
-
         <!-- 1、banner -->
         <products-banner banner-key="ai"></products-banner>
 
@@ -14,12 +11,6 @@
 
         <!-- 4、场景介绍  -->
         <products-pmScene :pmScene="pmScene"></products-pmScene>
-
-        <!-- 5、服务支持-->
-        <!-- <products-pmService></products-pmService> -->
-
-        <!-- 公共底部 -->
-        <!-- <common-footer></common-footer> -->
     </div>
 </template>
 

@@ -7,7 +7,7 @@
                     class="m-item"
                     v-for="(item, i) in data.children"
                     :key="i"
-                    :class="(i + 1) % 2 == 0 ? 'pic-r' : 'pic-l'"
+                    :class="item.imgCss ? item.imgCss : ((i + 1) % 2 == 0 ? 'pic-r' : 'pic-l')"
                 >
                     <span class="u-pic" :style="`backgroundImage: url(${item.img})`"></span>
                     <div class="u-con">

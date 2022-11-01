@@ -4,11 +4,10 @@
         <products-banner banner-key="tsp"></products-banner>
 
         <!-- 2、产品优势-->
-        <products-pmDotCon :pmDotConTil="pmDotConTil01" :pmDotCon="pmDotCon01"></products-pmDotCon>
+        <products-graphic-matrix matrix-key="tsp"></products-graphic-matrix>
 
         <!-- 3、应用场景  -->
-        <products-pmDotCon :pmDotConClass="pmDotConClass" :pmDotConTil="pmDotConTil" :pmDotCon="pmDotCon">
-        </products-pmDotCon>
+        <products-graphic-matrix matrix-key="tsp_x" custom-class="ecs-dotcon"></products-graphic-matrix>
 
         <!-- 4、产品功能  -->
         <products-pmImgCon :pmImgConTil="pmImgConTil" :pmImgCon="pmImgCon"></products-pmImgCon>
@@ -61,30 +60,6 @@ export default {
                     desc: "通过网络及终端的深度协同联动，终端未知的新型威胁可通过流量侧如上网行为分析、上网流量检测等提前发现异常并及时分析与处置，实现更全面的安全威胁防护",
                     img: "/images/products/products_tsp/s2.jpeg",
                     imgCss: "pic-r",
-                },
-            ],
-            // 产品优势
-            pmDotConTil01: "产品优势",//标题
-            pmDotCon01: [
-                {
-                    title: "轻资产",
-                    desc: "无需在本地服务器上安装控制台，云端按需订阅终端安全服务即可，即开即用，大大降低设备投入成本。",
-                    img: "/images/products/products_tsp/01.svg",
-                },
-                {
-                    title: "全网终端统一管理",
-                    desc: "除在网终端外，离网终端（出差、移动办公）也可进行统一管控；云端管理平台实时更新全网（在网和离网）终端病毒库。",
-                    img: "/images/products/products_tsp/02.svg",
-                },
-                {
-                    title: "桌面管控运维简单",
-                    desc: "拥有广告弹窗、远程桌面、USB管控、违规外联等桌管功能，日常运维管理简单高效。。",
-                    img: "/images/products/products_tsp/03.svg",
-                },
-                {
-                    title: "实时响应",
-                    desc: "云端专家7*24小时在线服务，及时响应和处理您的问题。全网安全风险情报实时同步，支持微信公众号主动告警和一键处置风险。",
-                    img: "/images/products/products_tsp/04.svg",
                 },
             ],
         }

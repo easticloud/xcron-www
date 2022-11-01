@@ -4,7 +4,7 @@
         <products-banner banner-key="dis"></products-banner>
 
         <!-- 2、产品优势  -->
-        <products-pmDotCon :pmDotConTil="pmDotConTil" :pmDotCon="pmDotCon"></products-pmDotCon>
+        <products-graphic-matrix matrix-key="dis"></products-graphic-matrix>
 
         <!-- 3、应用场景  -->
         <products-pmScene :pmScene="pmScene"></products-pmScene>
@@ -20,36 +20,6 @@ export default {
     layout: 'products',
     data() {
         return {
-            // 数据接入服务-banner
-            pmBanner: {
-                title: "数据接入服务",
-                desc: "数据接入服务（Data Ingestion Service，简称DIS）可让您轻松收集、处理和分发实时流数据，以便您对新信息快速做出响应。DIS对接多种第三方数据采集工具，提供丰富的云服务Connector及Agent/SDK。适用于IoT、互联网、媒体等行业的设备监控、实时推荐、日志分析等场景。",
-                img: "/images/products/products_dis/b1.jpg",
-            },
-            // 产品优势
-            pmDotConTil: "产品优势",//标题
-            pmDotCon: [
-                {
-                    title: "高效传输",
-                    desc: "实时收集各种数据。支持百万并发连接，数据请求毫秒级响应。单分区支持最高每日百GB级别的写入量。轻松实现传输通道规格扩容",
-                    img: "/images/products/products_dis/05.svg",
-                },
-                {
-                    title: "简单易用",
-                    desc: "服务秒级开通。用户配置SDK/Agent实现免编程数据采集，快速实现数据采集、传输",
-                    img: "/images/products/products_dis/06.svg",
-                },
-                {
-                    title: "安全可靠",
-                    desc: "HTTPS加密传输。租户间资源及操作隔离，实现租户访问权限控制，保护系统和用户的隐私及数据安全。数据跨AZ存储，服务可用性99.9%",
-                    img: "/images/products/products_dis/07.svg",
-                },
-                {
-                    title: "无忧运维",
-                    desc: "服务秒级开通。用户配置SDK/Agent实现免编程数据采集，快速实现数据采集、传输",
-                    img: "/images/products/products_dis/08.svg",
-                },
-            ],
             // 应用场景
             pmScene: {
                 products: 0,
