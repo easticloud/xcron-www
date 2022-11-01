@@ -32,6 +32,7 @@ export default {
     data() {
         return {
             tabs: ["能源", "医疗健康", "教育", "交通物流"],
+            keys: ["energy", "health", "education", "transport"],
             tabsIndex: 0,
             headerList: [
                 {
@@ -317,9 +318,23 @@ export default {
             return this.headerList[this.tabsIndex];
         },
     },
+    watch: {
+        $route: {
+            immediate: true,
+            handler: function (res) {
+                if (res.query.key) this.tabsIndex = this.keys.findIndex((item) => item == res.query.key) || 0;
+            },
+        },
+    },
     methods: {
         changeTab(i) {
-            this.tabsIndex = i;
+            // this.tabsIndex = i;
+            this.$router.push({
+                path: "/programme/other",
+                query: {
+                    key: this.keys[i],
+                },
+            });
         },
     },
 };

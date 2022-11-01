@@ -127,19 +127,19 @@ export default {
                         other: [
                             {
                                 title: "能源行业解决方案",
-                                link: "/programme/other",
+                                link: "/programme/other?key=energy",
                             },
                             {
                                 title: "医疗健康行业解决方案",
-                                link: "/programme/other",
+                                link: "/programme/other?key=health",
                             },
                             {
                                 title: "教育行业解决方案",
-                                link: "/programme/other",
+                                link: "/programme/other?key=education",
                             },
                             {
                                 title: "交通物流解决方案",
-                                link: "/programme/other",
+                                link: "/programme/other?key=transport",
                             },
                         ],
                     },

@@ -31,9 +31,7 @@
                             <span class="u-desc" v-show="!search">{{ item.desc }}</span>
                         </a>
                     </div>
-                    <div class="m-empty" v-show="!children.length">
-                        没找到结果，请重新输入
-                    </div>
+                    <div class="m-empty" v-show="!children.length">没找到结果，请重新输入</div>
                 </div>
             </template>
             <template v-if="type == 'solution'">
@@ -179,43 +177,43 @@ export default {
                     label: "新零售行业解决方案",
                     desc: "要素整合、精准营销、高效果运营",
                     icon: "/images/index/solution/icon-1.png",
-                    link:'/programme/new_retail'
+                    link: "/programme/new_retail",
                 },
                 {
                     label: "运营商行业解决方案",
                     desc: "网络变现、业务创新、运营敏捷",
                     icon: "/images/index/solution/icon-2.png",
-                    link:'/programme/operators'
+                    link: "/programme/operators",
                 },
                 {
                     label: "数字政府解决方案",
                     desc: "服务能力向移动化和智能化发展",
                     icon: "/images/index/solution/icon-3.png",
-                    link:'/programme/government'
+                    link: "/programme/government",
                 },
                 {
                     label: "金融行业解决方案",
                     desc: "敏捷创新、智能升级、数字化转型",
                     icon: "/images/index/solution/icon-4.png",
-                    link:'/programme/finance'
+                    link: "/programme/finance",
                 },
                 {
                     label: "迁移上云解决方案",
                     desc: "提供ERP系统上云一站式服务",
                     icon: "/images/index/solution/icon-5.png",
-                    link:'/programme/cloud'
+                    link: "/programme/cloud",
                 },
                 {
                     label: "TIk Tok解决方案",
                     desc: "解决个人/企业Tiktok问题",
                     icon: "/images/index/solution/icon-6.png",
-                    link:'/programme/media'
+                    link: "/programme/media",
                 },
                 {
                     label: "其他行业解决方案",
                     desc: "能源丨医疗健康丨教育丨交通物流",
                     icon: "/images/index/solution/icon-7.png",
-                    link:'/programme/other'
+                    link: "/programme/other?key=energy",
                 },
             ],
         };
