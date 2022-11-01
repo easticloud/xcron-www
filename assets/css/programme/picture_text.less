@@ -52,11 +52,31 @@
             background-repeat: no-repeat;
             background-position: top center;
             background-size: 100% auto;
-            min-height: 348px;
             .pt(160px);
             .m-text {
                 padding: 30px;
                 background-color: #fff;
+            }
+            &.u-mini {
+                .pt(125px);
+                .m-text {
+                    padding: 20px 30px;
+                    .u-title {
+                        .fz(21px,30px);
+                    }
+                    .u-desc {
+                        .fz(18px,25px);
+                    }
+                }
+            }
+            &.u-icon {
+                .pt(130px);
+                .m-text {
+                    padding: 20px 30px;
+                    .u-title {
+                        .x;
+                    }
+                }
             }
         }
     }
