@@ -11,10 +11,10 @@
         </products-pmImgCon>
 
         <!-- 4、产品功能  -->
-        <products-pmDotCon :pmDotConTil="pmDotConTil01" :pmDotCon="pmDotCon01"></products-pmDotCon>
+        <products-graphic-matrix matrix-key="tcs_x" />
 
         <!-- 5、应用场景  -->
-        <products-pmSceneUseS :pmSceneUseS="pmSceneUseS" :pmSceneUseSTil="pmSceneUseSTil"></products-pmSceneUseS>
+        <products-tabs tab-key="tcs"></products-tabs>
     </div>
 </template>
 
@@ -53,30 +53,6 @@ export default {
                     desc: "自研的数字资产链平台，基于云区块链引擎，可实现数字资产的确权、可信保存、安全交易。",
                     img: "",
                 }
-            ],
-            // 产品功能
-            pmDotConTil01: "产品功能",//标题
-            pmDotCon01: [
-                {
-                    title: "跨链数据迁移",
-                    desc: "基于可信环境中授权信息，支持读取账本中的数据，将不同异构链或者同构链中的状态信息迁移到目的链中，所有迁移皆记录在账本中，实现数据可追溯，可审计，并支持对迁移完成数据进行校验，保证数据迁移正确性。",
-                    img: "/images/products/products_tcs/01.png",
-                },
-                {
-                    title: "数据访问权限管理",
-                    desc: "统一的身份管理体系，提供身份的创建、更新等功能。用户可以基于分布式身份体系完成区块链服务的注册，并对申请访问区块链进行授权操作，可以基于账本，链代码的查询及交易动作进行分别授权。",
-                    img: "/images/products/products_tcs/02.png",
-                },
-                {
-                    title: "跨链互操作",
-                    desc: "在可信环境中，用户可以授权访问其他区块链访问其跨链合约，经过跨链寻址，身份校验等一系列动作，实现合约的远程调用，完成业务场景中的复杂互操作。",
-                    img: "/images/products/products_tcs/03.png",
-                },
-                {
-                    title: "同构异构链管理",
-                    desc: "基于区块链跨链服务，实现不同类型，不同架构，不同安全算法区块链配置对接，生成相应接入服务。",
-                    img: "/images/products/products_tcs/04.png",
-                },
             ],
             // 应用场景
             pmSceneUseSTil: "应用场景",

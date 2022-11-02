@@ -1,8 +1,5 @@
 <template>
     <div class="p-products">
-        <!-- 公共头部 -->
-        <common-header></common-header>
-
         <!-- 1、云专线banner -->
         <products-banner banner-key="dc"></products-banner>
 
@@ -10,7 +7,7 @@
         <products-frame-text text-key="dc" custom-class="m-p-ECS"></products-frame-text>
 
         <!-- 3、应用场景  -->
-        <products-pmScene :pmScene="pmScene"></products-pmScene>
+        <products-tabs :data="pmScene"></products-tabs>
 
         <!-- 4、权威认可  -->
         <products-pmDotCon :pmDotConClass="pmDotConClass" :pmDotConTil="pmDotConTil" :pmDotCon="pmDotCon">
@@ -18,25 +15,20 @@
 
         <!-- 5、联系我们Contact  -->
         <products-contactUs></products-contactUs>
-
-        <!-- 6、服务支持-->
-        <products-pmService></products-pmService>
-
-        <!-- 公共底部 -->
-        <common-footer></common-footer>
     </div>
 </template>
 
 <script>
 export default {
     name: "products-DC",
+    layout: "products",
     data() {
         return {
             // 应用场景
             pmScene: {
                 products: 0,
                 til: "应用场景",
-                isShow: false,
+
                 sceneClass: "m-Bms-products_dc",
                 list: [
                     {

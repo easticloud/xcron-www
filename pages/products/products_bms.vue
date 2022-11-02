@@ -13,7 +13,7 @@
         <products-pmPInfo :pmPInfoTil="pmPInfoTil" :pmPInfoImg="pmPInfoImg"></products-pmPInfo>
 
         <!-- 5、应用场景  -->
-        <products-pmScene :pmScene="pmScene"></products-pmScene>
+        <products-tabs tab-key="bms" custom-class="m-Bms-scene"></products-tabs>
     </div>
 </template>
 
@@ -24,20 +24,20 @@ export default {
     data() {
         return {
             // 技术支撑
-            pmPInfoTil: "擎天架构，为裸金属提供业界领先技术支撑",//标题
+            pmPInfoTil: "擎天架构，为裸金属提供业界领先技术支撑", //标题
             pmPInfoImg: "/images/products/products_bms/bg.png",
             // 应用场景
             pmScene: {
                 products: 0,
                 til: "应用场景",
-                isShow: false,
                 sceneClass: "m-Bms-scene",
                 list: [
                     {
                         label: "核心数据库",
                         children: {
                             title: "企业核心数据库场景",
-                            titletag: "满足核心数据库对性能和安全的要求，云BMS提供多种规格的服务器，支持自动化挂载共享云硬盘。",
+                            titletag:
+                                "满足核心数据库对性能和安全的要求，云BMS提供多种规格的服务器，支持自动化挂载共享云硬盘。",
                             src: "/images/products/products_bms/01.svg",
                             tag: [
                                 {
@@ -59,7 +59,8 @@ export default {
                         label: "高性能计算",
                         children: {
                             title: "高性能计算场景",
-                            titletag: "针对高计算，高吞吐的场景特点，BMS支持最新Intel CPU的计算实例，结合100G网络，带来低时延的性能体验",
+                            titletag:
+                                "针对高计算，高吞吐的场景特点，BMS支持最新Intel CPU的计算实例，结合100G网络，带来低时延的性能体验",
                             src: "/images/products/products_bms/02.svg",
                             tag: [
                                 {
@@ -100,10 +101,9 @@ export default {
                         },
                     },
                 ],
-            }
-
-        }
-    }
+            },
+        };
+    },
 };
 </script>
 

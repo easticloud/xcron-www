@@ -10,7 +10,7 @@
         <products-pmImgCon :pmImgConTil="pmImgConTil" :pmImgCon="pmImgCon"></products-pmImgCon>
 
         <!-- 4、场景使用  -->
-        <products-pmSceneUse></products-pmSceneUse>
+        <products-tabsUse></products-tabsUse>
     </div>
 </template>
 

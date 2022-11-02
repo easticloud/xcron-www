@@ -7,7 +7,7 @@
         <products-graphic-matrix matrix-key="dis"></products-graphic-matrix>
 
         <!-- 3、应用场景  -->
-        <products-pmScene :pmScene="pmScene"></products-pmScene>
+        <products-tabs :data="pmScene"></products-tabs>
 
         <!-- 4、功能描述  -->
         <products-pmDotCon :pmDotConTil="pmDotConTil01" :pmDotCon="pmDotCon01"></products-pmDotCon>
@@ -24,7 +24,7 @@ export default {
             pmScene: {
                 products: 0,
                 til: "应用场景",
-                isShow: false,
+
                 sceneClass: "m-Bms-products_dis",
                 list: [
                     {

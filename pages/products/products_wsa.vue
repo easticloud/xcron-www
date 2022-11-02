@@ -7,7 +7,7 @@
         <products-graphic-matrix matrix-key="wsa"></products-graphic-matrix>
 
         <!-- 3、应用场景  -->
-        <products-pmSceneUseS :pmSceneUseS="pmSceneUseS" :pmSceneUseSTil="pmSceneUseSTil"></products-pmSceneUseS>
+        <products-tabsUseS :pmSceneUseS="pmSceneUseS" :pmSceneUseSTil="pmSceneUseSTil"></products-tabsUseS>
     </div>
 </template>
 

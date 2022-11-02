@@ -7,11 +7,11 @@
         <products-frame-text text-key="hss"></products-frame-text>
 
         <!-- 3、应用场景  -->
-        <products-pmScene :pmScene="pmScene"></products-pmScene>
+        <products-tabs :data="pmScene"></products-tabs>
 
         <!-- 4、重磅升级  -->
-        <products-pmSceneUseS :pmSceneUseS="pmSceneUseS" :pmSceneUseSTil="pmSceneUseSTil"
-            :pmSceneUseSTrue="pmSceneUseSTrue" :pmSceneUseS01="pmSceneUseS01"></products-pmSceneUseS>
+        <products-tabsUseS :pmSceneUseS="pmSceneUseS" :pmSceneUseSTil="pmSceneUseSTil"
+            :pmSceneUseSTrue="pmSceneUseSTrue" :pmSceneUseS01="pmSceneUseS01"></products-tabsUseS>
     </div>
 </template>
 
@@ -25,7 +25,7 @@ export default {
             pmScene: {
                 index: 0,
                 til: "应用场景",
-                isShow: false,
+
                 sceneClass: "m-Bms-scene",
                 list: [
                     {

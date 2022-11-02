@@ -14,7 +14,7 @@
         </products-pmDotCon>
 
         <!-- 5、应用场景  -->
-        <products-pmScene :pmScene="pmScene"></products-pmScene>
+        <products-tabs :data="pmScene"></products-tabs>
     </div>
 </template>
 
@@ -43,7 +43,7 @@ export default {
             pmScene: {
                 products: 0,
                 til: "应用场景",
-                isShow: false,
+
                 sceneClass: "m-Bms-products_vpc",
                 list: [
                     {
