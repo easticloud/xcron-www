@@ -7,7 +7,7 @@
         <products-graphic-matrix matrix-key="dis"></products-graphic-matrix>
 
         <!-- 3、应用场景  -->
-        <products-tabs :data="pmScene"></products-tabs>
+        <products-tabs tab-key="dis" custom-class="m-Bms-products_dis"></products-tabs>
 
         <!-- 4、功能描述  -->
         <products-pmDotCon :pmDotConTil="pmDotConTil01" :pmDotCon="pmDotCon01"></products-pmDotCon>
@@ -20,81 +20,6 @@ export default {
     layout: 'products',
     data() {
         return {
-            // 应用场景
-            pmScene: {
-                products: 0,
-                til: "应用场景",
-
-                sceneClass: "m-Bms-products_dis",
-                list: [
-                    {
-                        label: "实时数据处理",
-                        children: {
-                            title: "实时数据处理",
-                            titletag: "实时收集数据，缓存在通道中，分析平台实时或周期读取通道中的数据分析后将结果应用到业务系统，例如对实时采集城市各交通枢纽的车辆通行数据，基于分析可实现对停车场开放时长和交通资源的调配",
-                            src: "/images/products/products_dis/1.svg",
-                            tag: [
-                                {
-                                    tagTil: "· 永久在线",
-                                    tagCon: "业务系统随时随地发送数据到DIS",
-                                },
-                                {
-                                    tagTil: "· 高并发、低延时",
-                                    tagCon: "支持百万并发消息，端到端时延低至毫秒级",
-                                },
-                                {
-                                    tagTil: "· 生态完善",
-                                    tagCon: "支持对接各分析平台，数据传输、计算一站式处理",
-                                },
-                            ],
-                        },
-                    },
-                    {
-                        label: "实时文件传输",
-                        children: {
-                            title: "实时文件传输",
-                            titletag: "实时检测客户应用系统中产生的日志文件，并采集上传到云上，进行离线分析、存储查询及机器学习，可应用于日志分析、用户画像、营销推荐等场景。",
-                            src: "/images/products/products_dis/2.svg",
-                            tag: [
-                                {
-                                    tagTil: "· 自动捕获增量数据",
-                                    tagCon: "支持自动采集文件中的增量数据或新增文件",
-                                },
-                                {
-                                    tagTil: "· 简单易用",
-                                    tagCon: "提供不同平台Agent，简单配置，即可实现数据采集",
-                                },
-                                {
-                                    tagTil: "· 安全可靠",
-                                    tagCon: "传输过程使用https加密，保障数据安全传输",
-                                },
-                            ],
-                        },
-                    },
-                    {
-                        label: "数据接入备份",
-                        children: {
-                            title: "数据接入备份",
-                            titletag: "将大量滚动日志文件传输到云端做备份，用于数据丢失或异常后的恢复和故障分析。同时大量小文本文件可合并转储为大文件，提高数据处理性能",
-                            src: "/images/products/products_dis/3.svg",
-                            tag: [
-                                {
-                                    tagTil: "· 多种数据源支持",
-                                    tagCon: "对接kafka、flume等开源系统，易于集成",
-                                },
-                                {
-                                    tagTil: "· 数据传输高效",
-                                    tagCon: "通道入口带宽可调整，传输能力有保障",
-                                },
-                                {
-                                    tagTil: "· 海量小文件传输",
-                                    tagCon: "小文件搬迁上云，原文件转储到对象存储",
-                                },
-                            ],
-                        },
-                    },
-                ],
-            },
             // 功能描述
             pmDotConTil01: "功能描述",//标题
             pmDotCon01: [

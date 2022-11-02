@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import { matrix } from "@/assets/data/product.json";
+import matrix from "@/assets/data/product_matrix.json";
 export default {
     name: "graphicMatrix",
     props: {

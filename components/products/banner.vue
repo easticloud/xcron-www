@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import { product_banner } from "@/assets/data/product.json";
+import product_banner from "@/assets/data/product_banner.json";
 export default {
     props: {
         bannerKey: {

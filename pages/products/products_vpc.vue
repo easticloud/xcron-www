@@ -14,7 +14,7 @@
         </products-pmDotCon>
 
         <!-- 5、应用场景  -->
-        <products-tabs :data="pmScene"></products-tabs>
+        <products-tabs tab-key="vpc" custom-class="m-Bms-products_vpc"></products-tabs>
     </div>
 </template>
 
@@ -39,69 +39,6 @@ export default {
                     img: "/images/products/products_vpc/icon.png",
                 },
             ],
-            // 应用场景
-            pmScene: {
-                products: 0,
-                til: "应用场景",
-
-                sceneClass: "m-Bms-products_vpc",
-                list: [
-                    {
-                        label: "云端专属网络",
-                        children: {
-                            title: "云端专属网络",
-                            titletag: "基于云构建的云上私有网络环境，用户通过弹性IP访问云上私有网络环境，配置部署业务",
-                            src: "/images/products/products_vpc/01.svg",
-                            tag: [
-                                {
-                                    tagTil: "· 灵活配置",
-                                    tagCon: "自由定义网络，按需划分子网，申请弹性IP等资源",
-                                },
-                                {
-                                    tagTil: "· 安全隔离",
-                                    tagCon: "VPC之间完全隔离，子网之间可配置访问控制策略",
-                                },
-                            ],
-                        },
-                    },
-                    {
-                        label: "Web服务",
-                        children: {
-                            title: "Web服务",
-                            titletag: "基于云构建的云上私有网络环境，通过弹性负载均衡对外提供服务，支撑海量用户访问",
-                            src: "/images/products/products_vpc/02.svg",
-                            tag: [
-                                {
-                                    tagTil: "· 可支撑高并发连接",
-                                    tagCon: "应对海量接入，与弹性伸缩服务无缝集成，业务稳定可靠",
-                                },
-                                {
-                                    tagTil: "· 后端资源自动扩容",
-                                    tagCon: "按照业务流量自动扩容，适合业务量突增场景",
-                                },
-                            ],
-                        },
-                    },
-                    {
-                        label: "混合云部署",
-                        children: {
-                            title: "混合云部署",
-                            titletag: "基于云提供的VPN/云专线服务，高速连接云上私有网络和用户自有IT设施，满足云上和自有设施间业务和数据的迁移，支撑混合云场景等",
-                            src: "/images/products/products_vpc/03.svg",
-                            tag: [
-                                {
-                                    tagTil: "· 选择多样化",
-                                    tagCon: "云专线独占私有线路，高速，安全 。 VPN稳定，高性价比",
-                                },
-                                {
-                                    tagTil: "· 云上云下互通",
-                                    tagCon: "用户业务和数据可以云上、线下灵活部署并迁移",
-                                },
-                            ],
-                        },
-                    },
-                ],
-            },
         }
     },
 };

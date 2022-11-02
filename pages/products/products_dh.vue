@@ -1,13 +1,13 @@
 <template>
     <div class="p-products">
         <!-- 1、banner -->
-        <products-banner banner-key="dh"></products-banner>
+        <products-banner banner-key="dh" />
 
         <!-- 2、产品优势  -->
-        <products-graphic-matrix matrix-key="dh"></products-graphic-matrix>
+        <products-graphic-matrix matrix-key="dh" />
 
         <!-- 3、应用场景  -->
-        <products-tabs :data="pmScene"></products-tabs>
+        <products-tabs tab-key="dh" custom-class="m-Bms-products_dh" />
 
         <!-- 4、功能描述  -->
         <products-pmDotCon :pmDotConTil="pmDotConTil01" :pmDotCon="pmDotCon01"></products-pmDotCon>

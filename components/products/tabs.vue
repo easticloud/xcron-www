@@ -44,7 +44,7 @@
 </template>
 
 <script>
-import { product_tabs } from "@/assets/data/product.json";
+import product_tabs from "@/assets/data/product_tabs.json";
 export default {
     props: {
         tabKey: {

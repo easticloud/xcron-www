@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import { frame_text } from "@/assets/data/product.json";
+import frame_text from "@/assets/data/product_frame_text.json";
 export default {
     props: {
         textKey: {
