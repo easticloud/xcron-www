@@ -59,3 +59,19 @@
         background-image: url(../../../static/images/programme/banner/transport.jpg);
     }
 }
+@media screen and(max-width:@phone) {
+    .m-programme-header {
+        padding: 40px 0;
+        .m-header-content {
+            .h(auto);
+            h1 {
+                .fz(32px,42px);
+                .mb(14px);
+            }
+            .u-desc {
+                .fz(16px,28px);
+                max-width: 100%;
+            }
+        }
+    }
+}

@@ -81,3 +81,71 @@
         }
     }
 }
+@media screen and(max-width:@phone) {
+    .m-picture-text {
+        padding: 30px 0;
+
+        .m-list {
+            .mt(25px);
+            gap: 10px;
+            .u-item {
+                max-width: 100%;
+                .m-text {
+                    gap: 8px;
+                    .u-title {
+                        .fz(20px,32px);
+                    }
+                    .u-desc {
+                        .fz(16px,24px);
+                    }
+                }
+            }
+        }
+        &.u-left {
+            .m-list {
+                .u-item {
+                    padding: 15px;
+                    gap: 12px;
+                    align-items: center;
+                    .u-img {
+                        .size(120px);
+                    }
+                }
+                .m-text {
+                    gap: 0;
+                    .u-desc {
+                        .fz(16px,24px);
+                    }
+                }
+            }
+        }
+        &.u-top {
+            .m-list {
+                flex-direction: column;
+                gap: 20px;
+                .u-item {
+                    .m-text {
+                        padding: 20px;
+                    }
+                    &.u-mini {
+                        .pt(62px);
+                        .m-text {
+                            .u-title {
+                                .fz(20px,32px);
+                            }
+                            .u-desc {
+                                .fz(16px,24px);
+                            }
+                        }
+                    }
+                    &.u-icon {
+                        .pt(65px);
+                        .m-text {
+                            padding: 10px 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
