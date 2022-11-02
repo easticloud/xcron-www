@@ -4,8 +4,7 @@
         <products-banner banner-key="ecs"></products-banner>
 
         <!-- 2、了解弹性云服务器  -->
-        <products-pAboutBCS :pAboutBCS="pAboutBCS" :pAboutBCSTil="pAboutBCSTil" :pAboutBCSClass="pAboutBCSClass">
-        </products-pAboutBCS>
+        <products-frame-text text-key="ecs" custom-class="m-p-ECS"></products-frame-text>
 
         <!-- 3、产品优势  -->
         <products-pmDotCon :pmDotConClass="pmDotConClass" :pmDotConTil="pmDotConTil" :pmDotCon="pmDotCon">

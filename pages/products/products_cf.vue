@@ -4,10 +4,10 @@
         <products-banner banner-key="cf"></products-banner>
 
         <!-- 2、了解云防火墙  -->
-        <products-pAboutBCS :pAboutBCSTil="pAboutBCSTil" :pAboutBCS="pAboutBCS"></products-pAboutBCS>
+        <products-frame-text text-key="cf"></products-frame-text>
 
         <!-- 2、产品优势  -->
-        <products-pmDotCon :pmDotConTil="pmDotConTil" :pmDotCon="pmDotCon"></products-pmDotCon>
+        <products-graphic-matrix matrix-key="cf" />
 
         <!-- 3、应用场景  -->
         <products-pmScene :pmScene="pmScene"></products-pmScene>
@@ -23,52 +23,6 @@ export default {
     layout: "products",
     data() {
         return {
-            // 云防火墙-banner
-            pmBanner: {
-                title: "云防火墙",
-                desc: "云防火墙服务（Cloud Firewall）是新一代的云原生防火墙，提供云上互联网边界和VPC边界的防护，包括：实时入侵检测与防御，全局统一访问控制，全流量分析可视化，日志审计与溯源分析等，同时支持按需弹性扩容，是用户业务上云的网络安全防护基础服务。",
-                img: "/images/products/products_cf/b1.jpg",
-            },
-            // 了解云防火墙
-            pAboutBCSTil: "云防火墙",
-            pAboutBCS: [
-                {
-                    til: "安全",
-                    desc: "提高内部网络的安全性",
-                },
-                {
-                    til: "可视",
-                    desc: "对网络存取和访问进行监控审计",
-                },
-                {
-                    til: "极简",
-                    desc: "一键开通，安全策略无缝平移",
-                },
-            ],
-            // 产品优势
-            pmDotConTil: "产品优势",//标题
-            pmDotCon: [
-                {
-                    title: "极简部署",
-                    desc: "作为一款云原生SaaS服务，可以对公网资产、内部资产自动安全盘点，一键开启防护，支持原有安全策略一键导入，可随业务按需动态扩容。",
-                    img: "/images/products/products_cf/01.svg",
-                },
-                {
-                    title: "智能防护",
-                    desc: "集成全网威胁漏洞库，并通过自带的入侵防御引擎（IPS），对恶意流量进行实时检测和防御。",
-                    img: "/images/products/products_cf/02.svg",
-                },
-                {
-                    title: "可视可溯",
-                    desc: "全场景流量日志、访问日志、入侵攻击日志记录，并通过报表分析呈现，支持审计及高级威胁溯源分析。",
-                    img: "/images/products/products_cf/03.svg",
-                },
-                {
-                    title: "丰富生态",
-                    desc: "支持无缝集成第三方厂家威胁检测分析引擎，云上云下统一生态，客户原线下安全策略资产无缝平移。",
-                    img: "/images/products/products_cf/04.svg",
-                },
-            ],
             // 应用场景
             pmScene: {
                 index: 0,

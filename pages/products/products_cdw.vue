@@ -4,12 +4,10 @@
         <products-banner banner-key="cdw"></products-banner>
 
         <!-- 2、了解云数据仓库  -->
-        <products-pAboutBCS :pAboutBCS="pAboutBCS" :pAboutBCSTil="pAboutBCSTil" :pAboutBCSClass="pAboutBCSClass">
-        </products-pAboutBCS>
+        <products-frame-text text-key="cdw" custom-class="m-p-ECS"></products-frame-text>
 
         <!-- 3、产品优势  -->
-        <products-pmDotCon :pmDotConClass="pmDotConClass" :pmDotConTil="pmDotConTil" :pmDotCon="pmDotCon">
-        </products-pmDotCon>
+        <products-graphic-matrix matrix-key="cdw_x" custom-class="ecs-dotcon" />
 
         <!-- 4、精品案例  -->
         <products-pmImgCon :pmImgConClass="pmImgConClass" :pmImgConTil="pmImgConTil" :pmImgCon="pmImgCon">
@@ -26,56 +24,6 @@ export default {
     layout: "products",
     data() {
         return {
-            // 了解弹性云服务器
-            pAboutBCSTil: "了解云数据仓库",
-            pAboutBCSClass: "m-p-ECS",
-            pAboutBCS: [
-                {
-                    til: "一站式分析",
-                    desc: "4+1，库/仓/市/湖/+IoT，一体化仓湖一体，融合(OBS)、协同(HDFS)一库两用，HTAP混合负载",
-                },
-                {
-                    til: "超大规模",
-                    desc: "全球最大金融数仓(工行)，单集群480节点，装机20PB首家信通院2048节点集群认证",
-                },
-                {
-                    til: "全场景部署",
-                    desc: "客户机房(IDC)、边缘站点各种部署场景全覆盖架构一致、功能一致、体验一致",
-                },
-                {
-                    til: "生态兼容",
-                    desc: "兼容TD/Oracle/PG/MySQL生态支持存储过程/触发器/序列/用户自定义函数/窗口函数等",
-                },
-            ],
-            // 产品优势
-            pmDotConTil: "产品优势",//标题
-            pmDotConClass: "ecs-dotcon",
-            pmDotCon: [
-                {
-                    title: "新一代云数仓，超强扩展，极致算力，多层级高可靠技术",
-                    desc: "全国首个金融云数仓，2021 IDC 中国金融行业技术应用场景创新奖“金融新基建”优秀案例; \n集群规模超强扩展能力，存储10PB级业务数据; \n多层级全并行计算，实现算的更快，满足业务更高的SLA要求; \n软件多层级HA、多层级备份、硬件全冗余设计，保证系统的鲁棒性，业务7x24全天候在线。",
-                    img: "/images/products/products_cdw/01.png",
-                    imgCss: "pic-r",
-                },
-                {
-                    title: "高并发交互式查询秒级响应，分析师工作效率全面提升",
-                    desc: "单集群480节点，装机容量20PB，支撑数据分析、集市、BI等各种场景； \n通过分布式查询优化，实现高并发点查询秒级/毫秒级响应； \n资源融合统一，灵活调配，多层级并行计算，效率最优.",
-                    img: "/images/products/products_cdw/02.jpeg",
-                    imgCss: "pic-l",
-                },
-                {
-                    title: "HTAP混合负载，按需弹性，湖仓一体",
-                    desc: "混合负载：“一库两用”，支持超过100万QPS、10万TPS高并发混合读写，支持事务强一致； \n资源管理：可以根据业务优先级进行资源动态分配，实现“快慢通道”； \按需扩容：弹性按需扩容，灵活应对用户数据及负载潮汐变化；\n仓湖一体：DWS可以直接读写OBS对象存储系统的数据，支持数据冷热分级。",
-                    img: "/images/products/products_cdw/03.jpg",
-                    imgCss: "pic-r",
-                },
-                {
-                    title: "复杂即席查询，实时数据分析，一站式平台",
-                    desc: "复杂SQL实时查询，10+表格联合运算，秒级返回结果； \n实时入仓批流融合60万/秒/节点，T+0完成数据分析； \n多源数据融合，一站式统一平台，助力非传统数仓工程师便捷使用数据。",
-                    img: "/images/products/products_cdw/04.jpeg",
-                    imgCss: "pic-l",
-                },
-            ],
             // 精品案例
             pmImgConTil: "精品案例",//标题
             pmImgConClass: "p-cdw",//复写样式

@@ -4,7 +4,7 @@
         <products-banner banner-key="dew"></products-banner>
 
         <!-- 2、了解数据加密服务  -->
-        <products-pAboutBCS :pAboutBCSTil="pAboutBCSTil" :pAboutBCS="pAboutBCS"></products-pAboutBCS>
+        <products-frame-text text-key="dew"></products-frame-text>
 
         <!-- 3、产品优势  -->
         <products-pmDotCon :pmDotConTil="pmDotConTil" :pmDotCon="pmDotCon"></products-pmDotCon>
@@ -20,32 +20,6 @@ export default {
     layout: 'products',
     data() {
         return {
-            // 数据加密服务-banner
-            pmBanner: {
-                title: "数据加密服务",
-                desc: "数据加密服务（Data Encryption Workshop）是一个综合的云上数据加密服务。它可以提供专属加密、密钥管理、密钥对管理、凭据管理功能。其密钥由硬件安全模块（HSM） 保护，并与许多服务集成。用户也可以借此服务开发自己的加密应用。",
-                img: "/images/products/products_dew/b1.jpg",
-            },
-            // 了解数据加密服务
-            pAboutBCSTil: "了解数据加密服务",
-            pAboutBCS: [
-                {
-                    til: "数据加解密",
-                    desc: "与ECS、RDS、OBS、EVS、IMS等服务集成，加解密您存储在这些云服务内的数据",
-                },
-                {
-                    til: "多种密钥算法",
-                    desc: "支持对称，非对称加密；支持AES、RSA、SM2、SM4等国际、国密加密算法",
-                },
-                {
-                    til: "等保合规",
-                    desc: "满足等保的数据保密性要求，对密钥的操作可进行安全访问控制及日志审计",
-                },
-                {
-                    til: "专属加密",
-                    desc: "Dedicated HSM可提供认证合规的金融加密机、服务器加密机以及签名验签服务器",
-                },
-            ],
             // 产品优势
             pmDotConTil: "功能描述",//标题
             pmDotCon: [

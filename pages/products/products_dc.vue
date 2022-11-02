@@ -7,8 +7,7 @@
         <products-banner banner-key="dc"></products-banner>
 
         <!-- 2、了解云专线  -->
-        <products-pAboutBCS :pAboutBCS="pAboutBCS" :pAboutBCSTil="pAboutBCSTil" :pAboutBCSClass="pAboutBCSClass">
-        </products-pAboutBCS>
+        <products-frame-text text-key="dc" custom-class="m-p-ECS"></products-frame-text>
 
         <!-- 3、应用场景  -->
         <products-pmScene :pmScene="pmScene"></products-pmScene>
@@ -33,33 +32,6 @@ export default {
     name: "products-DC",
     data() {
         return {
-            // 云专线-banner
-            pmBanner: {
-                title: "云专线",
-                desc: "云专线（Direct Connect）用于搭建用户本地数据中心与VPC之间高速、低时延、稳定安全的专属连接通道，充分利用服务优势的同时，继续使用现有的IT设施，实现灵活一体，可伸缩的混合云计算环境。",
-                img: "/images/products/products_dc/b1.jpg",
-            },
-            // 了解云专线
-            pAboutBCSTil: "了解云专线",
-            pAboutBCSClass: "m-p-ECS",
-            pAboutBCS: [
-                {
-                    til: "用通道高安全",
-                    desc: "用户使用云专线接入VPC，使用专享私密通道进行通信，网络隔离，安全性极高",
-                },
-                {
-                    til: "多种接入线路",
-                    desc: "云专线支持从用户IDC拉运营商MSTP/传输专线、裸光纤、MPLS VPN等类型的专线接入",
-                },
-                {
-                    til: "混合云无缝扩展",
-                    desc: "通过云专线将用户本地数据中心与云上资源互联，形成灵活可伸缩的混合云部署",
-                },
-                {
-                    til: "超大带宽",
-                    desc: "主力region专线单线路最大支持100Gbps带宽连接，满足各类用户带宽需求",
-                },
-            ],
             // 应用场景
             pmScene: {
                 products: 0,

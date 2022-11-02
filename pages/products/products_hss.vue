@@ -4,7 +4,7 @@
         <products-banner banner-key="hss"></products-banner>
 
         <!-- 2、了解企业主机安全  -->
-        <products-pAboutBCS :pAboutBCSTil="pAboutBCSTil" :pAboutBCS="pAboutBCS"></products-pAboutBCS>
+        <products-frame-text text-key="hss"></products-frame-text>
 
         <!-- 3、应用场景  -->
         <products-pmScene :pmScene="pmScene"></products-pmScene>
@@ -21,32 +21,6 @@ export default {
     layout: 'products',
     data() {
         return {
-            // 企业主机安全-banner
-            pmBanner: {
-                title: "企业主机安全",
-                desc: "企业主机安全（Host Security Service）是服务器贴身安全管家，通过资产管理、漏洞管理、基线检查、入侵检测、程序运行认证、文件完整性校验，安全运营、网页防篡改等功能，帮助企业更方便地管理主机安全风险，实时发现黑客入侵行为，以及满足等保合规要求。",
-                img: "/images/products/products_hss/b1.jpg",
-            },
-            // 了解企业主机安全
-            pAboutBCSTil: "了解企业主机安全",
-            pAboutBCS: [
-                {
-                    til: "减少被攻击面",
-                    desc: "资产管理、基线检查、漏洞管理三大功能及时发现主机风险，有效减少90%被攻击面",
-                },
-                {
-                    til: "防暴力破解",
-                    desc: "账户破解防护+双因子认证，实现100%暴力破解防护",
-                },
-                {
-                    til: "勒索病毒防治",
-                    desc: "通过安全体检，主动防御和文件备份功能，有效进行勒索病毒防治",
-                },
-                {
-                    til: "网页防篡改",
-                    desc: "支持动态、静态网页防篡改，保障重要系统的网站信息不被恶意篡改",
-                },
-            ],
             // 应用场景
             pmScene: {
                 index: 0,

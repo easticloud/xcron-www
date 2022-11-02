@@ -4,7 +4,7 @@
         <products-banner banner-key="bcs"></products-banner>
 
         <!-- 2、了解区块链服务  -->
-        <products-pAboutBCS :pAboutBCSTil="pAboutBCSTil" :pAboutBCS="pAboutBCS"></products-pAboutBCS>
+        <products-frame-text text-key="bcs"></products-frame-text>
 
         <!-- 3、产品与服务  -->
         <products-pmImgCon :pmImgConClass="pmImgConClass" :pmImgConTil="pmImgConTil" :pmImgCon="pmImgCon">
@@ -26,32 +26,6 @@ export default {
     layout: "products",
     data() {
         return {
-            // 区块链服务-banner
-            pmBanner: {
-                title: "区块链服务",
-                desc: "区块链是构建信任的基石，是实现信用传递，价值传递的可信网络。区块链聚焦构建安全、可靠的区块链基础设施，让企业、政府快速、高效的搭建区块链网络及行业应用，实现资金流、物流、信息流的可信快速流动，高效可信协同，助力降低协作成本，提升效率。",
-                img: "/images/products/products_bcs/b1.jpg",
-            },
-            // 了解区块链服务
-            pAboutBCSTil: "了解区块链服务",
-            pAboutBCS: [
-                {
-                    til: "100000+",
-                    desc: "10万级TPS秒级共识",
-                },
-                {
-                    til: "10000+",
-                    desc: "支持10000+节点扩展",
-                },
-                {
-                    til: "400+",
-                    desc: "已落地400+应用场景",
-                },
-                {
-                    til: "可信",
-                    desc: "满足金融级可信和协同要求",
-                },
-            ],
             // 产品与服务
             pmImgConTil: "产品与服务",//标题
             pmImgConClass: "noimgCon",//复写样式
