@@ -395,6 +395,31 @@
             }
         ]
     },
+    "cf_x": {
+        "title": "功能特性",
+        "children": [
+            {
+                "title": "细粒度访问控制",
+                "desc": "支持全向流量访问控制，实时入侵防御等功能\n提供Internet流量访问控制、细粒度访问控制、VPC间流量的访问控制",
+                "img": "/images/products/products_cf/01-2x.png"
+            },
+            {
+                "title": "主动外联管控",
+                "desc": "支持云内资源的主动外联检测与封禁，协助客户判断恶意外连请求\n自动发现失陷主机，展示主机的主动外联数据，及时发现可疑主机",
+                "img": "/images/products/products_cf/02-2x.png"
+            },
+            {
+                "title": "入侵检测与防御",
+                "desc": "入侵防御引擎对恶意流量实时检测和拦截，集成全网威胁情报，实现智能精准防护\n针对开放公网访问的资产，能够自动识别威胁暴露面，并支持一键开启防护",
+                "img": "/images/products/products_cf/03-2x.png"
+            },
+            {
+                "title": "日志审计&流量可视化",
+                "desc": "全场景流量日志，报表分析呈现，支持审计及高级威胁溯源分析\n支持全网流量可视",
+                "img": "/images/products/products_cf/04-2x.png"
+            }
+        ]
+    },
     "bms_x": {
         "title": "产品优势",
         "children": [
@@ -427,6 +452,31 @@
                 "desc": "• 云擎天架构加持，无虚拟化开销和性能损失，100%释放算力资源 \n• 深度定制化硬件，尽享云上硬件红利 \n• 业界独家支持共享云存储，更好满足集群应用需求 \n• 资源服务遍布全球，助力企业业务全球快速扩展",
                 "img": "/images/products/products_bms/04.jpeg",
                 "imgCss": "pic-r"
+            }
+        ]
+    },
+    "dew": {
+        "title": "功能描述",
+        "children": [
+            {
+                "title": "专属加密",
+                "desc": "提供基础版和专业版专属加密服务，满足不同业务场景需求",
+                "img": "/images/products/products_dew/01.png"
+            },
+            {
+                "title": "密钥管理",
+                "desc": "全生命周期密钥管理，满足不同云服务下的加密需求",
+                "img": "/images/products/products_dew/02.png"
+            },
+            {
+                "title": "密钥对管理",
+                "desc": "分为私钥本地保存和私钥托管两种方式，满足不同业务场景需求",
+                "img": "/images/products/products_dew/03.png"
+            },
+            {
+                "title": "凭据管理",
+                "desc": " 对敏感凭据的全生命周期和统一管理",
+                "img": "/images/products/products_dew/04.png"
             }
         ]
     }

@@ -6,11 +6,11 @@
         <!-- 2、了解数据加密服务  -->
         <products-frame-text text-key="dew"></products-frame-text>
 
-        <!-- 3、产品优势  -->
-        <products-pmDotCon :pmDotConTil="pmDotConTil" :pmDotCon="pmDotCon"></products-pmDotCon>
+        <!-- 3、功能描述  -->
+        <products-graphic-matrix matrix-key="dew"></products-graphic-matrix>
 
         <!-- 4、应用场景  -->
-        <products-tabs :data="pmScene"></products-tabs>
+        <products-tabs tab-key="dew" custom-class="m-Bms-scene"></products-tabs>
     </div>
 </template>
 
@@ -20,30 +20,6 @@ export default {
     layout: 'products',
     data() {
         return {
-            // 产品优势
-            pmDotConTil: "功能描述",//标题
-            pmDotCon: [
-                {
-                    title: "专属加密",
-                    desc: "提供基础版和专业版专属加密服务，满足不同业务场景需求",
-                    img: "/images/products/products_dew/01.png",
-                },
-                {
-                    title: "密钥管理",
-                    desc: "全生命周期密钥管理，满足不同云服务下的加密需求",
-                    img: "/images/products/products_dew/02.png",
-                },
-                {
-                    title: "密钥对管理",
-                    desc: "分为私钥本地保存和私钥托管两种方式，满足不同业务场景需求",
-                    img: "/images/products/products_dew/03.png",
-                },
-                {
-                    title: "凭据管理",
-                    desc: " 对敏感凭据的全生命周期和统一管理",
-                    img: "/images/products/products_dew/04.png",
-                },
-            ],
             // 应用场景
             pmScene: {
                 index: 0,

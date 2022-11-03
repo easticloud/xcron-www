@@ -7,7 +7,7 @@
         <products-graphic-matrix matrix-key="iec"></products-graphic-matrix>
 
         <!-- 3、应用场景  -->
-        <products-tabs :data="pmScene"></products-tabs>
+        <products-tabs tab-key="iec" custom-class="m-Bms-scene"></products-tabs>
 
         <!-- 4、功能描述  -->
         <products-pmDotCon :pmDotConTil="pmDotConTil01" :pmDotCon="pmDotCon01"></products-pmDotCon>
@@ -20,87 +20,6 @@ export default {
     layout: 'products',
     data() {
         return {
-            // 应用场景
-            pmScene: {
-                index: 0,
-                til: "应用场景",
-
-                sceneClass: "m-Bms-scene",
-                list: [
-                    {
-                        label: "互动直播",
-                        children: {
-                            title: "互动直播",
-                            titletag: "互动直播场景将音视频转码、弹幕分发、内容审核等处理能力部署在边缘站点，可以显著提升业务处理质量，优化响应效率，降低流量成本。",
-                            src: "/images/products/products_iec/s1.svg",
-                            tag: [
-                                {
-                                    tagTil: "· 多样算力",
-                                    tagCon: "提供GPU、AI等多样化算力，提升高清转码、内容审核等场景处理的性价比",
-                                },
-                                {
-                                    tagTil: "· 流量本地化",
-                                    tagCon: "优化直播弹幕等大流量业务的成本",
-                                },
-                            ],
-                        },
-                    },
-                    {
-                        label: "在线教育",
-                        children: {
-                            title: "在线教育",
-                            titletag: "在线教育场景为老师与学生提供实时互动的视频教育体验，需要在边缘侧提供区域间稳定互联的低时延通信链路，从而有效支撑师生间多点对多点实时互动。",
-                            src: "/images/products/products_iec/s2.svg",
-                            tag: [
-                                {
-                                    tagTil: "· 边云网络",
-                                    tagCon: "基于时延和丢包率实时探测的动态网络选路",
-                                },
-                                {
-                                    tagTil: "· 广域覆盖",
-                                    tagCon: "边缘节点覆盖中国大陆各主要区域",
-                                },
-                            ],
-                        },
-                    },
-                    {
-                        label: "应用加速",
-                        children: {
-                            title: "应用加速",
-                            titletag: "应用加速场景如游戏加速、App加速等，需要根据端到端时延要求，选择靠近最终用户的边缘站点，并通过优化端到端的网络选路，降低端到端时延。",
-                            src: "/images/products/products_iec/s3.svg",
-                            tag: [
-                                {
-                                    tagTil: "· 弹性扩展",
-                                    tagCon: "资源按需使用，批量业务创建，有效应对业务的突发增量需求",
-                                },
-                                {
-                                    tagTil: "· 高效运维",
-                                    tagCon: "多站点资源的统一管理，基于API的服务管控和监控运维",
-                                },
-                            ],
-                        },
-                    },
-                    {
-                        label: "自建CDN",
-                        children: {
-                            title: "自建CDN",
-                            titletag: "前互联网企业或服务商自建CDN网络时，大多采取租赁IDC的模式，需要建设和维护遍布多地域的大量站点。边缘云服务提供覆盖中国大陆的边缘算力网络，以及全局管理和自动化运维能力，帮助用户快速搭建和维护CDN网络。",
-                            src: "/images/products/products_iec/s4.svg",
-                            tag: [
-                                {
-                                    tagTil: "· 广域覆盖",
-                                    tagCon: "遍布中国大陆各主要地域和省市的站点布局",
-                                },
-                                {
-                                    tagTil: "· 高性价比",
-                                    tagCon: "提供内容分发场景所需的含NVMe的高性能本地存储型实例",
-                                },
-                            ],
-                        },
-                    },
-                ],
-            },
             // 功能描述
             pmDotConTil01: "功能描述",//标题
             pmDotCon01: [
