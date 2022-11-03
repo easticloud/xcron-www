@@ -1,8 +1,8 @@
 <template>
     <div class="m-p-pInfo">
         <div class="wp">
-            <h2>{{pmPInfoTil}}</h2>
-            <div class="infoImg" :style="`backgroundImage: url(${pmPInfoImg})`"></div>
+            <h2>{{ title }}</h2>
+            <div class="infoImg" :style="`backgroundImage: url(${bgImg})`"></div>
         </div>
     </div>
 </template>
@@ -10,16 +10,13 @@
 <script>
 export default {
     props: {
-        pmPInfoTil: String,
-        pmPInfoImg: String
+        title: String,
+        bgImg: String,
     },
     data() {
-        return {
-        };
+        return {};
     },
-    methods: {
-
-    },
+    methods: {},
 };
 </script>
 
