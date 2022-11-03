@@ -1,7 +1,7 @@
 <template>
     <div class="m-p-scene" :class="customClass">
         <div class="wp">
-            <h2>{{ data.title }}</h2>
+            <h2 v-if="data.title">{{ data.title }}</h2>
             <div class="m-tabs" v-if="data.children.length > 1">
                 <div
                     class="m-item"

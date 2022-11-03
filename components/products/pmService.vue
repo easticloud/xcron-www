@@ -49,6 +49,7 @@ export default {
             .pr;
             .flex;
             .db;
+            letter-spacing: 1px;
 
             span {
                 .db;
