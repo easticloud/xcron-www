@@ -80,11 +80,32 @@
 
 @media screen and(max-width:@phone) {
     .m-scene-recommend {
-        .pt(30px);
+        .pt(35px);
         .m-title {
             h2 {
                 .fz(24px,30px);
                 font-weight: 500;
+            }
+        }
+        .m-box {
+            .pt(30px);
+            flex-direction: column;
+            .u-item {
+                .u-txt {
+                    padding: 30px 20px;
+                    .u-title {
+                        .fz(18px,30px);
+                    }
+                }
+                .u-button {
+                    .size(100%,42px);
+                    .fz(18px,42px);
+                }
+                .m-tag {
+                    .u-tag {
+                        .fz(16px,30px);
+                    }
+                }
             }
         }
         .m-recommend-content.u-shadow {

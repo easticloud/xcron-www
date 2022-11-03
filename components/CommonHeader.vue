@@ -1,22 +1,37 @@
 <template>
-    <div class="c-header">
-        <div class="wp">
-            <nuxt-link to="/"><img src="../assets/img/logo.svg" alt="Xcron" /></nuxt-link>
-            <div class="m-box">
+    <div>
+        <div class="c-header">
+            <div class="wp">
+                <nuxt-link to="/"><img src="../assets/img/logo.svg" alt="Xcron" /></nuxt-link>
+                <div class="m-box">
+                    <nuxt-link class="u-link" v-for="(item, i) in list" :key="i" :to="item.href">
+                        <span
+                            class="u-txt"
+                            :class="activeIndex == i ? 'active' : ''"
+                            @click="activeHandle(i)"
+                            @mouseover="change(item.key)"
+                        >
+                            {{ item.label }}
+                        </span>
+                    </nuxt-link>
+                </div>
+            </div>
+            <div @mouseleave="clean">
+                <index-menu :type="type"></index-menu>
+            </div>
+        </div>
+        <div class="c-header-mobile" :class="{ show }">
+            <div class="m-header">
+                <nuxt-link to="/"><img src="../assets/img/logo.svg" alt="Xcron" class="u-logo" /></nuxt-link>
+                <img src="../assets/img/menu.svg" class="u-icon" @click="show = !show" />
+            </div>
+            <div class="m-menu" v-show="show">
                 <nuxt-link class="u-link" v-for="(item, i) in list" :key="i" :to="item.href">
-                    <span
-                        class="u-txt"
-                        :class="activeIndex == i ? 'active' : ''"
-                        @click="activeHandle(i)"
-                        @mouseover="change(item.key)"
-                    >
+                    <span class="u-txt" @click="show = false">
                         {{ item.label }}
                     </span>
                 </nuxt-link>
             </div>
-        </div>
-        <div @mouseleave="clean">
-            <index-menu :type="type"></index-menu>
         </div>
     </div>
 </template>
@@ -35,6 +50,7 @@ export default {
                 { label: "联系我们", class: "active", key: "contact", href: "/" },
                 { label: "关于我们", class: "active", key: "about", href: "/" },
             ],
+            show: false,
         };
     },
     computed: {
@@ -52,7 +68,7 @@ export default {
         },
         clean() {
             this.type = "";
-        }
+        },
     },
 };
 </script>

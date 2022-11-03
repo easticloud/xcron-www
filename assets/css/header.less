@@ -43,3 +43,46 @@
         }
     }
 }
+.c-header-mobile {
+    .none;
+    .m-header {
+        .flex;
+        padding: 20px 10px;
+        justify-content: space-between;
+        align-items: center;
+        .u-logo {
+            .size(auto,40px);
+        }
+        .u-icon {
+            .size(40px);
+        }
+    }
+    .m-menu {
+        .flex;
+        .fz(18px,34px);
+        flex-direction: column;
+        padding: 0 10px;
+        .u-link {
+            .color(#3c3c3c);
+            border-top: 1px solid #ddd;
+            padding: 10px;
+            font-weight: 500;
+        }
+    }
+    &.show {
+        .pf;
+        .z(99);
+        .lt(0);
+        .rb(0);
+        background-color: #fff;
+    }
+}
+
+@media screen and(max-width:@phone) {
+    .c-header {
+        .none;
+    }
+    .c-header-mobile {
+        .db;
+    }
+}
