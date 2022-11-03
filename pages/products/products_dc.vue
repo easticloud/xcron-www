@@ -10,8 +10,7 @@
         <products-tabs tab-key="dc" custom-class="m-Bms-products_dc"></products-tabs>
 
         <!-- 4、权威认可  -->
-        <products-pmDotCon :pmDotConClass="pmDotConClass" :pmDotConTil="pmDotConTil" :pmDotCon="pmDotCon">
-        </products-pmDotCon>
+        <products-graphic-matrix matrix-key="dc" custom-class="bcsAuth-1" />
 
         <!-- 5、联系我们Contact  -->
         <products-contactUs></products-contactUs>

@@ -10,8 +10,7 @@
         <products-graphic-matrix matrix-key="cdw_x" custom-class="ecs-dotcon" />
 
         <!-- 4、精品案例  -->
-        <products-pmImgCon :pmImgConClass="pmImgConClass" :pmImgConTil="pmImgConTil" :pmImgCon="pmImgCon">
-        </products-pmImgCon>
+        <products-vertical-matrix matrix-key="cdw" custom-class="p-cdw"></products-vertical-matrix>
 
         <!-- 5、应用场景  -->
         <products-tabs tab-key="cdw" custom-class="m-Bms-scene"></products-tabs>

@@ -7,10 +7,10 @@
         <products-graphic-matrix matrix-key="ais" custom-class="m-p-oSer"></products-graphic-matrix>
 
         <!-- 3、产品功能  -->
-        <products-pmImgCon :pmImgConTil="pmImgConTil" :pmImgCon="pmImgCon"></products-pmImgCon>
+        <products-vertical-matrix matrix-key="ais"></products-vertical-matrix>
 
         <!-- 4、场景使用  -->
-        <products-tabsUse></products-tabsUse>
+        <products-tabs tab-key="ais" custom-class="m-tab-ais" />
     </div>
 </template>
 
@@ -55,4 +55,19 @@ export default {
 
 <style lang="less">
 @import "~@/assets/css/products.less";
+
+.m-tab-ais {
+    background: #fff;
+
+    .m-Scontent {
+        margin-top: 0;
+        box-shadow: 0px 0px 5px 1px #E6E6E6;
+
+        .u-img {
+            img {
+                .size(448px, 224px);
+            }
+        }
+    }
+}
 </style>

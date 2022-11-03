@@ -10,7 +10,7 @@
         <products-graphic-matrix matrix-key="tsp_x" custom-class="ecs-dotcon"></products-graphic-matrix>
 
         <!-- 4、产品功能  -->
-        <products-pmImgCon :pmImgConTil="pmImgConTil" :pmImgCon="pmImgCon"></products-pmImgCon>
+        <products-vertical-matrix matrix-key="tsp"></products-vertical-matrix>
     </div>
 </template>
 
@@ -20,12 +20,6 @@ export default {
     layout: 'products',
     data() {
         return {
-            // 终端安全防护-banner
-            pmBanner: {
-                title: "终端安全防护",
-                desc: "可对终端侧的安全威胁事前预防、事中防护及事后检测和响应，并联动网络侧的安全防御能力，为企业构建由网到端的全面闭环防护",
-                img: "/images/products/products_tsp/b1.jpg",
-            },
             // 产品功能
             pmImgConTil: "产品功能",
             pmImgCon: [
@@ -43,23 +37,6 @@ export default {
                     title: "网端联动",
                     desc: "通过网络及终端的深度协同联动，能够实现在网络端发现威胁、定位主机后，可直接在控制台下发对终端的处置命令，实现高协同、更有效、全面的危险防御",
                     img: "/images/products/products_tsp/7.png",
-                },
-            ],
-            // 应用场景
-            pmDotConTil: "应用场景",//标题
-            pmDotConClass: "ecs-dotcon",
-            pmDotCon: [
-                {
-                    title: "企业终端遭勒索病毒攻击并感染，文件被加密，核心资产受威胁",
-                    desc: "通过4 层勒索入侵防御、6级勒索反加密防护和6项勒索检测与响应，可提前识别和封锁攻击入口，对攻击手段进行对抗，并快速定位、处置与阻断勒索病毒，减少对用户的业务影响",
-                    img: "/images/products/products_tsp/s1.jpg",
-                    imgCss: "pic-l",
-                },
-                {
-                    title: "企业员工下载携带未知威胁的文件，终端安全防护软件无法识别，安全事件频发",
-                    desc: "通过网络及终端的深度协同联动，终端未知的新型威胁可通过流量侧如上网行为分析、上网流量检测等提前发现异常并及时分析与处置，实现更全面的安全威胁防护",
-                    img: "/images/products/products_tsp/s2.jpeg",
-                    imgCss: "pic-r",
                 },
             ],
         }
