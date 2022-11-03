@@ -46,3 +46,27 @@
         background-image: url(../../../static/images/scene/banner/common.jpg);
     }
 }
+@media screen and (max-width: @phone) {
+    .m-scene-header {
+        .m-header-content {
+            .h(auto);
+            padding: 40px 20px;
+            h1 {
+                .fz(32px,38px);
+                .mb(20px);
+            }
+            .u-desc {
+                .fz(16px,30px);
+                .mb(30px);
+                max-width: 100%;
+            }
+            .u-button {
+                .fz(18px,48px);
+                .size(140px,48px);
+            }
+        }
+        &.u-hot {
+            .h(auto);
+        }
+    }
+}

@@ -1,10 +1,10 @@
 .m-scene-programme {
     .pt(50px);
+    background-color: #fff;
     .m-programme-content {
         .flex;
         .r(5px);
         .clip;
-        background-color: #fff;
         .u-img-box {
             .flex;
             .w(600px);
@@ -78,6 +78,19 @@
                     border: 0;
                     .pb(0);
                 }
+            }
+        }
+    }
+}
+@media screen and (max-width: @phone) {
+    .m-scene-programme {
+        .m-programme-content {
+            flex-direction: column;
+            .u-img-box {
+                width: 100%;
+            }
+            .m-programme-box {
+                padding:30px 0;
             }
         }
     }

@@ -38,7 +38,7 @@
             font-weight: 400;
             padding: 57px 0 0 80px;
             box-sizing: border-box;
-            background: url(../../../static/images/scene/hot/shop.svg) no-repeat center center;
+            background: url(../../../static/images/scene/hot/shop.svg) no-repeat center left;
             h2 {
                 .fz(36px,50px);
                 .mb(15px);
@@ -63,8 +63,22 @@
         .m-service {
             .flex;
             flex-wrap: wrap;
-            gap:22px;
+            gap: 22px;
             padding: 50px 0 75px 0;
+        }
+    }
+}
+
+@media screen and (max-width: @phone) {
+    .m-hot-scene {
+        .m-hot-content {
+            .pt(35px);
+            .m-info {
+                .none;
+            }
+            .m-shop {
+                padding: 30px 20px;
+            }
         }
     }
 }

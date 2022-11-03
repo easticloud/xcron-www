@@ -7,7 +7,7 @@
         .flex;
         flex-direction: column;
         align-items: center;
-        gap:10px;
+        gap: 10px;
         h2 {
             .fz(36px,50px);
             font-weight: 400;
@@ -31,6 +31,32 @@
                 .u-title {
                     .fz(21px,30px);
                     font-weight: 500;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: @phone) {
+    .m-scene-business {
+        .u-desc {
+            .fz(16px,30px);
+        }
+        .m-title {
+            padding: 0 20px;
+            h2 {
+                .fz(24px,30px);
+            }
+        }
+        .m-business-content {
+            padding: 30px 0;
+            flex-direction: column;
+            .u-item {
+                padding: 0 10px;
+                .u-box {
+                    gap: 0;
+                    .u-title {
+                        .fz(18px,30px);
+                    }
                 }
             }
         }

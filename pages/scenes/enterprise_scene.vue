@@ -297,4 +297,9 @@ export default {
 .m-enterprise-content {
     padding: 75px 0;
 }
+@media screen and (max-width: @phone) {
+    .m-enterprise-content {
+        padding: 40px 0;
+    }
+}
 </style>
