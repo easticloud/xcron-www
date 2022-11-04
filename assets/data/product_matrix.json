@@ -433,7 +433,7 @@
             },
             {
                 "title": "HTAP混合负载，按需弹性，湖仓一体",
-                "desc": "混合负载：“一库两用”，支持超过100万QPS、10万TPS高并发混合读写，支持事务强一致； \n资源管理：可以根据业务优先级进行资源动态分配，实现“快慢通道”； 按需扩容：弹性按需扩容，灵活应对用户数据及负载潮汐变化；\n仓湖一体：DWS可以直接读写OBS对象存储系统的数据，支持数据冷热分级。",
+                "desc": "混合负载：“一库两用”，支持超过100万QPS、10万TPS高并发混合读写，支持事务强一致； \n资源管理：可以根据业务优先级进行资源动态分配，实现“快慢通道”； \n按需扩容：弹性按需扩容，灵活应对用户数据及负载潮汐变化；\n仓湖一体：DWS可以直接读写OBS对象存储系统的数据，支持数据冷热分级。",
                 "img": "/images/products/products_cdw/04.jpeg",
                 "imgCss": "pic-r"
             },
@@ -486,12 +486,12 @@
             {
                 "title": "云网能力技术最佳实践奖",
                 "desc": "由中国信息通信研究院、中国标准化协会颁发的技术创新的系列奖项。KYON企业级云网络凭借极简敏捷的携网上云能力，以及数项技术创新，得到可信云权威评估机构的高度认可，斩获“2020可信云技术最佳实践奖”",
-                "img": "/images/products/products_vpc/icon.png"
+                "img": "/images/products/xintongyuan.jpeg"
             },
             {
                 "title": "IPv6支持度优秀奖",
                 "desc": "作为首批通过工信部IPv6认证的云厂商之一，16项云服务获得工信部认证的云服务IPv6支持能力测评证书，标志着云服务在IPv6网络下的各项能力均已走在行业前列",
-                "img": "/images/products/products_vpc/icon.png"
+                "img": "/images/products/xintongyuan.jpeg"
             }
         ]
     },
@@ -661,7 +661,7 @@
             {
                 "title": "可信云技术最佳实践奖",
                 "desc": "擎天架构，凭借业界领先的云基础设施技术底座，以及面向多场景的技术创新，得到可信云权威机构的高度认可，荣获2020-2021年度“可信云技术最佳实践奖”。",
-                "img": "/images/products/products_ecs/04.png"
+                "img": "/images/products/xintongyuan.jpeg"
             },
             {
                 "title": "下一代云计算技术创新奖",
@@ -681,12 +681,12 @@
             {
                 "title": "通过可信区块链双项测评",
                 "desc": "2021年12月通过中国通信院第六批可信区块链功能专项、性能专项两项测评，同事时性能评测局第一位，获得权威认可。",
-                "img": "/images/products/products_bcs/01.png"
+                "img": "/images/products/xintongyuan.jpeg"
             },
             {
                 "title": "可信云最佳实践奖",
                 "desc": "凭借业界领先的区块链技术，作为第一个应用区块链技术解决政务数据共享难题的厂商，得到权威机构的高度认可。",
-                "img": "/images/products/products_bcs/01.png"
+                "img": "/images/products/xintongyuan.jpeg"
             },
             {
                 "title": "十佳区块链技术服务商",
@@ -696,7 +696,7 @@
             {
                 "title": "2021区块链技术领军企业",
                 "desc": "中国西部数字经济博览会暨第二届中国西安区块链产业发展论坛中，荣获2021区块链技术应用领军企业荣誉。",
-                "img": "/images/products/products_bcs/03.png"
+                "img": "/images/products/products_bcs/03.jpeg"
             }
         ]
     },
@@ -706,7 +706,7 @@
             {
                 "title": "可信云·云平台网络能力",
                 "desc": "云专线解决方案获得中国信息通信研究院可信云·云平台网络能力认证",
-                "img": "/images/products/products_dc/1.png"
+                "img": "/images/products/xintongyuan.jpeg"
             },
             {
                 "title": "网络安全等级保护",

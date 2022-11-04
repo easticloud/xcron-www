@@ -17,7 +17,12 @@
 <script>
 export default {
     name: "products-AIS",
-    layout: "products"
+    layout: "products",
+    head() {
+        return {
+            title: "AI在线服务",
+        }
+    }
 };
 </script>
 

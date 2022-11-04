@@ -17,7 +17,12 @@
 <script>
 export default {
     name: "products-DH",
-    layout: 'products'
+    layout: 'products',
+    head() {
+        return {
+            title: "专属主机",
+        }
+    }
 };
 </script>
 

@@ -17,7 +17,12 @@
 <script>
 export default {
     name: "products-IEC",
-    layout: 'products'
+    layout: 'products',
+    head() {
+        return {
+            title: "智能边缘云",
+        }
+    }
 };
 </script>
 

@@ -17,7 +17,12 @@
 <script>
 export default {
     name: "products-DIS",
-    layout: 'products'
+    layout: 'products',
+    head() {
+        return {
+            title: "数据接入服务",
+        }
+    }
 };
 </script>
 

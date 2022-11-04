@@ -28,6 +28,11 @@ export default {
             bgImg: "/images/products/products_ecs/bg.png"
         }
     },
+    head() {
+        return {
+            title: "弹性云服务器",
+        }
+    }
 };
 </script>
 

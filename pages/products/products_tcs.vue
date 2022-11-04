@@ -20,7 +20,12 @@
 <script>
 export default {
     name: "products-TCS",
-    layout: "products"
+    layout: "products",
+    head() {
+        return {
+            title: "可信跨链服务",
+        };
+    },
 };
 </script>
 

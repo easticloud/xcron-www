@@ -20,7 +20,12 @@
 <script>
 export default {
     name: "products-BCS",
-    layout: "products"
+    layout: "products",
+    head() {
+        return {
+            title: "区块链服务",
+        }
+    }
 };
 </script>
 

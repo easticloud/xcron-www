@@ -17,7 +17,12 @@
 <script>
 export default {
     name: "products-DEW",
-    layout: 'products'
+    layout: 'products',
+    head() {
+        return {
+            title: "数据加密服务",
+        }
+    }
 };
 </script>
 

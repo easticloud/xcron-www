@@ -17,7 +17,12 @@
 <script>
 export default {
     name: "products-DLV",
-    layout: 'products'
+    layout: 'products',
+    head() {
+        return {
+            title: "数据可视化",
+        }
+    }
 };
 </script>
 

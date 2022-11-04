@@ -28,6 +28,11 @@ export default {
             bgImg: "/images/products/products_bms/bg.png"
         };
     },
+    head() {
+        return {
+            title: "裸金属服务器",
+        }
+    }
 };
 </script>
 

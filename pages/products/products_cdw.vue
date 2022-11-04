@@ -20,7 +20,12 @@
 <script>
 export default {
     name: "products-CDW",
-    layout: "products"
+    layout: "products",
+    head() {
+        return {
+            title: "云数据仓库",
+        }
+    }
 };
 </script>
 

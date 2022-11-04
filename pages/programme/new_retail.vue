@@ -24,6 +24,11 @@ import PictureText from "@/components/programme/picture_text";
 import AllText from "@/components/programme/all_text";
 export default {
     components: { Header, PictureText, AllText },
+    head() {
+        return {
+            title: "新零售行业解决方案",
+        };
+    },
     data() {
         return {
             header: {

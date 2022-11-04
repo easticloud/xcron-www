@@ -14,7 +14,12 @@
 <script>
 export default {
     name: "products-GA",
-    layout: 'products'
+    layout: 'products',
+    head() {
+        return {
+            title: "全球加速",
+        }
+    }
 };
 </script>
 

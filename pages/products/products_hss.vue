@@ -20,7 +20,12 @@
 <script>
 export default {
     name: "products-HSS",
-    layout: 'products'
+    layout: 'products',
+    head() {
+        return {
+            title: "企业主机安全",
+        }
+    }
 };
 </script>
 

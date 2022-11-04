@@ -14,7 +14,12 @@
 <script>
 export default {
     name: "products-WSA",
-    layout: "products"
+    layout: "products",
+    head() {
+        return {
+            title: "全站加速",
+        };
+    },
 };
 </script>
 

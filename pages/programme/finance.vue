@@ -25,6 +25,11 @@ import TextPicture from "@/components/programme/text_picture";
 import AllText from "@/components/programme/all_text";
 export default {
     components: { Header, IconText, TextPicture, AllText },
+    head() {
+        return {
+            title: "金融行业解决方案"
+        }
+    },
     data() {
         return {
             header: {

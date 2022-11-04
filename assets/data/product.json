@@ -1,5 +1,6 @@
 {
     "product_show": [
+        { "label": "处理器", "value": "寒武纪220+Hi3796M" },
         { "label": "NPU", "value": "最大16TOPs@INT8算力" },
         { "label": "RAM", "value": "8GB DDR4" },
         { "label": "ROM", "value": "8GB" },

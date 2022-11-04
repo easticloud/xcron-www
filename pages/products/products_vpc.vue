@@ -20,7 +20,12 @@
 <script>
 export default {
     name: "products-VPC",
-    layout: "products"
+    layout: "products",
+    head() {
+        return {
+            title: "虚拟私有云",
+        }
+    }
 };
 </script>
 

@@ -58,6 +58,15 @@ export default {
             return this.$store.state.activeIndex;
         },
     },
+    watch: {
+        $route: {
+            deep: true,
+            immediate: true,
+            handler(val) {
+                if (val.path.includes('products')) this.$store.commit("changeMenuIndex", 1);
+            },
+        }
+    },
     methods: {
         change(key) {
             this.type = key == "production" || key == "solution" ? key : "";
@@ -68,7 +77,7 @@ export default {
         },
         clean() {
             this.type = "";
-        },
+        }
     },
 };
 </script>

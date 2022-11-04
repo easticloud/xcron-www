@@ -13,14 +13,19 @@
         <products-graphic-matrix matrix-key="dc" custom-class="bcsAuth-1" />
 
         <!-- 5、联系我们Contact  -->
-        <products-contactUs></products-contactUs>
+        <products-contact-us></products-contact-us>
     </div>
 </template>
 
 <script>
 export default {
     name: "products-DC",
-    layout: "products"
+    layout: "products",
+    head() {
+        return {
+            title: "云专线",
+        }
+    }
 };
 </script>
 

@@ -17,7 +17,12 @@
 <script>
 export default {
     name: "Products-AI",
-    layout: "products"
+    layout: "products",
+    head() {
+        return {
+            title: "智能AI边缘盒子",
+        }
+    }
 };
 </script>
 

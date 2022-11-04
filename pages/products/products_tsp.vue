@@ -17,7 +17,12 @@
 <script>
 export default {
     name: "products-TSP",
-    layout: 'products'
+    layout: 'products',
+    head() {
+        return {
+            title: "终端安全防护",
+        }
+    }
 };
 </script>
 

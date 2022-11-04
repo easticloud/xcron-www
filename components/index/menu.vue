@@ -233,7 +233,7 @@ export default {
     methods: {
         change(i) {
             this.index = i;
-        },
+        }
     },
 };
 </script>

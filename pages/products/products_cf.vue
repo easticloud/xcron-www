@@ -20,7 +20,12 @@
 <script>
 export default {
     name: "products-CF",
-    layout: "products"
+    layout: "products",
+    head() {
+        return {
+            title: "云防火墙",
+        }
+    }
 };
 </script>
 
