@@ -28,6 +28,7 @@ export default {
     components: { Header, Tabs, Business, Programme, Recommend },
     data() {
         return {
+            title : "行业场景",
             header: {
                 type: "industry",
                 title: "行业应用场景专区",

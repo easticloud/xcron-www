@@ -26,6 +26,7 @@ export default {
     components: { Header, Tabs, Programme, Recommend },
     data() {
         return {
+            title : "通用场景",
             header: {
                 type: "common",
                 title: "业务通用场景专区",

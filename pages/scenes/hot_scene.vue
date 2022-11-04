@@ -40,6 +40,7 @@ export default {
     components: { Header, Service },
     data() {
         return {
+            title : "热门场景",
             header: {
                 type: "hot",
                 title: "企业热门场景专区",
