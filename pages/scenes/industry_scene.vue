@@ -6,7 +6,7 @@
         <div class="m-industry-scene">
             <Header :data="header" />
             <Tabs :data="tabs" :index="tabsIndex" @change="changeTab" />
-            <div class="wp m-industry-content">
+            <div class="wp m-industry-content m-scene-content">
                 <Business :data="current.business" v-if="current.business" />
                 <Programme :data="current.programme" v-if="current.programme" />
                 <Recommend :data="current.recommend" v-if="current.recommend" />
@@ -230,11 +230,6 @@ export default {
     },
 };
 </script>
-<style lang="less" scoped>
-.p-scene {
-    background-color: #f8f8f8;
-}
-.m-industry-content {
-    padding: 75px 0;
-}
+<style lang="less">
+@import "~@/assets/css/scene/index.less";
 </style>

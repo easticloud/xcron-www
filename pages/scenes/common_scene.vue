@@ -6,7 +6,7 @@
         <div class="m-common-scene">
             <Header :data="header" />
             <Tabs :data="tabs" :index="tabsIndex" @change="changeTab" />
-            <div class="wp m-common-content">
+            <div class="wp m-common-content m-scene-content">
                 <Programme :data="current.programme" v-if="current.programme" />
                 <Recommend :data="current.recommend" v-if="current.recommend" />
             </div>
@@ -210,11 +210,6 @@ export default {
     },
 };
 </script>
-<style lang="less" scoped>
-.p-scene {
-    background-color: #f8f8f8;
-}
-.m-common-content {
-    padding: 75px 0;
-}
+<style lang="less">
+@import "~@/assets/css/scene/index.less";
 </style>
