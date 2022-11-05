@@ -1,5 +1,5 @@
 <template>
-    <div class="m-scene-recommend">
+    <div class="m-scene-recommend" v-if="data">
         <div class="wp m-recommend-content" :class="title ? 'u-shadow' : ''">
             <div class="m-title">
                 <h2>{{ title ? title : "场景推荐" }}</h2>
@@ -24,9 +24,18 @@
     </div>
 </template>
 <script>
+import scenes_recommend from "@/assets/data/scenes_recommend.json";
 export default {
-    props: ["data"],
+    props: {
+        textKey: {
+            type: String,
+            default: "",
+        },
+    },
     computed: {
+        data() {
+            return scenes_recommend[this.textKey] || "";
+        },
         desc() {
             return this.data.desc || "";
         },

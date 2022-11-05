@@ -8,12 +8,22 @@
     </div>
 </template>
 <script>
+import scenes_tabs from "@/assets/data/scenes_tabs.json";
 export default {
-    props: ["data", "index"],
+    props: {
+        textKey: {
+            type: String,
+            default: "",
+        },
+        index: {
+            type: String || Number,
+            default: "1",
+        },
+    },
     emits: ["change"],
     computed: {
         list() {
-            return this.data || [];
+            return scenes_tabs[this.textKey] || [];
         },
     },
     methods: {

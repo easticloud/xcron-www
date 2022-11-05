@@ -8,9 +8,18 @@
     </div>
 </template>
 <script>
+import scenes_header from "@/assets/data/scenes_header.json";
 export default {
-    props: ["data"],
+    props: {
+        bannerKey: {
+            type: String,
+            default: "",
+        },
+    },
     computed: {
+        data() {
+            return scenes_header[this.bannerKey] || {};
+        },
         title() {
             return this.data.title || "";
         },

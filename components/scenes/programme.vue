@@ -1,8 +1,8 @@
 <template>
-    <div class="m-scene-programme">
+    <div class="m-scene-programme" v-if="data">
         <div class="wp m-programme-content">
             <div class="u-img-box">
-                <img :src="img" class="u-img" />
+                <img :src="require(`/static/images/${img}`)" class="u-img" />
             </div>
             <div class="m-programme-box">
                 <div class="m-box">
@@ -25,7 +25,7 @@
                     <span class="u-title">推荐产品</span>
                     <div class="m-product">
                         <div class="u-product" v-for="(item, i) in recommend" :key="i">
-                            <img :src="item.icon" class="u-img" />
+                            <img :src="require(`/static/images/${item.icon}`)" class="u-img" />
                             <span class="u-desc">{{ item.name }}</span>
                         </div>
                     </div>
@@ -35,9 +35,18 @@
     </div>
 </template>
 <script>
+import scenes_programme from "@/assets/data/scenes_programme.json";
 export default {
-    props: ["data"],
+    props: {
+        textKey: {
+            type: String,
+            default: "",
+        },
+    },
     computed: {
+        data() {
+            return scenes_programme[this.textKey] || "";
+        },
         img() {
             return this.data.img || "";
         },
