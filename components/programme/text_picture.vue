@@ -1,5 +1,5 @@
 <template>
-    <div class="m-text-picture">
+    <div class="m-text-picture" v-if="data">
         <h2>{{ title }}</h2>
         <div class="m-cont wp">
             <div class="m-list">
@@ -8,14 +8,23 @@
                     <span class="u-desc" v-html="item.desc"> </span>
                 </div>
             </div>
-            <img :src="img" class="u-img" />
+            <img :src="require(`/static/images/${img}`)" class="u-img" />
         </div>
     </div>
 </template>
 <script>
+import programme_text_picture from "@/assets/data/programme_text_picture.json";
 export default {
-    props: ["data"],
+    props: {
+        textKey: {
+            type: String,
+            default: "",
+        },
+    },
     computed: {
+        data() {
+            return programme_text_picture[this.textKey] || "";
+        },
         title() {
             return this.data.title || "";
         },
