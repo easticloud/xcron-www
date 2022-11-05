@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="70px" height="70px" viewBox="0 0 70 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>跨链互操作</title>
+    <defs>
+        <linearGradient x1="6.67669508%" y1="17.5540123%" x2="95.2956729%" y2="82.4459877%" id="linearGradient-1">
+            <stop stop-color="#FF8888" offset="0%"></stop>
+            <stop stop-color="#D10716" offset="100%"></stop>
+            <stop stop-color="#CF0010" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="SDSF-产品中心（可信跨链服务）" transform="translate(-380.000000, -2198.000000)">
+            <g id="产品优势备份" transform="translate(360.000000, 1880.000000)">
+                <g id="编组-6备份-10" transform="translate(0.000000, 318.000000)">
+                    <g id="跨链互操作" transform="translate(20.000000, 0.000000)">
+                        <rect id="矩形" x="0" y="0" width="70" height="70"></rect>
+                        <g id="编组-7" transform="translate(35.000000, 35.000000) rotate(-270.000000) translate(-35.000000, -35.000000) translate(9.000000, 10.000000)">
+                            <rect id="矩形" stroke="#FFC8C8" fill="url(#linearGradient-1)" x="9.5" y="0.5" width="35" height="28" rx="5"></rect>
+                            <rect id="矩形" stroke-opacity="0.302418529" stroke="#FFC8C8" x="0.5" y="10.5" width="51" height="39" rx="5"></rect>
+                            <g id="工具" transform="translate(16.000000, 20.000000)"></g>
+                            <rect id="矩形" fill="#000000" fill-rule="nonzero" opacity="0" x="16" y="20" width="21" height="21"></rect>
+                            <path d="M33.1875,33.375 C32.4,33.375 31.725,33.7125 31.1625,34.275 L23.625,30.45 C23.625,30.3375 23.625,30.1125 23.625,30 C23.625,29.8875 23.625,29.6625 23.625,29.55 L31.1625,25.725 C31.725,26.2875 32.4,26.625 33.1875,26.625 C34.7625,26.625 36,25.3875 36,23.8125 C36,22.2375 34.7625,21 33.1875,21 C31.6125,21 30.375,22.2375 30.375,23.8125 C30.375,23.925 30.375,24.15 30.375,24.2625 L22.8375,28.0875 C22.275,27.525 21.6,27.1875 20.8125,27.1875 C19.2375,27.1875 18,28.425 18,30 C18,31.575 19.2375,32.8125 20.8125,32.8125 C21.6,32.8125 22.275,32.475 22.8375,31.9125 L30.375,35.7375 C30.375,35.85 30.375,36.075 30.375,36.1875 C30.375,37.7625 31.6125,39 33.1875,39 C34.7625,39 36,37.7625 36,36.1875 C36,34.6125 34.7625,33.375 33.1875,33.375 Z" id="路径" stroke="#CF0010" stroke-width="0.5" fill="#CF0010" fill-rule="nonzero" transform="translate(27.000000, 30.000000) rotate(-90.000000) translate(-27.000000, -30.000000) "></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
