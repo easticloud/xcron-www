@@ -40,6 +40,11 @@ import Header from "@/components/scenes/header";
 import Service from "@/components/scenes/service";
 export default {
     components: { Header, Service },
+    head() {
+        return {
+            title: "热门场景",
+        }
+    },
     data() {
         return {};
     },

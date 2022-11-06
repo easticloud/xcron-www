@@ -17,7 +17,7 @@
                 <div class="m-search">
                     <div class="u-search">
                         <img class="u-img" src="../../assets/img/search.svg" />
-                        <el-input class="u-input" placeholder="搜索云产品" v-model.trim="search"> </el-input>
+                        <el-input class="u-input" placeholder="搜索云产品" v-model.trim="search" clearable> </el-input>
                     </div>
                     <div class="m-content" v-show="children.length">
                         <a
@@ -36,13 +36,13 @@
             </template>
             <template v-if="type == 'solution'">
                 <div class="m-list-solution">
-                    <div class="m-item" v-for="(item, i) in solution" :key="i">
+                    <nuxt-link :to="item.link" class="m-item" v-for="(item, i) in solution" :key="i">
                         <img class="u-img" :src="item.icon" />
-                        <a :href="item.link" class="u-txt">
+                        <a class="u-txt">
                             <span class="u-label">{{ item.label }}</span>
                             <span class="u-desc">{{ item.desc }}</span>
                         </a>
-                    </div>
+                    </nuxt-link>
                 </div>
             </template>
         </div>

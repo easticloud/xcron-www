@@ -63,7 +63,9 @@ export default {
             deep: true,
             immediate: true,
             handler(val) {
+                // TODO: 需要对应的路由
                 if (val.path.includes('products')) this.$store.commit("changeMenuIndex", 1);
+                if (val.path.includes('programme')) this.$store.commit("changeMenuIndex", 2);
             },
         }
     },

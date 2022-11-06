@@ -10,6 +10,5 @@ export const mutations = {
 
     changeMenuIndex(state, value) {
         state.activeIndex = value;
-        console.log(state.activeIndex);
     }
 };
