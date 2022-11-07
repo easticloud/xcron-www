@@ -28,10 +28,10 @@
                                 <p class="u-tag" v-for="(child, i) in children.tag" :key="i">
                                     <template v-if="typeof child === 'object'">
                                         <b>{{ child.title }}</b>
-                                        {{ child.desc }}
+                                        <span v-html="nl2br(child.desc)"></span>
                                     </template>
                                     <template v-else>
-                                        {{ child }}
+                                        <span v-html="nl2br(child)"></span>
                                     </template>
                                 </p>
                             </template>
@@ -73,6 +73,9 @@ export default {
         change(i) {
             this.index = i;
         },
+        nl2br(str) {
+            return str.replace(/\n/g, "<br />");
+        }
     },
 };
 </script>
