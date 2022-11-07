@@ -23,7 +23,7 @@
                         <a
                             :href="item.link"
                             class="m-item"
-                            :class="{ 'is-search': search }"
+                            :class="{ 'is-search': search, active: $route.fullPath === item.link }"
                             v-for="(item, i) in children"
                             :key="i"
                         >
@@ -36,7 +36,13 @@
             </template>
             <template v-if="type == 'solution'">
                 <div class="m-list-solution">
-                    <nuxt-link :to="item.link" class="m-item" v-for="(item, i) in solution" :key="i">
+                    <nuxt-link
+                        :to="item.link"
+                        class="m-item"
+                        v-for="(item, i) in solution"
+                        :key="i"
+                        :class="{ active: $route.fullPath === item.link }"
+                    >
                         <img class="u-img" :src="item.icon" />
                         <a class="u-txt">
                             <span class="u-label">{{ item.label }}</span>
@@ -229,11 +235,36 @@ export default {
                 : list[this.index].children;
         },
     },
-
+    watch: {
+        $route: {
+            deep: true,
+            immediate: true,
+            handler() {
+                this.setIndex();
+            },
+        },
+    },
     methods: {
         change(i) {
             this.index = i;
-        }
+        },
+        reset() {
+            this.setIndex();
+        },
+        setIndex() {
+            const fullPath = this.$route.fullPath;
+            if (fullPath.includes("/products")) {
+                for (let i = 0; i < this.production.length; i++) {
+                    const children = this.production[i].children;
+                    for (let j = 0; j < children.length; j++) {
+                        if (fullPath === children[j].link) {
+                            this.index = i;
+                            break;
+                        }
+                    }
+                }
+            }
+        },
     },
 };
 </script>

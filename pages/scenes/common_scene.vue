@@ -25,6 +25,11 @@ import Programme from "@/components/scenes/programme";
 import Recommend from "@/components/scenes/recommend";
 export default {
     components: { Header, Tabs, Programme, Recommend },
+    head() {
+        return {
+            title: "通用场景",
+        };
+    },
     data() {
         return {
             keys: ["market", "resources", "administration", "finance", "develop"],

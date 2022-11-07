@@ -29,6 +29,11 @@ import AllText from "@/components/programme/all_text";
 
 export default {
     components: { Header, TextPicture, Recommend, AllText },
+    head() {
+        return {
+            title: "运营商行业解决方案",
+        };
+    },
 };
 </script>
 <style lang="less">

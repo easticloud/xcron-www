@@ -26,6 +26,11 @@ import AllText from "@/components/programme/all_text";
 import PictureText from "@/components/programme/picture_text";
 export default {
     components: { Header, TextPicture, AllText, PictureText },
+    head() {
+        return {
+            title: "媒体应用解决方案",
+        };
+    },
 };
 </script>
 <style lang="less">

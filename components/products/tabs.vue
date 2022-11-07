@@ -14,7 +14,7 @@
                 </div>
             </div>
             <div class="m-Scontent">
-                <div class="m-item">
+                <div class="m-item" :class="children.imgPos">
                     <span class="u-img">
                         <img :src="children.src" />
                     </span>

@@ -76,20 +76,26 @@
 
         .u-img {
             .w(600px);
-            padding-right: 85px;
+            // padding-right: 85px;
             .flex;
             align-items: center;
 
             img {
                 .dbi;
                 max-width: inherit;
-                .size(600px, 354px);
+                width: 600px;
+                // object-fit: scale-down;
             }
         }
 
         .m-item {
+            gap: 85px;
             .fz(18px, 1.8);
             .flex;
+
+            &.img-r {
+                flex-direction: row-reverse;
+            }
 
             .u-bgimg {
                 .h(280px);

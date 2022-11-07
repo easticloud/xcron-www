@@ -30,6 +30,11 @@ import PictureText from "@/components/programme/picture_text";
 import IconText from "@/components/programme/icon_text";
 export default {
     components: { Header, Tabs, TextPicture, AllText, PictureText, IconText },
+    head() {
+        return {
+            title: "其他行业解决方案",
+        };
+    },
     data() {
         return {
             tabs: ["能源", "医疗健康", "教育", "交通物流"],

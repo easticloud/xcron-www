@@ -17,7 +17,7 @@
                 </div>
             </div>
             <div @mouseleave="clean">
-                <index-menu :type="type"></index-menu>
+                <index-menu :type="type" ref="menu"></index-menu>
             </div>
         </div>
         <div class="c-header-mobile" :class="{ show }">
@@ -79,6 +79,8 @@ export default {
         },
         clean() {
             this.type = "";
+
+            this.$refs.menu && this.$refs.menu.reset();
         }
     },
 };

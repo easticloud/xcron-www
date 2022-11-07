@@ -27,8 +27,13 @@ import Programme from "@/components/scenes/programme";
 import Recommend from "@/components/scenes/recommend";
 export default {
     components: { Header, Tabs, Business, Programme, Recommend },
+    head() {
+        return {
+            title: "行业场景",
+        };
+    },
     data() {
-        return { 
+        return {
             keys: ["media", "online", "health"],
             tabsIndex: 0,
         };

@@ -25,6 +25,11 @@ import IconText from "@/components/programme/icon_text";
 import PictureText from "@/components/programme/picture_text";
 export default {
     components: { Header, IconText, PictureText },
+    head() {
+        return {
+            title: "迁移上云解决方案",
+        };
+    },
 };
 </script>
 <style lang="less">
