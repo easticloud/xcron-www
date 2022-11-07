@@ -103,7 +103,7 @@
                     box-sizing: border-box;
                     background: url(../../../static/images/index/scene/dot.svg) left center no-repeat;
                     font-weight: 600;
-                    color: #3C3C3C;
+                    color: #3c3c3c;
                     letter-spacing: 1px;
                     font-size: 18px;
                     font-family: PingFang-SC-Medium, PingFang-SC;
@@ -183,6 +183,41 @@
                 align-items: center;
                 background-color: #f8f8f8;
             }
+        }
+    }
+}
+@media screen and (max-width: @phone) {
+    .m-index-scene {
+        .m-tabs {
+            .mt(30px);
+            flex-direction: column;
+            gap: 20px;
+            .m-item {
+                .w(100%);
+                border: 1px solid #ddd;
+                background-size: cover;
+                .clip;
+                .u-item {
+                    .mt(175px);
+                    padding: 20px 20px 20px 20px;
+                    color: #3c3c3c;
+                    background-color: #fff;
+                    border-top-right-radius: 5px;
+                    border-top-left-radius: 5px;
+                }
+                .u-line {
+                    .none;
+                }
+                .u-title {
+                    .fz(21px);
+                    .u-icon {
+                        .size(24px);
+                    }
+                }
+            }
+        }
+        .m-content {
+            .none;
         }
     }
 }

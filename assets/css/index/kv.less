@@ -49,7 +49,7 @@
 
 .el-carousel__button {
     .size(60px, 2px);
-    background: #F8F8F8;
+    background: #f8f8f8;
     border-radius: 1px;
     margin-right: 5px;
 }
@@ -63,18 +63,30 @@
 }
 
 .is-active button {
-    background: #CF0010;
+    background: #cf0010;
     border-radius: 1px;
 }
 
 @media screen and (max-width: @phone) {
     .el-carousel__container {
-        height: 176px;
+        height: 230px;
     }
-
     .m-slider .u-link {
-        .h(176px);
-        background-position: center top;
-        background-size: 150%;
+        .h(230px); 
+        .wp {
+            .h(230px);
+            .u-title {
+                .fz(28px);
+                .mb(10px);
+            }
+            .u-desc {
+                .fz(16px);
+                .mb(30px);
+            }
+            .u-btn {
+                .size(120px, 36px);
+                .fz(16px, 36px);
+            }
+        }
     }
 }

@@ -72,14 +72,6 @@
             flex-direction: column;
             align-items: flex-start;
 
-            .u-bgimg {
-                .h(280px);
-                .pl(60px);
-                .fz(18px, 1.8);
-                min-width: 500px;
-                .flex;
-            }
-
             .u-title {
                 .fz(24px);
                 .mb(10px);
@@ -150,6 +142,74 @@
                     background-image: linear-gradient(to right, #f1d994, #cf0010);
                 }
             }
+        }
+    }
+}
+@media screen and (max-width: @phone) {
+    .m-index-solution {
+        .m-tabs {
+            .mt(30px);
+            min-height: 50px;
+            overflow: scroll;
+            .m-item {
+                .fz(16px);
+                min-width: 110px;
+                align-items: center;
+                .u-label {
+                    .lh(50px);
+                }
+
+                .u-img {
+                    .size(18px);
+                }
+
+                &:hover,
+                &.active {
+                    &::after {
+                        .size(110px, 3px);
+                        .ml(-55px);
+                    }
+                }
+            }
+        }
+        .m-content {
+            .mt(20px);
+            position: relative;
+            &::after {
+                content: "";
+                .pa;
+                .lt(0);
+                .rb(0);
+                opacity: 0.5;
+                background-color: #000;
+            }
+            .m-item {
+                .z(2);
+                .flex;
+                padding: 0 10px;
+                min-width: 100%;
+                .fz(16px, 1.8);
+
+                .u-title {
+                    .fz(20px);
+                    color: #fff;
+                }
+                .u-desc {
+                    .color(#fff);
+                }
+                .u-tags {
+                    flex-wrap: wrap;
+                    align-items: center;
+                    .u-tag {
+                        .fz(13px);
+                        .lh(24px);
+                        .color(#fff);
+                        padding: 0 12px;
+                        border: 1px solid #fff;
+                    }
+                }
+            }
+            
         }
     }
 }

@@ -115,3 +115,64 @@
 .m-index-item .m-title .u-desc {
     font-weight: 300;
 }
+@media screen and (max-width: @phone) {
+    .m-index-production {
+        .m-tabs {
+            .mt(30px);
+            overflow: scroll;
+            .m-item {
+                min-width: 90px;
+                .u-img {
+                    .size(40px);
+                }
+                .u-label {
+                    .fz(16px);
+                }
+
+                &:hover,
+                &.active {
+                    &::after {
+                        .size(90px, 3px);
+                        .ml(-45px);
+                    }
+                }
+            }
+        }
+        .m-content {
+            .mt(30px);
+            .m-children {
+                .flex;
+                flex-direction: column;
+                align-items: flex-start;
+                min-height: 270px;
+                gap: 20px;
+                padding: 20px 0;
+
+                .u-child {
+                    gap: 8px;
+                    .fz(14px);
+                    .u-title {
+                        .h(30px);
+                        .fz(18px);
+                        .u-sign {
+                            .fz(14px);
+                            padding: 2px 12px;
+                        }
+                    }
+                    .u-desc {
+                        .mb(10px);
+                    }
+
+                    .u-tags {
+                        .flex;
+                        gap: 10px;
+
+                        .u-tag {
+                            padding: 2px 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
