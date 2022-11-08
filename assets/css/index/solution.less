@@ -180,7 +180,7 @@
                 .pa;
                 .lt(0);
                 .rb(0);
-                opacity: 0.5;
+                opacity: 0.6;
                 background-color: #000;
             }
             .m-item {
@@ -209,7 +209,24 @@
                     }
                 }
             }
-            
+            .u-others {
+                .z(2);
+                position: static;
+                flex-direction: column;
+                justify-content: center;
+                flex-wrap: wrap;
+
+                &:after {
+                    .none;
+                }
+
+                .u-other {
+                    .size(100%, auto);
+                    .lh(60px);
+                    color: #fff;
+                    border: 0;
+                }
+            }
         }
     }
 }

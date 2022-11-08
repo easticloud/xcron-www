@@ -98,4 +98,27 @@ export default {
         }
     }
 }
+@media screen and (max-width: @phone) {
+    .m-content {
+        .mt(10px);
+        .m-item {
+            .size(33.3%, 80px);
+            padding: 0 5px;
+        }
+    }
+    .m-contact {
+        .fz(20px, 70px);
+        .size(100%, 160px);
+        .mt(30px);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0px;
+
+        .u-btn {
+            .size(200px, 42px);
+            .fz(16px, 42px);
+        }
+    }
+}
 </style>

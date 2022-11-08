@@ -18,15 +18,6 @@
                 </div>
             </div>
             <div class="m-content" :style="`backgroundImage: url(${children.src})`">
-                <div class="m-item">
-                    <a :href="children.link" target="_blank" class="u-title">{{ children.title }}</a>
-                    <span class="u-desc" v-if="children.desc">{{ children.desc }}</span>
-                    <div class="u-tags">
-                        <template v-if="children.tag.length">
-                            <span class="u-tag" v-for="(child, i) in children.tag" :key="i">{{ child }}</span>
-                        </template>
-                    </div>
-                </div>
                 <div class="u-others" v-if="children.other">
                     <template v-if="children.other.length">
                         <a
@@ -38,6 +29,15 @@
                             >{{ child.title }}</a
                         >
                     </template>
+                </div>
+                <div class="m-item" v-else>
+                    <a :href="children.link" target="_blank" class="u-title">{{ children.title }}</a>
+                    <span class="u-desc" v-if="children.desc">{{ children.desc }}</span>
+                    <div class="u-tags">
+                        <template v-if="children.tag.length">
+                            <span class="u-tag" v-for="(child, i) in children.tag" :key="i">{{ child }}</span>
+                        </template>
+                    </div>
                 </div>
             </div>
         </div>
