@@ -4,13 +4,15 @@
         <common-header></common-header>
         <!-- banner -->
         <banner bannerKey="services" />
-        
+
         <div class="m-page-content">
             <!-- 上云实施 -->
             <IconText textKey="cloud_services" />
             <!-- 专家服务 -->
             <IconText class="m-services" textKey="services" />
         </div>
+        <!-- 服务支持 -->
+        <products-pmService></products-pmService>
         <!-- 公共底部 -->
         <common-footer></common-footer>
     </div>

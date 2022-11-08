@@ -6,6 +6,8 @@
         <banner bannerKey="programme" />
 
         <div class="m-page-content"></div>
+        <!-- 服务支持 -->
+        <products-pmService></products-pmService>
         <!-- 公共底部 -->
         <common-footer></common-footer>
     </div>
