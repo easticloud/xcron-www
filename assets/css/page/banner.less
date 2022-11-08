@@ -1,0 +1,48 @@
+.m-page-banner {
+    .h(450px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    .color(#3c3c3c);
+    .m-content {
+        .flex;
+        .full;
+        .mt(0);
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .u-title {
+        .fz(52px,73px);
+        .mb(13px);
+        letter-spacing: 2px;
+        font-weight: 400;
+    }
+    .u-desc {
+        .fz(21px,32px);
+        max-width: 720px;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+    .u-button {
+        .mt(50px);
+        .fz(24px,65px);
+        .size(200px,65px);
+        .r(5px);
+        .x;
+        background-color: #cf0010;
+        color: #fff;
+        &:hover {
+            filter: brightness(110%);
+        }
+    }
+    &.u-products,
+    &.u-programme {
+        .h(550px);
+    }
+    &.u-services {
+        .u-title,
+        .u-desc {
+            .color(#F8F8F8);
+        }
+    }
+}

@@ -6,7 +6,7 @@
         <div class="m-programme-content">
             <Header banner-key="cloud" />
             <!-- ERP -->
-            <IconText :data="erp" textKey="cloud" />
+            <IconText textKey="cloud" />
             <!-- 方案优势 -->
             <PictureText textKey="cloud_advantages" />
             <!-- 客户案例 -->

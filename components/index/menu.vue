@@ -1,7 +1,7 @@
 <template>
     <div class="m-index-menu" v-if="type">
         <div class="wp">
-            <template v-if="type == 'production'">
+            <template v-if="type == 'products'">
                 <div class="m-list-production">
                     <a class="u-more" href="" target="_blank">查看全部产品 ></a>
                     <span
@@ -34,7 +34,7 @@
                     <div class="m-empty" v-show="!children.length">没找到结果，请重新输入</div>
                 </div>
             </template>
-            <template v-if="type == 'solution'">
+            <template v-if="type == 'programme'">
                 <div class="m-list-solution">
                     <nuxt-link
                         :to="item.link"

@@ -43,12 +43,12 @@ export default {
             type: "",
             list: [
                 { label: "首页", class: "active", key: "index", href: "/" },
-                { label: "产品中心", class: "active", key: "production", href: "/" },
-                { label: "解决方案", class: "active", key: "solution", href: "/" },
-                { label: "合作伙伴", class: "active", key: "partner", href: "/" },
-                { label: "服务支持", class: "active", key: "service", href: "/" },
-                { label: "联系我们", class: "active", key: "contact", href: "/" },
-                { label: "关于我们", class: "active", key: "about", href: "/" },
+                { label: "产品中心", class: "active", key: "products", href: "/products" },
+                { label: "解决方案", class: "active", key: "programme", href: "/programme" },
+                { label: "合作伙伴", class: "active", key: "partner", href: "/partner" },
+                { label: "服务支持", class: "active", key: "service", href: "/services" },
+                { label: "联系我们", class: "active", key: "contact", href: "/contact" },
+                { label: "关于我们", class: "active", key: "about", href: "/about" },
             ],
             show: false,
         };
@@ -63,15 +63,14 @@ export default {
             deep: true,
             immediate: true,
             handler(val) {
-                // TODO: 需要对应的路由
-                if (val.path.includes('products')) this.$store.commit("changeMenuIndex", 1);
-                if (val.path.includes('programme')) this.$store.commit("changeMenuIndex", 2);
+                if (val.path.includes("products")) this.$store.commit("changeMenuIndex", 1);
+                if (val.path.includes("programme")) this.$store.commit("changeMenuIndex", 2);
             },
-        }
+        },
     },
     methods: {
         change(key) {
-            this.type = key == "production" || key == "solution" ? key : "";
+            this.type = key == "products" || key == "programme" ? key : "";
         },
 
         activeHandle(index) {
@@ -81,7 +80,7 @@ export default {
             this.type = "";
 
             this.$refs.menu && this.$refs.menu.reset();
-        }
+        },
     },
 };
 </script>

@@ -6,7 +6,7 @@
         <div class="m-programme-content">
             <Header banner-key="operators" />
             <!-- 行业趋势 -->
-            <TextPicture :data="trend" textKey="operators" />
+            <TextPicture textKey="operators" />
             <!-- 方案优势 -->
             <AllText textKey="operators" />
             <!-- 多种方案 -->

@@ -6,11 +6,11 @@
         <div class="m-programme-content">
             <Header banner-key="new-retail" />
             <!-- 行业挑战 -->
-            <PictureText :data="industry" textKey="new-retail-industry" />
+            <PictureText textKey="new-retail-industry" />
             <!-- 方案优势 -->
             <AllText textKey="new-retail" />
             <!-- 场景化方案 -->
-            <PictureText :data="scene" textKey="new-retail-scene" />
+            <PictureText textKey="new-retail-scene" />
         </div>
         <!-- 服务支持 -->
         <products-pmService></products-pmService>
