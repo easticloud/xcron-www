@@ -1,0 +1,97 @@
+.p-page-index {
+    .m-page-solution {
+        background-color: #f8f8f8;
+        padding: 75px 0;
+        .u-page-solution {
+            .mt(50px);
+        }
+    }
+    .m-page-show {
+        padding: 75px 0;
+        .u-page-content {
+            .mt(50px);
+            display: grid;
+            grid-template-areas:
+                "one two three"
+                "one four four";
+            .u-item {
+                background-repeat: no-repeat;
+                padding: 38px 50px;
+                box-sizing: border-box;
+                .flex;
+                flex-direction: column;
+                gap: 15px;
+                .u-title {
+                    .color(#3c3c3c);
+                    font-weight: 500;
+                }
+                .u-desc {
+                    .color(#848484);
+                    .fz(18px,25px);
+                }
+                &.u-item-1 {
+                    padding: 75px 50px;
+                    grid-area: one;
+                    .size(400px,440px);
+                    .u-title,
+                    .u-desc {
+                        .color(#fff);
+                    }
+                }
+                &.u-item-2 {
+                    grid-area: two;
+                    .size(400px,220px);
+                }
+                &.u-item-3 {
+                    grid-area: three;
+                    .size(400px,220px);
+                    .u-title,
+                    .u-desc {
+                        .color(#fff);
+                    }
+                }
+                &.u-item-4 {
+                    grid-area: four;
+                    .size(800px,220px);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: @phone) {
+    .p-page-index {
+        .m-page-solution {
+            padding: 30px 0;
+            .u-page-solution {
+                .mt(30px);
+                .wp {
+                    .m-list-solution {
+                        flex-direction: column;
+                        gap: 20px;
+                        .m-item {
+                            height: 80px;
+                            padding: 0;
+                            .u-img {
+                                .size(40px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .m-page-show {
+            padding: 30px 0;
+            .u-page-content {
+                .mt(30px);
+                .flex;
+                flex-direction: column;
+                .u-item {
+                    width: 100% !important;
+                    height: 300px !important;
+                    background-size: cover;
+                }
+            }
+        }
+    }
+}

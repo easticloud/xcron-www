@@ -1,9 +1,10 @@
 .m-page-all {
     padding: 75px 0;
+    background-color: #f8f8f8;
     .wp {
         .mt(58px);
         .flex;
-        gap: 60px;
+        gap: 110px;
         .m-tabs {
             .flex;
             flex-shrink: 0;
@@ -11,6 +12,7 @@
             gap: 28px;
             .m-item {
                 .flex;
+                align-items: center;
                 gap: 26px;
                 .u-img {
                     .size(30px);
@@ -94,6 +96,31 @@
                         .color(#7b7b7b);
                         padding: 3px 12px;
                         border: 1px solid #b2b2b2;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: @phone) {
+    .m-page-all {
+        padding: 30px 0;
+        .wp {
+            .mt(30px);
+            flex-direction: column;
+            gap: 30px;
+            .m-tabs {
+                flex-direction: row;
+                overflow: scroll;
+                .m-item {
+                    flex-shrink: 0;
+                    gap: 10px; 
+                    .u-img {
+                        .size(30px);
+                    }
+                    .u-label {
+                        .fz(24px,30px);
                     }
                 }
             }
