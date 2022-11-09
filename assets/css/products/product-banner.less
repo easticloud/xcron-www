@@ -1,7 +1,7 @@
 .m-banner {
     .w(100%);
     .h(300px);
-    background-color: #3C3C3C;
+    background-color: #3c3c3c;
     background-position: center;
     background-repeat: no-repeat;
 
@@ -22,7 +22,6 @@
         .db;
         .fz(52px, 73px);
         // .pt(107px);
-
     }
 
     .u-banner__desc {
@@ -32,5 +31,24 @@
         .w(800px);
         letter-spacing: 1px;
         font-weight: 300;
+    }
+}
+
+@media screen and (max-width: @phone) {
+    .m-banner {
+        box-sizing: border-box;
+        .size(100%,auto);
+        padding: 40px 20px;
+        .m-banner-content {
+            width: 100%;
+        }
+        .u-banner__title {
+            .fz(24px, 36px);
+        }
+        .u-banner__desc {
+            .fz(18px, 30px);
+            .w(100%);
+            max-width: 100%;
+        }
     }
 }

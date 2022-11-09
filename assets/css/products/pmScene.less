@@ -25,7 +25,7 @@
         gap: 123px;
 
         &::after {
-            border-bottom: 2px solid #E6E6E6;
+            border-bottom: 2px solid #e6e6e6;
             content: "";
             .db;
             .pa;
@@ -150,7 +150,6 @@
 
 //
 
-
 // 裸金属
 .m-Bms-scene {
     .m-Scontent {
@@ -170,6 +169,45 @@
             .u-tags {
                 .u-tag {
                     .pb(15px);
+                }
+            }
+        }
+    }
+}
+
+@media screen and(max-width:@phone) {
+    .m-p-scene {
+        padding: 30px 0;
+        h2 {
+            .pb(20px);
+            .fz(24px, 50px);
+        }
+        .m-tabs {
+            padding: 0 10px;
+            gap: 20px;
+            overflow: auto;
+            justify-content: flex-start;
+            .m-item {
+                width: auto;
+                padding: 0 30px;
+                padding-bottom: 10px;
+            }
+        }
+        .m-Scontent {
+            .mt(30px);
+            padding: 0;
+            .u-img {
+                .w(100%);
+                img {
+                    max-width: inherit;
+                    width: 100%;
+                }
+            }
+            .m-item {
+                flex-direction: column;
+                gap: 0;
+                .u-con {
+                    padding: 20px;
                 }
             }
         }

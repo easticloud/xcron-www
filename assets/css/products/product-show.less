@@ -1,6 +1,6 @@
 .m-p-show {
     .m-picture {
-        background: linear-gradient(180deg, #F8F8F8 0%, #FFFFFF 100%);
+        background: linear-gradient(180deg, #f8f8f8 0%, #ffffff 100%);
         .pb(75px);
     }
 
@@ -20,8 +20,8 @@
         p {
             .w(590px);
             .h(250px);
-            background: #FFF;
-            box-shadow: 0px 0px 5px 1px #E6E6E6;
+            background: #fff;
+            box-shadow: 0px 0px 5px 1px #e6e6e6;
             .r(5px);
             .flex;
             .flex(tb);
@@ -43,7 +43,7 @@
     .m-parameter {
         .w(100%);
         .pb(75px);
-        background-color: #F8F8F8;
+        background-color: #f8f8f8;
 
         .m-p-table {
             .w(100%);
@@ -58,12 +58,12 @@
             .x;
             .fz(24px, 75px);
             .color(#3c3c3c);
-            background: #E6E6E6;
+            background: #e6e6e6;
         }
 
         .m-p-table {
             .fz(21px, 75px);
-            background: #FFFFFF;
+            background: #ffffff;
 
             tr,
             td {
@@ -71,7 +71,7 @@
             }
 
             td {
-                border: 1px solid #E6E6E6;
+                border: 1px solid #e6e6e6;
                 font-weight: 500;
             }
 
@@ -80,6 +80,41 @@
                 color: #848484;
                 font-weight: 300;
                 width: 70%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: @phone) {
+    .m-p-show {
+        h2 {
+            padding: 35px 0 20px 0;
+            .fz(24px, 30px);
+        }
+        .m-picture-con {
+            flex-direction: column;
+            gap: 20px;
+            p {
+                .w(100%);
+                .h(120px);
+                padding: 20px 10px;
+                box-sizing: border-box;
+            }
+        }
+        .m-parameter {
+            .pb(30px);
+            .table-til {
+                .fz(16px, 42px);
+            }
+            .m-p-table {
+                .fz(16px, 42px);
+                tr,
+                td {
+                    padding-left: 10px;
+                }
+                .f-col {
+                    .fz(16px);
+                }
             }
         }
     }
