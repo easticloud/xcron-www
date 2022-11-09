@@ -44,115 +44,19 @@
     </div>
 </template>
 <script>
+import { solution } from "@/assets/data/index.json";
 export default {
     data() {
         return {
             index: 0,
-            list: [
-                {
-                    label: "新零售",
-                    src: "/images/index/solution/icon-1.png",
-                    children: {
-                        title: "新零售行业解决方案",
-                        link: "/programme/new_retail",
-                        desc: "通过云计算、大数据、人工智能等技术，蒋零售场景中要素进行整合，达到精准营销，高效运营。",
-                        src: "/images/index/solution/01.svg",
-                        tag: ["数据驱动", "数字赋能", "AI加持"],
-                    },
-                },
-                {
-                    label: "运营商",
-                    src: "/images/index/solution/icon-2.png",
-                    children: {
-                        title: "运营商行业解决方案",
-                        link: "/programme/operators",
-                        desc: "提供更适合运营商的业务云化转型方案以及面向运营商企业客户的行业数字化方案，帮助运营商加速网络变现，业务创新，运营敏捷，取得新增长。",
-                        src: "/images/index/solution/02.jpeg",
-                        tag: ["网络变现", "业务创新", "运营敏捷"],
-                    },
-                },
-                {
-                    label: "数字政府",
-                    src: "/images/index/solution/icon-3.png",
-                    children: {
-                        title: "数字政府解决方案",
-                        link: "/programme/government",
-                        desc: "通过全栈专属云，人工智能和微服务等服务，帮助政府及公共事业的服务能力向移动化和智能化发展。",
-                        src: "/images/index/solution/03.jpeg",
-                        tag: ["协同共享", "智能精准", "简单易用"],
-                    },
-                },
-                {
-                    label: "金融",
-                    src: "/images/index/solution/icon-4.png",
-                    children: {
-                        title: "金融行业解决方案",
-                        link: "/programme/finance",
-                        desc: "通过金融专区、专属云安全合规部署和全栈技术创新，助力金融客户业务敏捷创新、智能升级等数字化转型目标。",
-                        src: "/images/index/solution/04.jpeg",
-                        tag: ["全新趋势", "转型升级", "业务创新"],
-                    },
-                },
-                {
-                    label: "上云与迁移",
-                    src: "/images/index/solution/icon-5.png",
-                    children: {
-                        title: "迁移上云解决方案",
-                        link: "/programme/cloud",
-                        desc: "提供ERP系统上云一站式服务，为您完成数字化时代的企业管理工具转型。",
-                        src: "/images/index/solution/05.jpeg",
-                        tag: ["降低成本", "安全稳定", "最新技术"],
-                    },
-                },
-                {
-                    label: "媒体应用",
-                    src: "/images/index/solution/icon-6.png",
-                    children: {
-                        title: "TIk Tok解决方案",
-                        link: "/programme/media",
-                        desc: "抖音国际版Tiktok在全球深受欢迎，成为国际上下载量最多的APP之一。由简入深，针对浏览客户、运营客户以及企业高端客户都有完整配套解决方案，解决个人/企业Tiktok问题。",
-                        src: "/images/index/solution/06.jpeg",
-                        tag: ["全案定制", "高速转化", "精准匹配"],
-                    },
-                },
-                {
-                    label: "其他",
-                    src: "/images/index/solution/icon-7.png",
-                    children: {
-                        title: "",
-                        link: "",
-                        desc: "",
-                        src: "",
-                        tag: [],
-                        other: [
-                            {
-                                title: "能源行业解决方案",
-                                link: "/programme/other?key=energy",
-                            },
-                            {
-                                title: "医疗健康行业解决方案",
-                                link: "/programme/other?key=health",
-                            },
-                            {
-                                title: "教育行业解决方案",
-                                link: "/programme/other?key=education",
-                            },
-                            {
-                                title: "交通物流解决方案",
-                                link: "/programme/other?key=transport",
-                            },
-                        ],
-                    },
-                },
-            ],
         };
-    },
-    async asyncData({ params }) {
-        return {};
-    },
+    }, 
     computed: {
         children() {
             return this.list[this.index].children;
+        },
+        list() {
+            return solution;
         },
     },
     methods: {

@@ -18,33 +18,16 @@
     </div>
 </template>
 <script>
+import { partner } from "@/assets/data/index.json";
 export default {
     data() {
-        return {
-            list: [
-                { label: "三度集团", href: "", src: "/images/index/partner/01.png" },
-                { label: "华为云", href: "", src: "/images/index/partner/02.png" },
-                { label: "网宿科技", href: "", src: "/images/index/partner/03.png" },
-                { label: "斗鱼", href: "", src: "/images/index/partner/04.png" },
-                { label: "字节跳动", href: "", src: "/images/index/partner/05.png" },
-                { label: "硅基智能", href: "", src: "/images/index/partner/06.png" },
-                { label: "Aegis擎盾", href: "", src: "/images/index/partner/07.png" },
-                { label: "Stacks network", href: "", src: "/images/index/partner/08.png" },
-                { label: "易信科技", href: "", src: "/images/index/partner/09.png" },
-                { label: "速丰通联", href: "", src: "/images/index/partner/10.png" },
-                { label: "创世云数据", href: "", src: "/images/index/partner/11.png" },
-                { label: "INIDC", href: "", src: "/images/index/partner/12.png" },
-                { label: "Fiber Home", href: "", src: "/images/index/partner/13.png" },
-                { label: "安恒信息", href: "", src: "/images/index/partner/14.png" },
-                { label: "驰速信息", href: "", src: "/images/index/partner/15.png" },
-            ],
-        };
-    },
-    async asyncData({ params }) {
         return {};
     },
-    computed: {},
-    methods: {},
+    computed: {
+        list() {
+            return partner;
+        },
+    },
 };
 </script>
 

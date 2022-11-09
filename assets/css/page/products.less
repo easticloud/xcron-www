@@ -1,0 +1,102 @@
+.m-page-all {
+    padding: 75px 0;
+    .wp {
+        .mt(58px);
+        .flex;
+        gap: 60px;
+        .m-tabs {
+            .flex;
+            flex-shrink: 0;
+            flex-direction: column;
+            gap: 28px;
+            .m-item {
+                .flex;
+                gap: 26px;
+                .u-img {
+                    .size(30px);
+                }
+                .u-label {
+                    .pointer;
+                    .fz(18px,25px);
+                    .color(#3c3c3c);
+                    font-weight: 400;
+                }
+                &.active {
+                    .u-label {
+                        .color(#CF0010);
+                    }
+                }
+            }
+        }
+        .m-children {
+            .flex;
+            .full;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .m-children-label {
+                .w(100%);
+                .fz(24px,33px);
+                .h(33px);
+                .color(#3c3c3c);
+                .pl(20px);
+                .mb(30px);
+                font-weight: 400;
+                border-left: 3px solid #cf0010;
+            }
+            .u-child {
+                .flex;
+                .fz(18px);
+                .mb(30px);
+                width: 340px;
+                flex-direction: column;
+                gap: 8px;
+                background-color: #fff;
+                padding: 20px;
+
+                .u-title {
+                    .flex;
+                    .h(40px);
+                    .fz(21px,30px);
+                    gap: 10px;
+                    align-items: center;
+
+                    .u-child-title {
+                        .color(#3c3c3c);
+                        font-weight: 500;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+
+                    .u-sign {
+                        .fz(18px,34px);
+                        .r(2px);
+                        .color(#cf0010);
+                        padding: 0px 12px;
+                        border: 1px solid #cf0010;
+                    }
+                }
+
+                .u-desc {
+                    .color(#848484);
+                    .mb(20px);
+                }
+
+                .u-tags {
+                    .flex;
+                    flex-wrap: wrap;
+                    gap: 10px;
+
+                    .u-tag {
+                        .fz(18px,25px);
+                        .r(2px);
+                        .color(#7b7b7b);
+                        padding: 3px 12px;
+                        border: 1px solid #b2b2b2;
+                    }
+                }
+            }
+        }
+    }
+}
