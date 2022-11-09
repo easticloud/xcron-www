@@ -1,7 +1,7 @@
 .m-p-aboutBCS {
     .w(100%);
     .h(352px);
-    background-color: #FFF;
+    background-color: #fff;
     .x;
 
     h2 {
@@ -55,6 +55,47 @@
 
             .tags {
                 font-weight: 300;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: @phone) {
+    .m-p-aboutBCS {
+        .h(auto);
+        h2 {
+            .fz(24px, 30px);
+            .pt(30px);
+        }
+        .m-bcs {
+            .flex;
+            padding: 30px 0;
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: 20px;
+
+            p {
+                .fz(24px, 30px);
+                span {
+                    .h(30px);
+                }
+
+                .tags {
+                    .fz(16px, 25px);
+                    .h(auto);
+                }
+            }
+        }
+    }
+    .m-p-ECS {
+        .h(auto);
+        .m-bcs {
+            p {
+                .fz(24px, 30px);
+                span {
+                    .h(30px);
+                    font-size: 24px;
+                }
             }
         }
     }

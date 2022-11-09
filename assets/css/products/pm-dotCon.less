@@ -1,6 +1,6 @@
 .pm-dotCon {
     height: auto;
-    background: #FFF;
+    background: #fff;
     .pb(50px);
 
     .wp {
@@ -46,7 +46,7 @@
             .u-title {
                 .db;
                 width: 100%;
-                .fz(18px, 20px);
+                .fz(18px, 30px);
                 font-weight: 600;
                 padding-bottom: 14px;
             }
@@ -73,7 +73,6 @@
         .m-item {
             width: 590px;
             height: auto;
-
         }
 
         // &::after {
@@ -89,7 +88,6 @@
     }
 }
 
-
 //权威认可auth
 .bcsAuth {
     background-color: #f8f8f8;
@@ -101,8 +99,8 @@
             .size(590px, auto);
             .r(5px);
             box-sizing: border-box;
-            background: #FFFFFF;
-            box-shadow: 0px 0px 5px 1px #E6E6E6;
+            background: #ffffff;
+            box-shadow: 0px 0px 5px 1px #e6e6e6;
             padding: 30px 30px 30px 201px;
             .mb(25px);
 
@@ -117,7 +115,6 @@
                 top: 50%;
                 transform: translateY(-50%);
                 background-size: cover;
-
             }
         }
     }
@@ -137,8 +134,8 @@
             .size(385px, 160px);
             .r(5px);
             box-sizing: border-box;
-            background: #FFFFFF;
-            box-shadow: 0px 0px 5px 1px #E6E6E6;
+            background: #ffffff;
+            box-shadow: 0px 0px 5px 1px #e6e6e6;
             padding: 23px 20px 23px 105px;
 
             .u-title {
@@ -161,7 +158,7 @@
 // 弹性云服务器-产品优势
 .ecs-dotcon {
     .h(auto);
-    background-color: #F8F8F8;
+    background-color: #f8f8f8;
     .clip;
     .pb(50px);
 
@@ -174,7 +171,7 @@
             .r(5px);
             .clip;
             padding: 50px;
-            box-shadow: 0px 0px 5px 1px #E6E6E6;
+            box-shadow: 0px 0px 5px 1px #e6e6e6;
             background-color: #fff;
             .mb(25px);
 
@@ -212,6 +209,88 @@
             .u-pic {
                 right: 0;
                 left: auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: @phone) {
+    .ecs-dotcon {
+        .pb(30px);
+
+        .m-tabs {
+            .w(100%);
+            .db;
+
+            .m-item {
+                .size(100%, auto);
+                padding: 30px 20px;
+                .mb(20px);
+                span {
+                    .pt(0);
+                }
+                .u-pic {
+                    background: none;
+                    background-image: none !important;
+                }
+                .u-desc {
+                    .lh(28px);
+                }
+                .u-con {
+                    position: static;
+                    .w(100%);
+                }
+            }
+
+            .pic-l {
+                .u-con {
+                    left: 459px;
+                }
+            }
+
+            .pic-r {
+                .u-pic {
+                    right: 0;
+                    left: auto;
+                }
+            }
+        }
+    }
+    .bcsAuth {
+        .pb(30px);
+
+        .m-tabs {
+            .m-item {
+                .flex;
+                flex-direction: column;
+                .size(100%, auto);
+                padding: 30px;
+                gap: 20px;
+
+                .u-title {
+                    .pb(15px);
+                    font-weight: 600;
+                }
+
+                .u-pic {
+                    position: static;
+                    .size(100%,145px);
+                    transform: translateY(0);
+                    background-position: center center;
+                    background-size: 145px 145px;
+                }
+            }
+        }
+    }
+    .bcsAuth-1 {
+        .pb(30px);
+
+        .m-tabs {
+            gap: 20px;
+            flex-direction: column;
+
+            .m-item {
+                .size(100%, 160px);
             }
         }
     }

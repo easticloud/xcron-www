@@ -1,21 +1,19 @@
 <template>
-    <div class="contactUs">
+    <div class="m-contactUs">
         <div class="wp">
-            <div class="cu-main">
-                <div class="cu-online">
-                    <span class="cu-ico"></span>
-                    <p class="cu-con">
-                        <b>1对1咨询专属顾问</b>
-                        1对1免费咨询华为云专属顾问，为您量身定制产品推荐方案
-                    </p>
-                    <el-button type="primary" plain>立即咨询</el-button>
-                </div>
-                <div class="cu-Telephone">
-                    <p class="cu-con">
-                        <b>咨询热线：025-86702988</b>
-                        实点实分专业的服务团队，致力于为您提供专业的售前购买咨询服务，及完善的售后技术服务，助您云上无忧
-                    </p>
-                </div>
+            <div class="m-left">
+                <img class="u-img" src="../../static/images/products/products_dc/service.svg" />
+                <span class="u-text">
+                    <span class="u-title">1对1咨询专属顾问</span>
+                    <span class="u-desc"> 1对1免费咨询华为云专属顾问，为您量身定制产品推荐方案</span>
+                </span>
+                <a href="" target="_black" class="u-button">立即咨询</a>
+            </div>
+            <div class="m-right">
+                <span class="u-title">咨询热线：025-86702988</span>
+                <span class="u-desc">
+                    实点实分专业的服务团队，致力于为您提供专业的售前购买咨询服务，及完善的售后技术服务，助您云上无忧
+                </span>
             </div>
         </div>
     </div>
@@ -23,15 +21,11 @@
 
 <script>
 export default {
-    props: {
-    },
+    props: {},
     data() {
-        return {
-        };
+        return {};
     },
-    methods: {
-
-    },
+    methods: {},
 };
 </script>
 

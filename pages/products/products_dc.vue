@@ -24,8 +24,8 @@ export default {
     head() {
         return {
             title: "云专线",
-        }
-    }
+        };
+    },
 };
 </script>
 
@@ -34,5 +34,10 @@ export default {
 
 .m-p-aboutBCS {
     height: 403px;
+}
+@media screen and (max-width: @phone) {
+    .m-p-aboutBCS {
+        .h(auto);
+    }
 }
 </style>

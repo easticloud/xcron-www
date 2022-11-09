@@ -1,86 +1,101 @@
-.contactUs {
+.m-contactUs {
     .pb(75px);
-
-    .cu-main {
-        .size(100%, 180px);
-        background: #FFF;
-        box-shadow: 0px 0px 5px 1px #E6E6E6;
-        .r(5px);
-        .clip;
+    .wp {
         .flex;
+        .r(5px);
+        .h(180px);
+        padding: 25px 0;
+        background: #ffffff;
+        box-shadow: 0px 0px 5px 1px #e6e6e6;
 
-        .cu-online,
-        .cu-Telephone {
-            .flex;
-            width: 50%;
-            .clip;
-            .pr;
-            .fz(15px, 25px);
+        .u-title {
+            .fz(21px,30px);
+            font-weight: 500;
+            color: #3c3c3c;
             letter-spacing: 1px;
-            .color(#848484);
-            box-sizing: border-box;
-
-            .cu-con {
-                b {
-                    .db;
-                    .fz(21px, 29px);
-                    .pb(10px);
-                    .color(#3c3c3c);
-                    font-weight: bold;
+        }
+        .u-desc {
+            .fz(18px,25px);
+            font-weight: 400;
+            color: #848484;
+        }
+        .m-left {
+            padding: 0 50px;
+            .flex;
+            align-items: center;
+            gap: 20px;
+            .u-img {
+                .size(65px);
+            }
+            .u-text {
+                .flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+            .u-button {
+                .size(130px,50px);
+                .r(5px);
+                .x;
+                .fz(18px,50px);
+                .color(#fff);
+                background-color: #cf0010;
+                flex-shrink: 0;
+                &:hover {
+                    filter: brightness(110%);
                 }
             }
         }
-
-        .cu-Telephone {
-            .cu-con {
-                padding: 46px 73px 0 47px;
-            }
-        }
-
-        .cu-online {
-            padding: 46px 210px 0 134px;
+        .m-right {
+            .flex;
+            flex-direction: column;
+            padding: 0 50px;
+            width: 600px;
+            flex-shrink: 0;
             box-sizing: border-box;
-
-            &::after {
-                content: "";
-                .db;
-                .pa;
-                .rt(0, 50%);
-                .mt(calc(-130px /2));
-                .size(2px, 130px);
-                background-color: #E6E6E6;
-                .r(30px);
-                .clip;
-            }
-
-            .cu-ico {
-                .db;
-                .pa;
-                left: 49px;
-                .size(65px);
-                top: 50%;
-                margin-top: calc(-65px /2);
-                background: url(../../../static/images/products/products_dc/service.svg) no-repeat;
-            }
-
-
-
-            .el-button {
-                .pa;
-                right: 47px;
-                top: 50%;
-                margin-top: calc(-50px / 2);
-            }
+            gap: 10px;
+            justify-content: center;
+            border-left: 2px solid #e6e6e6;
         }
     }
+}
 
-    .el-button--primary.is-plain {
-        background: #CF0010;
-        .size(133px, 50px);
-        font-size: 18px;
-        font-weight: normal;
-        .r(5px);
-        border-color: transparent;
-        .color(#fff);
+@media screen and(max-width:@phone) {
+    .m-contactUs {
+        .pb(30px);
+        margin: 0 20px;
+        .wp {
+            flex-direction: column;
+            .h(auto);
+            padding: 25px 0;
+            gap: 20px;
+            box-sizing: border-box;
+
+            .u-title {
+                .fz(21px,30px);
+            }
+            .u-desc {
+                .fz(18px,25px);
+            }
+            .m-left {
+                .w(100%);
+                padding: 0 20px;
+                flex-wrap: wrap;
+                box-sizing: border-box;
+                .u-img {
+                    .size(65px);
+                }
+
+                .u-text {
+                    order: 2;
+                }
+            }
+            .m-right {
+                .flex;
+                padding: 0 20px;
+                width: 100%;
+                gap: 10px;
+                border: 0;
+            }
+        }
     }
 }

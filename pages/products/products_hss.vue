@@ -79,4 +79,13 @@ export default {
         }
     }
 }
+
+@media screen and (max-width: @phone) {
+    .m-p-aboutBCS {
+        .h(auto);
+        .m-bcs {
+            gap: 20px;
+        }
+    }
+}
 </style>

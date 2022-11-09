@@ -25,14 +25,14 @@ export default {
         return {
             // 技术支撑
             title: "擎天架构，为裸金属提供业界领先技术支撑", //标题
-            bgImg: "/images/products/products_bms/bg.png"
+            bgImg: "/images/products/products_bms/bg.png",
         };
     },
     head() {
         return {
             title: "裸金属服务器",
-        }
-    }
+        };
+    },
 };
 </script>
 
@@ -45,5 +45,13 @@ export default {
 
 .m-p-aboutBCS .m-bcs {
     gap: 90px;
+}
+@media screen and (max-width: @phone) {
+    .m-p-aboutBCS {
+        .h(auto);
+        .m-bcs {
+            gap: 20px;
+        }
+    }
 }
 </style>
