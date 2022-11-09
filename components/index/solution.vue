@@ -3,7 +3,7 @@
         <div class="wp">
             <div class="m-title">
                 <h2>全面、专业、智能的解决方案</h2>
-                <a href="" target="_blank" class="u-desc">查看全部解决方案 ></a>
+                <a href="/programme" target="_blank" class="u-desc">查看全部解决方案 ></a>
             </div>
             <div class="m-tabs">
                 <div

@@ -8,6 +8,8 @@
         <div class="m-page-content">
             <!-- 上云实施 -->
             <IconText textKey="cloud_services" />
+            <!-- 云上管理 -->
+            <PagePictureText textKey="services" />
             <!-- 专家服务 -->
             <IconText class="m-services" textKey="services" />
         </div>
@@ -19,11 +21,12 @@
 </template>
 
 <script>
-import banner from "@/components/page/banner.vue";
+import banner from "@/components/page/banner";
 import IconText from "@/components/programme/icon_text";
+import PagePictureText from "@/components/page/picture_text";
 export default {
     name: "ServicesProductsPage",
-    components: { banner, IconText },
+    components: { banner, IconText, PagePictureText },
 };
 </script>
 <style lang="less">

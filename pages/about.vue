@@ -10,6 +10,10 @@
             <TextPicture textKey="info" />
             <!-- 荣誉资质 -->
             <partner textKey="honors" class="u-bg" />
+            <!-- 品牌理念 -->
+            <div class="m-concept">
+                <h2>品牌理念</h2>
+            </div>
         </div>
         <!-- 服务支持 -->
         <products-pmService></products-pmService>
@@ -29,4 +33,16 @@ export default {
 </script>
 <style lang="less">
 @import "~@/assets/css/page/index.less";
+</style>
+<style lang="less" scoped>
+.m-concept {
+    .pt(55px);
+    .h(500px);
+    box-sizing: border-box;
+    background-position: center center;
+    background-size: 1920px 500px;
+    background-repeat: no-repeat;
+    background-image: url(../static/images/page/about/concept.png);
+    background-color: #f2f3f7;
+}
 </style>

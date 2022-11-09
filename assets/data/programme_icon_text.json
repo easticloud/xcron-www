@@ -165,34 +165,34 @@
         "title": "售后服务",
         "list": [
             {
-                "icon": "page/services/3-1.svg",
-                "title": "云原生专家服务",
-                "desc": "覆盖容器技术培训，业务分析，容器化源码改造、交付、运维的全方位专业咨询服务"
+                "icon": "page/contact/2-1.svg",
+                "title": "极速工单",
+                "desc": "云产品技术问题、云业务问题 专业工程师为您即时解答"
             },
             {
-                "icon": "page/services/3-2.svg",
-                "title": "管理检测与响应",
-                "desc": "提供“专家式”人工服务，帮助客户预防、监测、发现主机站点及系统的安全风险"
+                "icon": "page/contact/2-2.svg",
+                "title": "智能客服",
+                "desc": "智能诊断，极速解答，为您极速定位问题、解答问题"
             },
             {
-                "icon": "page/services/3-3.svg",
-                "title": "企业上云网络规划设计服务",
-                "desc": "为企业上云提供完整网络方案咨询与规划服务"
+                "icon": "page/contact/2-3.svg",
+                "title": "专业服务",
+                "desc": "为您提供上云实施、云上管理、专家服务、职业培训的全流程专业服务，加速实现您的业务价值"
             },
             {
-                "icon": "page/services/3-4.svg",
-                "title": "高级人工智能专家服务",
-                "desc": "为客户提供人工智能模型配套的调研、设计及原型开发等专业服务"
+                "icon": "page/contact/2-4.svg",
+                "title": "自助服务",
+                "desc": "TOP问题解决方案、高效便捷工具 助您高效完成产品运维"
             },
             {
-                "icon": "page/services/3-5.svg",
-                "title": "CSS专家服务",
-                "desc": "为客户提供云搜索服务的专家咨询，规划设计与实施，迁移支持与开发支持服务"
+                "icon": "page/contact/2-5.svg",
+                "title": "建议反馈",
+                "desc": "您的宝贵建议，使我们提供更完美的产品与服务"
             },
             {
-                "icon": "page/services/3-6.svg",
-                "title": "数据管理实施专业服务",
-                "desc": "一站式数据全生命周期管理的实施服务"
+                "icon": "page/contact/2-6.svg",
+                "title": "联系方式",
+                "desc": "热线电话：025-86702988，邮件服务：sdsf@xcron.cn"
             }
         ]
     }
