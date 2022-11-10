@@ -4,7 +4,7 @@
         <common-header></common-header>
 
         <!-- banner -->
-        <banner bannerKey="products" />
+        <banner bannerKey="products" :search="true" />
 
         <div class="m-page-content">
             <!-- 热门产品推荐 -->

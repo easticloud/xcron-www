@@ -3,7 +3,7 @@
         <!-- 公共头部 -->
         <common-header></common-header>
         <!-- banner -->
-        <banner bannerKey="programme" />
+        <banner bannerKey="programme" :search="true" />
 
         <div class="m-page-content">
             <!-- 热门方案展示 -->
@@ -52,7 +52,7 @@ export default {
         style(item) {
             if (item.color) return { backgroundColor: item.color };
             if (item.img) return { backgroundImage: `url(${item.img})` };
-            return {};
+            return "";
         },
     },
 };

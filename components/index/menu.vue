@@ -1,58 +1,62 @@
 <template>
-    <div class="m-index-menu" v-if="type">
-        <div class="wp">
-            <template v-if="type == 'products'">
-                <div class="m-list-production">
-                    <a class="u-more" href="" target="_blank">查看全部产品 ></a>
-                    <span
-                        class="u-list"
-                        v-for="(item, i) in production"
-                        :key="i"
-                        :class="{ active: index == i }"
-                        @click="change(i)"
-                    >
-                        {{ item.title }}</span
-                    >
+    <client-only>
+        <div>
+            <div class="m-index-menu" v-if="type">
+                <div class="wp">
+                    <template v-if="type == 'products'">
+                        <div class="m-list-production">
+                            <a class="u-more" href="" target="_blank">查看全部产品 ></a>
+                            <span
+                                class="u-list"
+                                v-for="(item, i) in production"
+                                :key="i"
+                                :class="{ active: index == i }"
+                                @click="change(i)"
+                            >
+                                {{ item.title }}
+                            </span>
+                        </div>
+                        <div class="m-search">
+                            <div class="u-search">
+                                <img class="u-img" src="../../assets/img/search.svg" />
+                                <el-input class="u-input" placeholder="搜索云产品" v-model.trim="search" clearable />
+                            </div>
+                            <div class="m-content" v-show="children.length">
+                                <a
+                                    :href="item.link"
+                                    class="m-item"
+                                    :class="{ 'is-search': search, active: $route.fullPath === item.link }"
+                                    v-for="(item, i) in children"
+                                    :key="i"
+                                >
+                                    <span class="u-title">{{ item.title }}</span>
+                                    <span class="u-desc" v-show="!search">{{ item.desc }}</span>
+                                </a>
+                            </div>
+                            <div class="m-empty" v-show="!children.length"><span>没找到结果，请重新输入</span></div>
+                        </div>
+                    </template>
+                    <template v-if="type == 'programme'">
+                        <div class="m-list-solution">
+                            <a
+                                :href="item.link"
+                                class="m-item"
+                                v-for="(item, i) in solution"
+                                :key="i"
+                                :class="{ active: $route.fullPath === item.link }"
+                            >
+                                <img class="u-img" :src="item.icon" />
+                                <a class="u-txt">
+                                    <span class="u-label">{{ item.label }}</span>
+                                    <span class="u-desc">{{ item.desc }}</span>
+                                </a>
+                            </a>
+                        </div>
+                    </template>
                 </div>
-                <div class="m-search">
-                    <div class="u-search">
-                        <img class="u-img" src="../../assets/img/search.svg" />
-                        <el-input class="u-input" placeholder="搜索云产品" v-model.trim="search" clearable> </el-input>
-                    </div>
-                    <div class="m-content" v-show="children.length">
-                        <a
-                            :href="item.link"
-                            class="m-item"
-                            :class="{ 'is-search': search, active: $route.fullPath === item.link }"
-                            v-for="(item, i) in children"
-                            :key="i"
-                        >
-                            <span class="u-title">{{ item.title }}</span>
-                            <span class="u-desc" v-show="!search">{{ item.desc }}</span>
-                        </a>
-                    </div>
-                    <div class="m-empty" v-show="!children.length">没找到结果，请重新输入</div>
-                </div>
-            </template>
-            <template v-if="type == 'programme'">
-                <div class="m-list-solution">
-                    <nuxt-link
-                        :to="item.link"
-                        class="m-item"
-                        v-for="(item, i) in solution"
-                        :key="i"
-                        :class="{ active: $route.fullPath === item.link }"
-                    >
-                        <img class="u-img" :src="item.icon" />
-                        <a class="u-txt">
-                            <span class="u-label">{{ item.label }}</span>
-                            <span class="u-desc">{{ item.desc }}</span>
-                        </a>
-                    </nuxt-link>
-                </div>
-            </template>
+            </div>
         </div>
-    </div>
+    </client-only>
 </template>
 <script>
 import { menu } from "@/assets/data/index.json";
