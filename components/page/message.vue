@@ -68,6 +68,7 @@ export default {
                 email: "",
                 addr: "",
                 content: "",
+                type: "xcron",
             },
             rules: {
                 name: {
