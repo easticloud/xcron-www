@@ -68,7 +68,6 @@ export default {
                 email: "",
                 addr: "",
                 content: "",
-                type: "xcron",
             },
             rules: {
                 name: {
@@ -142,7 +141,6 @@ export default {
                 email: "",
                 addr: "",
                 content: "",
-                type: "xcron",
             };
             this.active = "";
             this.isCheck = false;
@@ -154,7 +152,7 @@ export default {
                 .map((item) => item.isErr)
                 .filter(Boolean);
             !isSubmit.length &&
-                createMessage(this.form).then(() => {
+                createMessage({ ...this.form, type: "xcron" }).then(() => {
                     this.$notify({
                         title: "成功",
                         message: "留言成功",
