@@ -119,6 +119,9 @@
                     &:hover {
                         cursor: pointer;
                         background-color: #f8f8f8;
+                        .u-title {
+                            font-weight: 600;
+                        }
                     }
 
                     .u-title {
@@ -159,11 +162,6 @@
                 box-sizing: border-box;
                 gap: 10px;
 
-                &:hover {
-                    cursor: pointer;
-                    background-color: #f8f8f8;
-                }
-
                 .u-img {
                     .size(18px);
                     .mt(5px);
@@ -183,7 +181,13 @@
                         .color(#848484);
                     }
                 }
-
+                &:hover {
+                    cursor: pointer;
+                    background-color: #f8f8f8;
+                    .u-txt .u-label {
+                        font-weight: 600;
+                    }
+                }
                 &.active {
                     .u-label {
                         .color(#cf0010);

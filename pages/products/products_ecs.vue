@@ -10,7 +10,7 @@
         <products-graphic-matrix matrix-key="ecs" custom-class="ecs-dotcon" />
 
         <!-- 4、擎天架构加持，助力弹性云服务器更快、更稳 -->
-        <products-pmPInfo :title="title" :bgImg="bgImg"></products-pmPInfo>
+        <!-- <products-pmPInfo :title="title" :bgImg="bgImg"></products-pmPInfo> -->
 
         <!-- 5、权威认可  -->
         <products-graphic-matrix matrix-key="ecs_x" custom-class="bcsAuth" />

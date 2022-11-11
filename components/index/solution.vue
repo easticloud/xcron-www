@@ -17,8 +17,25 @@
                     <span class="u-label">{{ item.label }}</span>
                 </div>
             </div>
-            <div class="m-content" :style="`backgroundImage: url(${children.src})`">
-                <div class="u-others" v-if="children.other">
+            <a
+                :href="children.link"
+                target="_blank"
+                class="m-content"
+                :style="`backgroundImage: url(${children.src})`"
+                v-if="!children.other"
+            >
+                <div class="m-item">
+                    <span class="u-title">{{ children.title }}</span>
+                    <span class="u-desc" v-if="children.desc">{{ children.desc }}</span>
+                    <div class="u-tags">
+                        <template v-if="children.tag.length">
+                            <span class="u-tag" v-for="(child, i) in children.tag" :key="i">{{ child }}</span>
+                        </template>
+                    </div>
+                </div>
+            </a>
+            <div class="m-content" v-else>
+                <div class="u-others">
                     <template v-if="children.other.length">
                         <a
                             :href="child.link"
@@ -29,15 +46,6 @@
                             >{{ child.title }}</a
                         >
                     </template>
-                </div>
-                <div class="m-item" v-else>
-                    <a :href="children.link" target="_blank" class="u-title">{{ children.title }}</a>
-                    <span class="u-desc" v-if="children.desc">{{ children.desc }}</span>
-                    <div class="u-tags">
-                        <template v-if="children.tag.length">
-                            <span class="u-tag" v-for="(child, i) in children.tag" :key="i">{{ child }}</span>
-                        </template>
-                    </div>
                 </div>
             </div>
         </div>
@@ -50,7 +58,7 @@ export default {
         return {
             index: 0,
         };
-    }, 
+    },
     computed: {
         children() {
             return this.list[this.index].children;

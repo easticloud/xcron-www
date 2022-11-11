@@ -10,7 +10,7 @@
         <products-graphic-matrix matrix-key="bms_x" custom-class="ecs-dotcon" />
 
         <!-- 4、擎天架构，为裸金属提供业界领先技术支撑 -->
-        <products-pmPInfo :title="title" :bgImg="bgImg"></products-pmPInfo>
+        <!-- <products-pmPInfo :title="title" :bgImg="bgImg"></products-pmPInfo> -->
 
         <!-- 5、应用场景  -->
         <products-tabs tab-key="bms" custom-class="m-Bms-scene"></products-tabs>
