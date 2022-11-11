@@ -45,4 +45,11 @@ export default {
     background-image: url(../static/images/page/about/concept.png);
     background-color: #f2f3f7;
 }
+@media screen and (max-width: @phone) {
+    .m-concept {
+        .pt(30px);
+        .h(300px);
+        background-size: cover;
+    }
+}
 </style>

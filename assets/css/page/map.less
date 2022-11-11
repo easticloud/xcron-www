@@ -1,0 +1,48 @@
+.m-map {
+    margin: 0 0 80px 0;
+    .flex;
+    justify-content: center;
+    .u-map {
+        width: 100%;
+        height: 500px;
+    }
+    .m-address {
+        .pa;
+        .flex;
+        .size(350px,auto);
+        align-items: center;
+        gap: 14px;
+        box-sizing: border-box;
+        color: #3c3c3c;
+        background-color: #fff;
+        padding: 15px;
+
+        .u-logo {
+            .size(70px);
+            .clip;
+            flex-shrink: 0;
+            background-color: #fff;
+            img {
+                .size(70px);
+            }
+        }
+        .u-info {
+            .flex;
+            .fz(12px,17px);
+            gap: 7px;
+            flex-direction: column;
+            .u-title {
+                .fz(16px);
+            }
+        }
+        &::after {
+            content: "";
+            .pa;
+            .lt( 100px);
+            width: 0;
+            height: 0;
+            border: 20px solid;
+            border-color: #fff transparent transparent transparent;
+        }
+    }
+}

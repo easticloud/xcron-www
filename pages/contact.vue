@@ -31,6 +31,10 @@
             </div>
             <!-- 售后服务 -->
             <IconText class="m-services" textKey="sales" />
+            <!-- 地图 -->
+            <Map />
+            <!-- 留言 -->
+            <Message />
         </div>
         <!-- 服务支持 -->
         <products-pmService></products-pmService>
@@ -42,9 +46,11 @@
 <script>
 import banner from "@/components/page/banner.vue";
 import IconText from "@/components/programme/icon_text";
+import Map from "@/components/page/map.vue";
+import Message from "@/components/page/message.vue";
 export default {
     name: "ContactPage",
-    components: { banner, IconText },
+    components: { banner, IconText, Map, Message },
 };
 </script>
 <style lang="less">

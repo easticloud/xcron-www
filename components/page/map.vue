@@ -1,5 +1,5 @@
 <template>
-    <div class="m-map">
+    <div class="m-map wp">
         <baidu-map class="u-map" :center="center" :zoom="zoom" ak="Ew6p8zLR26m3UX3cu4ibtwUGqwprCmZI">
             <baidu-map-marker :position="{ lng: 118.726879, lat: 31.997976 }"></baidu-map-marker>
             <BaiduMapOverlay pane="labelPane" class="m-address" @draw="draw">

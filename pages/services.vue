@@ -32,12 +32,3 @@ export default {
 <style lang="less">
 @import "~@/assets/css/page/index.less";
 </style>
-
-<style lang="less">
-.p-page-index .m-services .m-list {
-    flex-wrap: wrap;
-    .u-item {
-        min-width: 320px;
-    }
-}
-</style>

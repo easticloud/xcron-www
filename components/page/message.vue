@@ -1,55 +1,57 @@
 <template>
     <div class="m-info-box" id="tab2">
-        <h3>在线留言</h3>
-        <div class="m-form">
-            <div class="m-item m-row" @click="onFocus('name')">
-                <span class="u-label">联系人</span>
-                <div class="u-input" :class="[active == 'name' ? 'active' : '', rules.name.isErr ? 'err' : '']">
-                    <i class="el-icon-user"></i>
-                    <input type="text" v-model="form.name" placeholder="请填写您的名称（称呼）" />
+        <div class="wp">
+            <h2>在线留言</h2>
+            <div class="m-form">
+                <div class="m-item m-row" @click="onFocus('name')">
+                    <span class="u-label">联系人</span>
+                    <div class="u-input" :class="[active == 'name' ? 'active' : '', rules.name.isErr ? 'err' : '']">
+                        <img class="u-icon" src="../../static/images/page/contact/3-1.svg" />
+                        <input type="text" v-model="form.name" placeholder="请填写您的名称（称呼）" />
+                    </div>
+                    <span class="u-err" v-if="rules.name.isErr">{{ rules.name.value }}</span>
                 </div>
-                <span class="u-err" v-if="rules.name.isErr">{{ rules.name.value }}</span>
-            </div>
-            <div class="m-item m-row" @click="onFocus('phone')">
-                <span class="u-label">联系电话</span>
-                <div class="u-input" :class="[active == 'phone' ? 'active' : '', rules.phone.isErr ? 'err' : '']">
-                    <i class="el-icon-mobile-phone"></i>
-                    <span class="u-desc">+86</span>
-                    <input type="text" v-model="form.phone" placeholder="请填写您的联系电话" />
+                <div class="m-item m-row" @click="onFocus('phone')">
+                    <span class="u-label">联系电话</span>
+                    <div class="u-input" :class="[active == 'phone' ? 'active' : '', rules.phone.isErr ? 'err' : '']">
+                        <img class="u-icon" src="../../static/images/page/contact/3-2.svg" />
+                        <span class="u-desc">+86</span>
+                        <input type="text" v-model="form.phone" placeholder="请填写您的联系电话" />
+                    </div>
+                    <span class="u-err" v-if="rules.phone.isErr">{{ rules.phone.value }}</span>
                 </div>
-                <span class="u-err" v-if="rules.phone.isErr">{{ rules.phone.value }}</span>
-            </div>
-            <div class="m-item m-row" @click="onFocus('email')">
-                <span class="u-label">联系邮箱</span>
-                <div class="u-input" :class="[active == 'email' ? 'active' : '', rules.email.isErr ? 'err' : '']">
-                    <i class="el-icon-message"></i>
-                    <input type="text" v-model="form.email" placeholder="请填写您的邮箱地址" />
+                <div class="m-item m-row" @click="onFocus('email')">
+                    <span class="u-label">联系邮箱</span>
+                    <div class="u-input" :class="[active == 'email' ? 'active' : '', rules.email.isErr ? 'err' : '']">
+                        <img class="u-icon" src="../../static/images/page/contact/3-3.svg" />
+                        <input type="text" v-model="form.email" placeholder="请填写您的邮箱地址" />
+                    </div>
+                    <span class="u-err" v-if="rules.email.isErr">{{ rules.email.value }}</span>
                 </div>
-                <span class="u-err" v-if="rules.email.isErr">{{ rules.email.value }}</span>
-            </div>
-            <div class="m-item m-row" @click="onFocus('addr')">
-                <span class="u-label">联系地址</span>
-                <div class="u-input" :class="[active == 'addr' ? 'active' : '', rules.addr.isErr ? 'err' : '']">
-                    <i class="el-icon-map-location"></i>
-                    <input type="text" v-model="form.addr" placeholder="请填写您的联系地址" />
+                <div class="m-item m-row" @click="onFocus('addr')">
+                    <span class="u-label">联系地址</span>
+                    <div class="u-input" :class="[active == 'addr' ? 'active' : '', rules.addr.isErr ? 'err' : '']">
+                        <img class="u-icon" src="../../static/images/page/contact/3-4.svg" />
+                        <input type="text" v-model="form.addr" placeholder="请填写您的联系地址" />
+                    </div>
+                    <span class="u-err" v-if="rules.addr.isErr">{{ rules.addr.value }}</span>
                 </div>
-                <span class="u-err" v-if="rules.addr.isErr">{{ rules.addr.value }}</span>
-            </div>
-            <div class="m-item m-row" @click="onFocus('content')">
-                <span class="u-label">留言内容</span>
-                <div
-                    class="u-textarea"
-                    :class="[active == 'content' ? 'active' : '', rules.content.isErr ? 'err' : '']"
-                >
-                    <i class="el-icon-chat-dot-square"></i>
-                    <textarea v-model="form.content" placeholder="请填写您的具体需求"></textarea>
+                <div class="m-item m-row" @click="onFocus('content')">
+                    <span class="u-label">留言内容</span>
+                    <div
+                        class="u-textarea"
+                        :class="[active == 'content' ? 'active' : '', rules.content.isErr ? 'err' : '']"
+                    >
+                        <img class="u-icon" src="../../static/images/page/contact/3-5.svg" />
+                        <textarea v-model="form.content" placeholder="请填写您的具体需求"></textarea>
+                    </div>
+                    <span class="u-err" v-if="rules.content.isErr">{{ rules.content.value }}</span>
                 </div>
-                <span class="u-err" v-if="rules.content.isErr">{{ rules.content.value }}</span>
             </div>
-        </div>
-        <div class="m-btns">
-            <span class="u-btn u-reset" @click="onReset">重新输入</span>
-            <span class="u-btn u-submit" @click="onSubmit">提交内容</span>
+            <div class="m-btns">
+                <span class="u-btn u-reset" @click="onReset">重新输入</span>
+                <span class="u-btn u-submit" @click="onSubmit">提交内容</span>
+            </div>
         </div>
     </div>
 </template>
@@ -139,6 +141,7 @@ export default {
                 email: "",
                 addr: "",
                 content: "",
+                type: "xcron",
             };
             this.active = "";
             this.isCheck = false;
@@ -165,4 +168,3 @@ export default {
 <style lang="less">
 @import "~@/assets/css/page/message.less";
 </style>
-
