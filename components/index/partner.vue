@@ -3,12 +3,12 @@
         <div class="wp">
             <div class="m-title">
                 <h2>全国5000+客户的信任与选择</h2>
-                <a href="" target="_blank" class="u-desc">查看全部合作伙伴 ></a>
+                <a href="/partner" target="_blank" class="u-desc">查看全部合作伙伴 ></a>
             </div>
             <div class="m-content">
-                <a class="m-item" :href="item.href" target="_blank" v-for="(item, i) in list" :key="i">
+                <span class="m-item" :href="item.href" target="_blank" v-for="(item, i) in list" :key="i">
                     <img :src="item.src" :alt="item.label" />
-                </a>
+                </span>
             </div>
         </div>
         <div class="m-contact">
