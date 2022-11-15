@@ -25,7 +25,7 @@
                     <div class="m-right">
                         <span class="u-title">让我们与您联系</span>
                         <span class="u-desc">留下您的联系方式，我们的专属顾问会在1个工作日内和您联系</span>
-                        <a href="http://" class="u-button">现在留言</a>
+                        <a href="/contact#contact" class="u-button">现在留言</a>
                     </div>
                 </div>
             </div>
@@ -34,7 +34,7 @@
             <!-- 地图 -->
             <Map />
             <!-- 留言 -->
-            <Message />
+            <Message id="contact" />
         </div>
         <!-- 服务支持 -->
         <products-pmService></products-pmService>

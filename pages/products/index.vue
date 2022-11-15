@@ -27,16 +27,16 @@
                     </div>
                     <div class="m-children">
                         <span class="m-children-label">{{ label }}</span>
-                        <div class="u-child" v-for="(child, i) in children" :key="i">
+                        <a :href="child.link" target="_blank" class="u-child" v-for="(child, i) in children" :key="i">
                             <span class="u-title">
-                                <a :href="child.link" target="_blank" class="u-child-title">{{ child.title }}</a>
+                                <span class="u-child-title">{{ child.title }}</span>
                                 <span class="u-sign" v-if="child.sign">{{ child.sign }}</span>
                             </span>
                             <span class="u-desc">{{ child.desc }}</span>
                             <div class="u-tags">
                                 <span class="u-tag" v-for="(item, k) in child.tag" :key="k">{{ item }}</span>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>

@@ -23,7 +23,7 @@ export default {
                 {
                     title: "上云场景组合折上折",
                     desc: "所有场景组合折上9折起！万元礼券限时领！",
-                    href: "/solution/mix",
+                    href: "/scenes/enterprise_scene",
                     target: "_blank",
                     src: getKV("xcron-1.jpg"),
                     mode: "dark",
@@ -31,7 +31,7 @@ export default {
                 {
                     title: "X.CRON推荐奖励计划",
                     desc: "加入推广成为云推官，推荐新用户下单即可获得现金奖励",
-                    href: "/production/servers",
+                    href: "/contact#contact",
                     target: "_blank",
                     src: getKV("xcron-2.jpg"),
                     mode: "light",
@@ -39,7 +39,7 @@ export default {
                 {
                     title: "企业上云解决方案",
                     desc: "高质量、高效率、高安全”7*24h专业运维服务",
-                    href: "/production/international",
+                    href: "/programme/cloud",
                     target: "_blank",
                     src: getKV("xcron-3.jpg"),
                     mode: "light",

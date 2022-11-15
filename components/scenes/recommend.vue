@@ -17,7 +17,7 @@
                             </span>
                         </div>
                     </div>
-                    <a href="" target="_blank" class="u-button">立即咨询</a>
+                    <a href="/contact#contact" target="_blank" class="u-button">立即咨询</a>
                 </div>
             </div>
         </div>

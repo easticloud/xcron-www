@@ -7,7 +7,7 @@
                     <span class="u-title">1对1咨询专属顾问</span>
                     <span class="u-desc"> 1对1免费咨询华为云专属顾问，为您量身定制产品推荐方案</span>
                 </span>
-                <a href="" target="_black" class="u-button">立即咨询</a>
+                <a href="/contact#contact" target="_black" class="u-button">立即咨询</a>
             </div>
             <div class="m-right">
                 <span class="u-title">咨询热线：025-86702988</span>

@@ -3,7 +3,7 @@
         <div class="wp m-header-content">
             <h1>{{ title }}</h1>
             <span class="u-desc">{{ desc }}</span>
-            <a :href="link" target="_blank" class="u-button">立即咨询</a>
+            <a href="/contact#contact" target="_blank" class="u-button">立即咨询</a>
         </div>
     </div>
 </template>

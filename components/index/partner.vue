@@ -13,7 +13,7 @@
         </div>
         <div class="m-contact">
             <span>联系我们，获取更多个性化定制方案</span>
-            <a class="u-btn" href="" target="_blank">立即咨询</a>
+            <a class="u-btn" href="/contact#contact" target="_blank">立即咨询</a>
         </div>
     </div>
 </template>

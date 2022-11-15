@@ -5,7 +5,7 @@
                 <div class="wp">
                     <template v-if="type == 'products'">
                         <div class="m-list-production">
-                            <a class="u-more" href="" target="_blank">查看全部产品 ></a>
+                            <a class="u-more" href="/products" target="_blank">查看全部产品 ></a>
                             <span
                                 class="u-list"
                                 v-for="(item, i) in production"

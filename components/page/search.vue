@@ -14,6 +14,7 @@
                         </a>
                     </template>
                     <template v-else>
+                        <span class="u-none">未找到对应结果，请重新输入</span>
                         <h3><img src="../../assets/img/hot.svg" class="u-icon" /> <span>热门推荐</span></h3>
                         <a :href="item.link" class="u-item" v-for="(item, i) in list" :key="i">
                             <span v-html="item.title" class="u-title"></span>
