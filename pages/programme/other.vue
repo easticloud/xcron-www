@@ -5,7 +5,7 @@
         <!-- 内容 -->
         <div class="m-programme-content">
             <Header :banner-key="header" />
-            <Tabs :data="tabs" :index="tabsIndex" @change="changeTab" />
+            <Tabs textKey="other" :index="tabsIndex" @change="changeTab" />
             <!-- 行业趋势 -->
             <TextPicture :textKey="header" />
             <!-- 方案优势 -->
@@ -37,7 +37,6 @@ export default {
     },
     data() {
         return {
-            tabs: ["能源", "医疗健康", "教育", "交通物流"],
             keys: ["energy", "health", "education", "transport"],
             tabsIndex: 0,
         };
