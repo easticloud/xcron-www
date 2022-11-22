@@ -135,9 +135,27 @@
             {
                 "label": "Web互联",
                 "children": {
+                    "title": "Web互联场景",
+                    "titletag": "对数据安全有一定要求，需要与普通公有云中的其他系统及数据进行安全隔离；业务高峰期，需要大量服务器资源；业务高峰期性能要求稳定",
+                    "src": "/images/products/products_dh/web.png",
+                    "tag": [
+                        {
+                            "title": "· 资源隔离",
+                            "desc": "用户之间物理资源隔离，消除用户之间资源相互影响，性能有保障"
+                        },
+                        {
+                            "title": "· 与云上服务器网络互通",
+                            "desc": "与普通公有云中云服务器使用相同VPC，服务器网络互通"
+                        }
+                    ]
+                }
+            },
+            {
+                "label": "高性能计算",
+                "children": {
                     "title": "高性能计算场景",
                     "titletag": "科学计算，游戏动画等业务场景，对计算性能有很高要求",
-                    "src": "/images/products/products_dh/web.png",
+                    "src": "/images/products/products_dh/compute.png",
                     "tag": [
                         {
                             "title": "· 资源物理隔离",
@@ -152,15 +170,6 @@
                             "desc": "支持IB数据网络互连，低时延磁盘"
                         }
                     ]
-                }
-            },
-            {
-                "label": "高性能计算",
-                "children": {
-                    "title": "高性能计算场景",
-                    "titletag": "- 科学计算，游戏动画等业务场景，对计算性能有很高要求 \n- 资源物理隔离专属主机内资源物理隔离，性能高，稳定性好 \n- 与云上服务器网络互通与普通公有云中云服务器使用相同VPC，服务器网络互通 \n- 高带宽低时延数据访问支持IB数据网络互连，低时延磁盘",
-                    "src": "/images/products/products_dh/compute.png",
-                    "tag": []
                 }
             }
         ]
@@ -574,7 +583,7 @@
                 "children": {
                     "title": "互动直播",
                     "titletag": "互动直播场景将音视频转码、弹幕分发、内容审核等处理能力部署在边缘站点，可以显著提升业务处理质量，优化响应效率，降低流量成本。",
-                    "src": "/images/products/products_iec/s1.svg",
+                    "src": "/images/products/products_iec/s1.png",
                     "tag": [
                         {
                             "title": "· 多样算力",
@@ -592,7 +601,7 @@
                 "children": {
                     "title": "在线教育",
                     "titletag": "在线教育场景为老师与学生提供实时互动的视频教育体验，需要在边缘侧提供区域间稳定互联的低时延通信链路，从而有效支撑师生间多点对多点实时互动。",
-                    "src": "/images/products/products_iec/s2.svg",
+                    "src": "/images/products/products_iec/s2.png",
                     "tag": [
                         {
                             "title": "· 边云网络",
@@ -610,7 +619,7 @@
                 "children": {
                     "title": "应用加速",
                     "titletag": "应用加速场景如游戏加速、App加速等，需要根据端到端时延要求，选择靠近最终用户的边缘站点，并通过优化端到端的网络选路，降低端到端时延。",
-                    "src": "/images/products/products_iec/s3.svg",
+                    "src": "/images/products/products_iec/s3.png",
                     "tag": [
                         {
                             "title": "· 弹性扩展",
@@ -880,7 +889,7 @@
                 "children": {
                     "title": "专属加密（云加密机）",
                     "titletag": "高合规性要求的加密场景，可以选择基于国家密码局认证或FIPS 140-2 第 3 级验证的硬件加密机，对租户业务进行专属加密，默认提供双机以提高可靠性",
-                    "src": "/images/products/products_dew/02.svg",
+                    "src": "/images/products/products_dew/s2.png",
                     "tag": [
                         {
                             "title": "· 合规遵从",

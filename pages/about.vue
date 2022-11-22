@@ -7,7 +7,7 @@
 
         <div class="m-page-content">
             <!-- 公司简介 -->
-            <TextPicture textKey="info" />
+            <TextPicture textKey="info" class="m-about-info" />
             <!-- 荣誉资质 -->
             <partner textKey="honors" class="u-bg" />
             <!-- 品牌理念 -->
@@ -45,6 +45,7 @@ export default {
     background-image: url(../static/images/page/about/concept.png);
     background-color: #f2f3f7;
 }
+
 @media screen and (max-width: @phone) {
     .m-concept {
         .pt(30px);
