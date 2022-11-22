@@ -143,12 +143,12 @@
         "title": "方案全景图",
         "list": [
             {
-                "bgImg": "programme/other/e3-1.svg",
+                "bgImg": "programme/other/e3-2.svg",
                 "title": "光伏云网",
                 "desc": "实现分布式电站的集中化、集约化，助力托管业务开展，提供从电站设备到智能运维的全系统智能化光伏云网解决方案，为客户带来更高收益、安全可靠的价值"
             },
             {
-                "bgImg": "programme/other/e3-2.svg",
+                "bgImg": "programme/other/e3-1.svg",
                 "title": "智慧充电",
                 "desc": "为充电桩或电动汽车运营商提供建站选址、高效运维、自助充电和车辆分时租赁解决方案，支持运营商快速搭建车桩一体管理平台，完成资源的创建、配置和上线"
             },

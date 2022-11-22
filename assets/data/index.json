@@ -272,11 +272,11 @@
             "label": "媒体应用",
             "src": "/images/index/solution/icon-6.png",
             "children": {
-                "title": "TIk Tok解决方案",
+                "title": "媒体应用解决方案",
                 "link": "/programme/media",
-                "desc": "抖音国际版Tiktok在全球深受欢迎，成为国际上下载量最多的APP之一。由简入深，针对浏览客户、运营客户以及企业高端客户都有完整配套解决方案，解决个人/企业Tiktok问题。",
+                "desc": "依托软硬协同、端云结合、音视频编解码技术等差异化能力，提供涵盖视频生产、分发和应用在内的超高清、低时延、强互动、极致体验的媒体能力，助力文娱行业持续创新。",
                 "src": "/images/index/solution/06.jpeg",
-                "tag": ["全案定制", "高速转化", "精准匹配"]
+                "tag": ["高速转化", "全案定制", "端云协同"]
             }
         },
         {
@@ -476,8 +476,8 @@
                 "link": "/programme/cloud"
             },
             {
-                "label": "TIk Tok解决方案",
-                "desc": "解决个人/企业Tiktok问题",
+                "label": "媒体应用解决方案",
+                "desc": "体验新玩法，开辟新赛道",
                 "icon": "/images/index/solution/icon-6.png",
                 "link": "/programme/media"
             },
