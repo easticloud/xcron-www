@@ -31,6 +31,8 @@
         <products-pmService></products-pmService>
         <!-- 公共底部 -->
         <common-footer></common-footer>
+        
+        
     </div>
 </template>
 <script>
@@ -43,7 +45,7 @@ export default {
     head() {
         return {
             title: "热门场景",
-        }
+        };
     },
     data() {
         return {};

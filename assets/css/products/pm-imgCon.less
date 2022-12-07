@@ -1,6 +1,6 @@
 .m-imgCon {
     height: auto;
-    background: #F8F8F8;
+    background: #f8f8f8;
     .pb(50px);
 
     .wp {
@@ -29,11 +29,9 @@
             .size(385px, auto);
             .r(5px);
             .mb(25px);
-            box-shadow: 0px 0px 5px 1px #E6E6E6;
+            box-shadow: 0px 0px 5px 1px #e6e6e6;
             padding: 0 33px 40px 33px;
             background-color: #fff;
-            ;
-
             .u-pic {
                 .pa;
                 left: 50%;
@@ -99,7 +97,6 @@
 
             .u-title {
                 .pt(145px);
-
             }
         }
     }
@@ -122,6 +119,18 @@
             .u-title {
                 .pt(75px);
             }
+        }
+    }
+}
+
+@media screen and (max-width: @phone) {
+    .m-imgCon {
+        h2 {
+            padding: 35px 0;
+            .fz(24px,50px);
+        }
+        .m-tabs .m-item .u-title{
+            .fz(18px);
         }
     }
 }

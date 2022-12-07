@@ -72,6 +72,8 @@
                 <a href="https://beian.miit.gov.cn/" target="_blank">苏ICP备15031332号</a>
             </span>
         </div>
+        <!-- 返回顶部 -->
+        <common-top></common-top>
     </div>
 </template>
 
