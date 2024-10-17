@@ -1,1 +1,0 @@
-# Nuxt2 boilerplate
