@@ -4,7 +4,7 @@
         <common-header></common-header>
         <!-- 内容 -->
         <div class="m-programme-content">
-            <Header banner-key="media" />
+            <PageHeader banner-key="media" />
             <!-- 行业趋势 -->
             <TextPicture textKey="media" />
             <!-- 方案优势 -->
@@ -16,18 +16,18 @@
         <products-pmService></products-pmService>
         <!-- 公共底部 -->
         <common-footer></common-footer>
-        
-        
+
+
     </div>
 </template>
 <script>
 // 媒体应用解决方案
-import Header from "@/components/programme/header";
+import PageHeader from "@/components/programme/header";
 import TextPicture from "@/components/programme/text_picture";
 import AllText from "@/components/programme/all_text";
 import PictureText from "@/components/programme/picture_text";
 export default {
-    components: { Header, TextPicture, AllText, PictureText },
+    components: { PageHeader, TextPicture, AllText, PictureText },
     head() {
         return {
             title: "媒体应用解决方案",

@@ -47,4 +47,9 @@ export default {
         extractCSS: true,
         transpile: [/^element-ui/],
     },
+
+    generate: {
+        devtools: true,
+        minify: false
+    }
 };
